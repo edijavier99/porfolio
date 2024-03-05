@@ -1,0 +1,41 @@
+#presentation-board{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(234, 234, 234);
+}
+.right-side{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.inner-right-side{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.presentation-img{
+    width: 55%;
+    height: 100%;
+    position: relative;
+    left: 200px;
+    z-index: 1;
+}
+.background-img{
+    background-color: black;
+    height: 100%;
+    width: 370px;
+    position: relative;
+    left: -190px;
+    top: -20px;
+}
+.left-side{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    justify-content: center;
+}
+
