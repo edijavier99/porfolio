@@ -12,8 +12,8 @@ export const Presentation = () =>{
             </section>
             <section className="left-side">
                 <header className="">
-                    <p>who am I</p>
-                    <h3>Edison Javier</h3>
+                    <p className="p-0 my-0 mx-5">who we are</p>
+                    <h3 >ERAGIN</h3>
                 </header>
                 <main className="">
                     <p>"Fast learner" en español se traduce como "aprendiz

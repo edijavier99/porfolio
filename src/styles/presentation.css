@@ -22,7 +22,7 @@
    justify-content: center;
 }
 .presentation-img{
-    width: 100%;
+    width: 90%;
     height: 100%;
     position: relative;
     z-index: 2;
@@ -31,11 +31,11 @@
 .background-img{
    position: absolute;
    top: -30px;
-   left: 0px;
+   left: 20px;
    background-color: black;
    z-index: 1;
    height: 100%;
-   width: 97%;
+   width: 90%;
 }
 .left-side{
     height: 100%;
@@ -64,6 +64,6 @@
         left: 0px;
     }
     .presentation-img{
-        left: 20px;
+        left: 10px;
     }
 }               

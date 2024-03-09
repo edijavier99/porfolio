@@ -13,7 +13,7 @@ export const  Navbar = (props) =>{
     <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
             <a className="navbar-brand" href="#">
-            <img src={props.logo} style={{ width: '100px', height: '80px' }} alt="navbar-logo"/>
+            <img src={props.logo} style={{ width: '80px', height: '60px' }} alt="navbar-logo"/>
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>

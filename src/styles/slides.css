@@ -3,7 +3,7 @@
 	min-height: 100vh;
 	position: relative;
 	z-index: 1;
-	background: linear-gradient(180deg, gray, black);
+	background: linear-gradient(360deg, gray, black);
 	border: none !important;
 
 }
@@ -17,7 +17,6 @@
 	background-color: rgba(0,0,0,0.4);
 	z-index: -1;
 }
-
 .carousel-item .container{
 	position: absolute;
 	left: 50%;

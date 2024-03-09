@@ -56,6 +56,7 @@ export const Projects = () => {
 
   return (
     <section id="projects-board">
+      <h1 className="projects">OUR PROJECTS</h1>
       <div className="projects-board-inner">{showProjects()}</div>
     </section>
   );
