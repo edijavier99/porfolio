@@ -40,3 +40,13 @@
     display: block;
   }
   
+
+  @media (max-width: 470px){
+    .projects-board-inner{
+      grid-template-columns: 1fr;
+      padding: 30px;
+    }
+    .project-item{
+      margin-bottom: 30px;
+    }
+  }

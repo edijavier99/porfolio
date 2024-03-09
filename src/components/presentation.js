@@ -5,7 +5,7 @@ export const Presentation = () =>{
     return(
         <section id="presentation-board">
             <section className="right-side">
-                <div className="inner-right-side">
+                <div className="inner-right-side ">
                     <img className="presentation-img" src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg" alt="" />
                     <div className="background-img"></div>
                 </div>

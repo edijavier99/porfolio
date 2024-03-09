@@ -4,6 +4,7 @@ import img1 from "../img/brainnover.jpeg";
 import img2 from "../img/Ecommerce.jpg";
 import img3 from "../img/tmw.jpg";
 
+
 export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 

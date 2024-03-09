@@ -4,6 +4,8 @@
 	position: relative;
 	z-index: 1;
 	background: linear-gradient(180deg, gray, black);
+	border: none !important;
+
 }
 .carousel-item:before{
 	content: '';
@@ -15,12 +17,14 @@
 	background-color: rgba(0,0,0,0.4);
 	z-index: -1;
 }
+
 .carousel-item .container{
 	position: absolute;
 	left: 50%;
 	top:50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
+	border: none;
 }
  .carousel-item h2{
 	font-size: 80px;
