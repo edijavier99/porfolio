@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/projects.css";
+import { ServiceCard } from "./serviceCard";
 
 export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -41,7 +42,7 @@ export const Projects = () => {
     return projectsInfo.map((item, index) => {
       return (
         <div className="project-item" key={index} onMouseOver={() => showProjectInfo(item)} onMouseOut={() => setSelectedProject(null)}>
-          <img
+          {/* <img
             className="project-img"
             src={item.img}
             alt={`${item.name}-img`}
@@ -50,7 +51,8 @@ export const Projects = () => {
             <div className="project-name">
               {selectedProject.name}
             </div>
-          )}
+          )} */}
+          <ServiceCard  item ={item}/>
         </div>
       );
     });
@@ -58,7 +60,8 @@ export const Projects = () => {
 
   return (
     <section id="projects-board">
-      <h1 className="projects">OUR SERVICES</h1>
+      <p className="projects"><strong>OUR</strong></p>
+      <h1>FOCUS</h1>
       <div className="projects-board-inner">{showProjects()}</div>
     </section>
   );
