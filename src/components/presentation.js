@@ -6,27 +6,27 @@ export const Presentation = () =>{
         <section id="presentation-board">
             <section className="right-side">
                 <div className="inner-right-side ">
-                    <img className="presentation-img" src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg" alt="" />
+                    <img className="presentation-img" src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg" alt="" />
                     <div className="background-img"></div>
                 </div>
             </section>
             <section className="left-side">
                 <header className="">
-                    <p className="p-0 my-0 mx-5">who we are</p>
-                    <h3 >ERAGIN</h3>
+                    <p className="p-0 my-0 mx-5"><strong>who we are</strong></p>
+                    <h1 >ERAGIN</h1>
                 </header>
                 <main className="">
-                    <p>"Fast learner" en español se traduce como "aprendiz
-                        rápido" o "aprendiz veloz". Esta frase se
-                        utiliza para describir a alguien que tiene 
-                        la capacidad de asimilar nuevas habilidades, 
-                        conceptos o información de manera rápida y 
-                        eficiente. Es una cualidad valorada en muchos 
-                        entornos educativos y laborales. Por ejemplo</p>
-                    <p>"Fast learner" es una característica elogiada en
-                        muchas situaciones, ya que indica la capacidad 
-                        de adaptación y el potencial para crecer y 
-                        desarrollarse en diferentes áreas.
+                    <p>
+                    In a world where technology is evolving constantly, 
+                    we are here to help you keep up and grow your business. 
+                    We are an agency specialized in creating customized 
+                    websites for small businesses and entrepreneurs. 
+                    Our commitment is to merge digital innovation with 
+                    your business vision to build a striking online presence. 
+                    </p>
+                    <p>
+                    Ready to take the leap into the digital future? <br/>
+                    Join us, and together, we will make your business stand out in the digital era.
                     </p>
                 </main>
             </section>

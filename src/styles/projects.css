@@ -11,49 +11,60 @@
 }
 .projects-board-inner{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 50px 70px 50px 80px;
 }
 .project-item {
-    position: relative;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .project-name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    font-size: 18px;
-    display: none;
-  }
-  
-  .project-item:hover .project-name {
-    display: block;
-  }
-  
+  position: relative;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
 
-  @media (max-width: 470px){
-    .projects-board-inner{
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Agregamos transición para el efecto de zoom */
+  z-index: 1; /* Asegura que la imagen esté por encima del título */
+}
+
+.project-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo oscuro */
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Inicialmente transparente */
+  transition: opacity 0.3s ease; /* Transición suave de opacidad */
+  z-index: 2; /* Asegura que el título esté sobre la imagen */
+}
+
+.project-item:hover .project-img {
+  transform: scale(1.2); /* Hace que la imagen se haga zoom al hacer hover */
+}
+
+.project-item:hover .project-name {
+  opacity: 1; /* Hace que el nombre del proyecto sea visible cuando se hace hover */
+}
+
+@media (max-width: 470px){
+  .projects-board-inner{
       grid-template-columns: 1fr;
       padding: 30px;
-    }
-    .project-item{
-      margin-bottom: 30px;
-    }
   }
+  .project-item{
+      margin-bottom: 30px;
+  }
+}

@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import "../styles/projects.css";
-import img1 from "../img/brainnover.jpeg";
-import img2 from "../img/Ecommerce.jpg";
-import img3 from "../img/tmw.jpg";
-
 
 export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -14,24 +10,30 @@ export const Projects = () => {
 
   const projectsInfo = [
     {
-      name: "trust my word",
+      name: "Website Design and Development",
       description:
         "App para mostrar la opinión de los usuarios sobre viajes, productos y espacios de ocio",
       link: "",
-      img: img3,
+      img: "https://cdn.pixabay.com/photo/2023/10/10/05/52/website-8305451_1280.jpg",
     },
     {
-      name: "brainnover",
+      name: "SEO",
       description:
         "App para gestionar tus notas, tareas y proyectos. Todo en uno.",
       link: "",
-      img: img1,
+      img: "https://cdn.pixabay.com/photo/2015/05/15/01/48/computer-767776_1280.jpg",
     },
     {
-      name: "Ecommerce",
+      name: "Responsive Design",
       description: "App de tienda e-commerce",
       link: "",
-      img: img2,
+      img: "https://s3.amazonaws.com/www-inside-design/uploads/2018/02/responsive-web-square.jpg",
+    },
+    {
+      name: " Maintenance and Support",
+      description: "App de tienda e-commerce",
+      link: "",
+      img: "https://www.net948.com/wp-content/uploads/2023/02/mantenimiento-de-paginas-web-3.jpeg",
     },
   ];
 
@@ -56,7 +58,7 @@ export const Projects = () => {
 
   return (
     <section id="projects-board">
-      <h1 className="projects">OUR PROJECTS</h1>
+      <h1 className="projects">OUR SERVICES</h1>
       <div className="projects-board-inner">{showProjects()}</div>
     </section>
   );

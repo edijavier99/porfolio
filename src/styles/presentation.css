@@ -27,6 +27,7 @@
     position: relative;
     z-index: 2;
     left: 30px;
+    object-fit: cover;
 }
 .background-img{
    position: absolute;
