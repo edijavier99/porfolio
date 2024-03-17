@@ -1,9 +1,8 @@
 .navbar-toggler{
     background-color: white;
 }
-.navbar {
+nav {
     background-color: black;
-    height: 80px;
 }
 .nav-link:focus, .nav-link:hover {
     color: #f8f9fa;
@@ -38,16 +37,10 @@
     .nav-item{
         text-align: center;
     }
-    .navbar {
-        height: auto;
-    }
     .navbar-brand{
-        transform: translateX(30%);
-        position: relative;
-        left: 55px;
-        font-size: 30px;
-        color: white;
-        letter-spacing: 7px; /* Ajusta el valor según el espaciado deseado */
-    
+        left: 25px;
+    }
+    .navbar-toggler{
+        margin-right: 10px;
     }
 }
