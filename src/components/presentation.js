@@ -24,6 +24,12 @@ export const Presentation = () =>{
                     Our commitment is to merge digital innovation with 
                     your business vision to build a striking online presence. 
                     </p>
+                    <p>We understand the 
+                        importance of ongoing support and maintenance for your online presence.
+                         Our team is dedicated to providing continuous assistance to 
+                         ensure your website remains up-to-date, secure, and optimized 
+                         for performance. Let us handle the technical aspects so you can focus on growing 
+                         your business with confidence.</p>
                     <p>
                     Ready to take the leap into the digital future? <br/>
                     Join us, and together, we will make your business stand out in the digital era.
