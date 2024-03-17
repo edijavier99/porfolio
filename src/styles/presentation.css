@@ -2,7 +2,7 @@
     height: 650px;
     width: 100%;
     display: flex;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(235, 235, 235);
 }
 .right-side{
     height: 100%;
@@ -46,7 +46,25 @@
     padding: 60px;
     justify-content: center;
 }
-
+.yellow-line{
+    height: 9px;
+    width: 90px;
+    background-color: yellow;
+    position: relative;
+    top: -10px;
+    left: 300px;
+}
+.contact-btn{
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 10px rgb(63, 62, 62);
+    width: 170px;
+    margin: 0 auto;
+}
+.contact-btn:hover{
+    background-color: black;
+    color: white;
+}
 @media (max-width: 470px){
     #presentation-board{
         display: flex;
@@ -66,5 +84,9 @@
     }
     .presentation-img{
         left: 10px;
+    }
+    .yellow-line{
+        top: -10px;
+        left: 150px;
     }
 }               

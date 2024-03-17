@@ -14,6 +14,7 @@ export const Presentation = () =>{
                 <header className="text-center">
                     <p className="p-0 my-0 mx-5"><strong>who we are</strong></p>
                     <h1 >ERAGIN</h1>
+                    <div className="yellow-line"></div>
                 </header>
                 <main>
                     <p>
@@ -34,8 +35,8 @@ export const Presentation = () =>{
                     <p>
                     Join us, and together, we will make your business stand out in the digital era.
                     </p>
-                    <button className="btn btn-success">Get Started</button>
                 </main>
+                <button className="btn contact-btn">Get Started</button>
             </section>
         </section>
     )

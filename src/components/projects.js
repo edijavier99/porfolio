@@ -63,6 +63,7 @@ export const Projects = () => {
     <section id="projects-board">
       <p className="projects"><strong>OUR</strong></p>
       <h1>FOCUS</h1>
+      <div className="yellow-line focus"></div>
       <div className="projects-board-inner">{showProjects()}</div>
     </section>
   );
