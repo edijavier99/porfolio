@@ -19,12 +19,12 @@ function  Home() {
   return (
     <div className="App">
       <Navbar items={menu} logo={logoo} />
-		  <Slide foto1={logo} foto2={logo} />
+		  {/* <Slide foto1={logo} foto2={logo} /> */}
 		  <Presentation/>
       <Projects/>
       <AnimatedText frase1={"Guiarte"} frase2={"Avanzar"} frase={"Apoyarte"}/>
       <Reviews/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
