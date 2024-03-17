@@ -23,7 +23,7 @@ function  Home() {
       <Projects/>
       <AnimatedText frase1={"Guiarte"} frase2={"Avanzar"} frase={"Apoyarte"}/>
       <Reviews/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

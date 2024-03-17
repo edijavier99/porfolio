@@ -14,7 +14,7 @@ export const Reviews = () =>{
             <div className="row text-center col-11 mt-4">
                 <div className="col-12 col-md-4 mb-5">
                     <Cards
-                        photo={logo}
+                        photo="https://cdn.pixabay.com/photo/2015/05/03/14/40/woman-751236_1280.jpg"
                         borderClass="border-0" 
                         startClass="fas fa-quote-left pe-2" 
                         nClase="rounded-circle shadow-1-strong" 
@@ -44,7 +44,7 @@ export const Reviews = () =>{
                 </div>
                 <div className="col-12 col-md-4 mb-5">
                 <Cards
-                     photo={logo}
+                     photo="https://cdn.pixabay.com/photo/2015/01/06/16/14/woman-590490_1280.jpg"
                       borderClass="border-0" 
                       startClass="fas fa-quote-left pe-2" 
                       nClase="rounded-circle shadow-1-strong" 
@@ -73,7 +73,7 @@ export const Reviews = () =>{
                 </div>   
                 <div className="col-12 col-md-4 mb-5">
                 <Cards
-                      photo={logo}
+                      photo="https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg"
                       borderClass="border-0" 
                       startClass="fas fa-quote-left pe-2" 
                       nClase="rounded-circle shadow-1-strong" 
