@@ -11,32 +11,32 @@ export const Presentation = () =>{
                 </div>
             </section>
             <section className="left-side">
-                <header className="">
+                <header className="text-center">
                     <p className="p-0 my-0 mx-5"><strong>who we are</strong></p>
                     <h1 >ERAGIN</h1>
                 </header>
-                <main className="">
+                <main>
                     <p>
                     In a world where technology is evolving constantly, 
                     we are here to help you keep up and grow your business. 
-                    We are an agency specialized in creating customized 
-                    websites for small businesses and entrepreneurs. 
                     Our commitment is to merge digital innovation with 
                     your business vision to build a striking online presence. 
                     </p>
-                    <p>We understand the 
-                        importance of ongoing support and maintenance for your online presence.
-                         Our team is dedicated to providing continuous assistance to 
+                    <p> Our team is dedicated to providing continuous assistance to 
                          ensure your website remains up-to-date, secure, and optimized 
                          for performance. Let us handle the technical aspects so you can focus on growing 
-                         your business with confidence.</p>
+                         your business with confidence. Our services include:</p>
+                    <ul>
+                        <li>Customized website designs tailored to your brand</li>
+                        <li>Personalized digital marketing strategies for your unique business goals</li>
+                        <li>Dedicated technical support to keep your online presence running smoothly</li>
+                    </ul>
                     <p>
-                    Ready to take the leap into the digital future? <br/>
                     Join us, and together, we will make your business stand out in the digital era.
                     </p>
+                    <button className="btn btn-success">Get Started</button>
                 </main>
             </section>
         </section>
     )
 }
-
