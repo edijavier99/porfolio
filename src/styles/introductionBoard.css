@@ -1,0 +1,66 @@
+#introduction-board{
+    height: calc( 100vh - 80px);
+    background: linear-gradient(black,gray);
+    display: flex;
+    flex-direction: row;
+}
+.introduction-board-left-side{
+    width: 35%;
+    height: 100%;
+    background-color: black;
+    border-top: 0.5px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.inner-introduction-board-left-side > h3{
+    font-size: 35px;
+    line-height: 60px;
+}
+.inner-introduction-board-left-side{
+    z-index: 2;
+    text-align: center;
+}
+.company-name {
+    background: linear-gradient(to right, gray, rgb(245, 195, 58));
+    -webkit-background-clip: text; /* Esto es para aplicar el gradiente al texto */
+    -webkit-text-fill-color: transparent; /* Esto es para hacer el texto transparente */
+}
+.introduction-board-right-side{
+    width: 65%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://cdn.pixabay.com/photo/2020/04/02/22/05/home-office-4996834_1280.jpg");
+}
+@media (max-width: 480px) {
+    .introduction-board-left-side {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent; /* Hacer el fondo transparente */
+        border: none; /* Eliminar el borde */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .inner-introduction-board-left-side > h3{
+        font-size: 30px;
+        padding: 20px;
+        line-height: 10px;
+    }
+    .introduction-board-right-side {
+        width: 100%;
+        height: 100%;
+        filter: brightness(0.5); /* Aplicar un filtro de brillo para oscurecer la imagen */
+    }
+    #introduction-board {
+        height: 100vh;
+        flex-direction: column; /* Cambiar la dirección del flexbox para apilar los elementos en dispositivos móviles */
+    }
+}
+

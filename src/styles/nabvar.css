@@ -1,9 +1,9 @@
 .navbar-toggler{
     background-color: white;
 }
-nav {
+.navbar {
     background-color: black;
-    border-bottom:0.5px solid rgb(149, 145, 145);
+    height: 80px;
 }
 .nav-link:focus, .nav-link:hover {
     color: #f8f9fa;
@@ -17,9 +17,37 @@ nav {
     transform: scale(1.2);
     color:white !important
 }
+.navbar-brand{
+    transform: translateX(30%);
+    position: relative;
+    left: 5%;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 7px; /* Ajusta el valor según el espaciado deseado */
+
+}
+.navbar-logo{
+    width: 80px;
+    height: 60px;
+}
+.dot-com{
+    font-size: 13px;
+}
 
 @media (max-width: 480px) {
     .nav-item{
         text-align: center;
+    }
+    .navbar {
+        height: auto;
+    }
+    .navbar-brand{
+        transform: translateX(30%);
+        position: relative;
+        left: 55px;
+        font-size: 30px;
+        color: white;
+        letter-spacing: 7px; /* Ajusta el valor según el espaciado deseado */
+    
     }
 }
