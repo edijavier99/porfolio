@@ -1,0 +1,78 @@
+#contact{
+    background-color: gray;
+    height: 100vh;
+}
+#contact-header{
+
+}
+#contact-body{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+#contact-body > .left-side{
+    background-color: red;
+    width: 30%;
+    height: auto;
+}
+.contact-channels{
+    list-style: none;
+}
+#contact-body{
+    width: 70%;
+    height: auto;
+}
+#contact-form {
+    margin: 30px auto;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form div {
+    margin-bottom: 15px;
+}
+
+#contact-form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 0.5px solid black;
+    box-sizing: border-box; 
+}
+#contact-submit{
+    background-color: bisque;
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+    width: 150px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+@media (max-width:470px){
+    #contact{
+        height: auto;
+    }
+    #contact-body{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        background-color: white;
+    }
+    #contact-body > .left-side{
+        width: 100%;
+    }
+}
