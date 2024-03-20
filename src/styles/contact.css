@@ -1,9 +1,16 @@
-#contact{
-    background-color: gray;
-    height: 100vh;
-}
 #contact-header{
-
+    width: 60%;
+    margin: 50px auto;
+}
+.contact-title{
+    font-size: 45px;
+    text-align: center;
+}
+.contact-description{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    color: rgb(79, 78, 78);
 }
 #contact-body{
     display: flex;
@@ -14,7 +21,9 @@
     background-color: white;
 }
 #contact-body > .left-side{
-    background-color: red;
+    border-radius:10px;
+    margin: 5px;
+    background-color: rgb(255, 166, 49);
     width: 30%;
     height: auto;
 }
@@ -24,9 +33,12 @@
 #contact-body{
     width: 70%;
     height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 #contact-form {
     margin: 30px auto;
+    height: 100%;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -56,7 +68,8 @@
     border:none;
     padding: 10px;
     width: 150px;
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-top: 20px;
     box-shadow: 5px 5px 5px gray;
 }
 
@@ -70,6 +83,7 @@
         height: auto;
         width: 90%;
         margin: 0 auto;
+        margin-bottom: 20px;
         background-color: white;
     }
     #contact-body > .left-side{

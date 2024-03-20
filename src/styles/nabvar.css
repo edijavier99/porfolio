@@ -1,46 +1,75 @@
-.navbar-toggler{
+.navbar-toggler {
     background-color: white;
+    margin-right: 25px;
 }
 nav {
     background-color: black;
+    height: 90px;
+    font-size: 18px;
 }
-.nav-link:focus, .nav-link:hover {
-    color: #f8f9fa;
-}
-.nav-link{
-    color: white;
+.nav-link {
+    color: white !important;
     cursor: pointer;
-    padding-left:15px ;
+    padding-left: 15px;
+    width: 120px;
+    position: relative;
+    text-align: center;
+}
+.nav-item {
+    position: relative;
+    transition: transform 0.3s ease; 
 }
 .nav-item:hover{
-    transform: scale(1.2);
-    color:white !important
+    transform: translateY(-13%)
 }
-.navbar-brand{
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.5s ease;
+}
+
+.nav-item:hover::after { 
+    width: 100%;
+    background-color: rgb(226, 163, 38);
+}
+
+.navbar-brand {
     transform: translateX(30%);
     position: relative;
     left: 5%;
     font-size: 30px;
-    color: white;
-    letter-spacing: 7px; /* Ajusta el valor según el espaciado deseado */
-
+    color: white !important;
+    letter-spacing: 7px;
 }
-.navbar-logo{
+
+.navbar-logo {
     width: 80px;
     height: 60px;
 }
-.dot-com{
+
+.dot-com {
     font-size: 13px;
 }
 
 @media (max-width: 480px) {
-    .nav-item{
+    .nav-item {
         text-align: center;
     }
-    .navbar-brand{
+    .navbar-brand {
         left: 25px;
     }
-    .navbar-toggler{
+    .navbar-toggler {
         margin-right: 10px;
+    }
+    nav {
+        height: auto;
+    }
+    .navbar-nav{
+        align-items: center;
     }
 }

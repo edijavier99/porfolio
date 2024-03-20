@@ -60,10 +60,12 @@
     box-shadow: 5px 5px 10px rgb(63, 62, 62);
     width: 170px;
     margin: 0 auto;
+    transition: transform 0.3s ease; 
 }
 .contact-btn:hover{
     background-color: black;
     color: white;
+    transform: translateY(-10%)
 }
 @media (max-width: 470px){
     #presentation-board{

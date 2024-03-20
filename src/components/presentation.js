@@ -13,7 +13,7 @@ export const Presentation = () =>{
             <section className="left-side">
                 <header className="text-center">
                     <p className="p-0 my-0 mx-5"><strong>who we are</strong></p>
-                    <h1 >ERAGIN</h1>
+                    <h1 >Ilarazi</h1>
                     <div className="yellow-line"></div>
                 </header>
                 <main>

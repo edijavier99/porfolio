@@ -3,15 +3,15 @@ import "../styles/nabvar.css"
 
 export const  Navbar = (props) =>{
     const items = props.items.map((item, index )=> (
-        <li className="nav-item" key={index}>
-          <a className="nav-link" href={item.url}>
+        <li className="nav-item mx-3" key={index}>
+          <a className="nav-link " href={item.url}>
             {item.label}
           </a>
         </li>
       ));
     return(            
     <nav className="navbar navbar-expand-lg ">
-            <a className="navbar-brand" href="#">ERAGIN<span className="dot-com">.com</span></a>
+            <a className="navbar-brand" href="#">ilarazi<span className="dot-com">.com</span></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
