@@ -5,6 +5,9 @@ import "../styles/contact.css"
 export const ContactMe = () =>{
     return(
         <section id="contact">
+            <div id="contact-img-back">
+                <h1 className="contact-out-title">CONTACT US</h1>
+            </div>
             <header id="contact-header">
                 <h2 className="contact-title">Get In Touch</h2>
                 <p className="contact-description">Do you have any inquiries or need assistance? 

@@ -4,6 +4,7 @@ import Home from "./views/Home";
 import { ContactMe } from "./views/ContactMe";
 import { Navbar } from "./components/navbar";
 import logoo from "../src/img/logo.png"
+import { AboutUs } from "./views/aboutUs";
 
 
 const Layout = () =>{
@@ -20,6 +21,7 @@ const Layout = () =>{
                 <Routes>
                     <Route element ={<Home/>} path="/"/>
                     <Route element ={<ContactMe/>} path="/contact-me"/>
+                    <Route element ={<AboutUs/>} path="/about-us"/>
                 </Routes>
             </BrowserRouter>
         </div>
