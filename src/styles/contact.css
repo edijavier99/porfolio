@@ -1,3 +1,4 @@
+
 #contact-img-back {
     position: relative;
     width: 100%;
@@ -59,6 +60,8 @@
     width: 30%;
     height: auto;
 }
+
+
 .contact-channels{
     width: 80%;
     height: 300px;
@@ -168,8 +171,7 @@
     box-shadow: 5px 5px 5px gray;
 }
 
-
-@media (max-width:470px){
+@media (max-width:768px){
     #contact{
         height: auto;
     }
@@ -186,5 +188,11 @@
     }
     .contact-out-title {
         font-size: 60px;
+    }
+    .contact-channels{
+        grid-template-columns: 1fr;
+        gap: 0;
+        height: auto;
+        width: 90%;
     }
 }

@@ -51,7 +51,6 @@ export const ContactMe = () =>{
                      <button className="btn cnt-btn" onClick={handleWhatsAppClick}> WhatsApp</button>
                 </div>
             </div>
-            <div></div>
             <main id="contact-body">
             
                 <div className="left-side">
