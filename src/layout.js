@@ -5,7 +5,7 @@ import { ContactMe } from "./views/ContactMe";
 import { Navbar } from "./components/navbar";
 import logoo from "../src/img/logo.png"
 import { AboutUs } from "./views/aboutUs";
-
+import { Footer } from "./components/footer";
 
 const Layout = () =>{
     const menu = [
@@ -23,6 +23,7 @@ const Layout = () =>{
                     <Route element ={<ContactMe/>} path="/contact-me"/>
                     <Route element ={<AboutUs/>} path="/about-us"/>
                 </Routes>
+            <Footer />
             </BrowserRouter>
         </div>
     )

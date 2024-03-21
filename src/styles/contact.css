@@ -60,7 +60,72 @@
     height: auto;
 }
 .contact-channels{
-    list-style: none;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    color:white
+}
+.channel{
+    background-color: rgb(66, 64, 64);
+    width: auto;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.left {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.pexels.com/photos/5745183/pexels-photo-5745183.jpeg?auto=compress&cs=tinysrgb&w=800");
+    z-index: 0; /* Añadido para asegurar que el contenido esté delante del pseudo-elemento */
+}
+.medium {
+    background-color: rgb(195, 191, 191);
+    height: 100%;
+    color: black;
+}
+.right {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.pexels.com/photos/326576/pexels-photo-326576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    z-index: 0; /* Añadido para asegurar que el contenido esté delante del pseudo-elemento */
+}
+.left::before,
+.right::before,
+.left::after,
+.right::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Color negro con opacidad del 50% */
+    z-index: -1; /* Para asegurarse de que estén detrás del contenido principal */
+}
+.fa-mobile-alt,.fa-at,.fa-whatsapp{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.cnt-btn{
+    width: 120px;
+    background-color: rgb(213, 157, 66);
+    transition: transform 0.3s ease; 
+}
+.cnt-btn:hover{
+    background-color: rgb(213, 157, 66);
+    border: none;
+    transform: translateY(-15%);
+    color: black;
 }
 #contact-body{
     width: 70%;
@@ -75,11 +140,9 @@
     display: flex;
     flex-direction: column;
 }
-
 #contact-form div {
     margin-bottom: 15px;
 }
-
 #contact-form label {
     display: inline-block;
     margin-bottom: 5px;
