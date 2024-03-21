@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
 }
-
 #contact-img-back::before {
     content: '';
     position: absolute;
@@ -52,10 +51,10 @@
     width: 80%;
     margin: 0 auto;
     background-color: white;
+    padding: 5px;
 }
 #contact-body > .left-side{
     border-radius:10px;
-    margin: 5px;
     background-color: rgb(255, 166, 49);
     width: 30%;
     height: auto;
@@ -121,5 +120,8 @@
     }
     #contact-body > .left-side{
         width: 100%;
+    }
+    .contact-out-title {
+        font-size: 60px;
     }
 }
