@@ -2,6 +2,7 @@
     height: 400px;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 .service-card-header{
     height: 200px;
@@ -19,5 +20,5 @@
     justify-content: center;
     height: 200px;
     background-color: rgb(241, 240, 240);
-    border-bottom: 7px solid black
+    border-bottom: 12px solid black
 }

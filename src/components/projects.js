@@ -43,16 +43,6 @@ export const Projects = () => {
     return projectsInfo.map((item, index) => {
       return (
         <div className="project-item" key={index} onMouseOver={() => showProjectInfo(item)} onMouseOut={() => setSelectedProject(null)}>
-          {/* <img
-            className="project-img"
-            src={item.img}
-            alt={`${item.name}-img`}
-          />
-          {selectedProject && (
-            <div className="project-name">
-              {selectedProject.name}
-            </div>
-          )} */}
           <ServiceCard item ={item}/>
         </div>
       );
@@ -63,7 +53,7 @@ export const Projects = () => {
     <section id="projects-board">
       <p className="projects"><strong>OUR</strong></p>
       <h1>FOCUS</h1>
-      <div className="yellow-line focus"></div>
+      <div className="yellow-line-focus"></div>
       <div className="projects-board-inner">{showProjects()}</div>
     </section>
   );

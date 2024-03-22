@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/contact.css"
-import { hasFormSubmit } from "@testing-library/user-event/dist/utils";
-
 
 export const ContactMe = () =>{
     const handleEmailClick = () => {
@@ -14,6 +12,20 @@ export const ContactMe = () =>{
     
       const handlePhoneCallClick = () => {
         window.location.href = "tel: +34 631912885";
+      };
+
+      const [firstName, setFirstName] = useState('');
+      const [lastName, setLastName] = useState('');
+      const [email, setEmail] = useState('');
+      const [validated, setValidated] = useState(false);
+    
+      const handleSubmit = (event) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        setValidated(true);
       };
     
     return(
@@ -51,34 +63,71 @@ export const ContactMe = () =>{
                      <button className="btn cnt-btn" onClick={handleWhatsAppClick}> WhatsApp</button>
                 </div>
             </div>
-            <main id="contact-body">
-            
-                <div className="left-side">
-                    {/* <h2>Contact Information</h2>
-                    <p>Merge digital innovation with your business vision</p>
-                    <ul className="contact-channels">
-                        <li> +34 631912885</li>
-                        <li> edijavier10@gmail.com</li>
-                        <li> London, UK </li>
-                    </ul> */}
+            <div id="contact-body" className="d-flex flex-row col-md-10 p-3">
+                <div className="col-ms-12 col-md-5 col-lg-5 d-flex flex-column align-items-center justify-content-center ">
+                    <h3 className="contact-heading"> Feel free to reach out <br/> 
+                    further information by <br/> 
+                    completing the <span className="text-primary">contact</span> form.</h3>
+                    <p className="text-muted"><i className="fas fa-user-clock me-2"></i>No more than 2 working days since receiving your request.</p>
                 </div>
-                <form id="contact-form">
+                <div className="col-ms-12 col-md-7 col-lg-7">
+                    <form id="contact-form" className={`needs-validation ${validated ? 'was-validated' : ''}`} noValidate onSubmit={handleSubmit}>
+                        <div className="row g-3">
+                            <div className="col-sm-6">
+                                <label htmlFor="firstName" className="form-label"><strong>First Name</strong></label>
+                                <input type="text" className="form-control" id="firstName" placeholder="Type your first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
+                                <div className="invalid-feedback">
+                                Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div className="col-sm-6">
+                                <label htmlFor="lastName" className="form-label"><strong>Last Name</strong></label>
+                                <input type="text" className="form-control" id="lastName" placeholder="Type your last name" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
+                                <div className="invalid-feedback">
+                                Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div className="col-12">
+                                <label htmlFor="email" className="form-label"><strong>Email</strong></label>
+                                <input type="email" className="form-control" id="email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                                <div className="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                                </div>
+                            </div>
+                            <label htmlFor="contact-message" className="form-label"><strong>Message</strong></label>
+                            <textarea id="contact-message"  className="form-control" rows={3} placeholder="Write here your message" required></textarea>
+                            <div className="invalid-feedback">
+                                Valid message is required.
+                                </div>
+                            <hr className="mt-5" />
+                            <button className="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+
+
+{/* <form name="contact-form" id="contact-form">
                     <div>
-                        <label id="name-label" for="name">Your Name</label>
+                        <label id="name-label" for="name"><strong>Your Name</strong></label>
                         <input id="name" type="text" placeholder="Enter your name" required />
                     </div>
                     <div>
-                        <label for="email" id="email-label">Your Email</label>
+                        <label for="email" id="email-label"><strong>Your Email</strong></label>
                         <input id="email" type="email" placeholder="Enter your email" required />
                     </div>
                     <div>
-                        <label for="subject" id="subject-label">Your Subject</label>
-                        <input id="subject" placeholder="Subject" type="text" />
+                        <label for="subject" id="subject-label"><strong>Your Subject</strong></label>
+                        <input id="subject" placeholder="Subject" type="text"/>
                     </div>
                     <textarea id="contact-message" rows={3} placeholder="Write here your message"></textarea>
                     <input type="submit"  id="contact-submit" value="Send Message" />
                 </form>
-            </main>
-        </section>
-    )
-}
+
+ */}

@@ -57,18 +57,15 @@
   transition: opacity 0.3s ease; /* Transición suave de opacidad */
   z-index: 2; /* Asegura que el título esté sobre la imagen */
 }
-.focus{
-  left: 720px;
-}
 .project-item:hover .project-img {
-  transform: scale(1.2); /* Hace que la imagen se haga zoom al hacer hover */
+  transform: scale(1.2); 
 }
 
 .project-item:hover .project-name {
   opacity: 1; /* Hace que el nombre del proyecto sea visible cuando se hace hover */
 }
 
-@media (max-width: 470px){
+@media (max-width: 890px){
   .projects-board-inner{
       grid-template-columns: 1fr;
       padding: 30px;
