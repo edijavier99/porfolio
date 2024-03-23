@@ -4,7 +4,6 @@
 }
 nav {
     background-color: black;
-    height: 90px;
     font-size: 18px;
 }
 .nav-link {
@@ -15,13 +14,13 @@ nav {
     position: relative;
     text-align: center;
 }
-/* .nav-item {
+.nav-item {
     position: relative;
     transition: transform 0.3s ease; 
 }
 .nav-item:hover{
     transform: translateY(-13%)
-} */
+}
 .nav-item::after {
     content: '';
     position: absolute;
@@ -56,7 +55,7 @@ nav {
     font-size: 13px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 790px) {
     .nav-item {
         text-align: center;
     }
@@ -66,14 +65,12 @@ nav {
     .navbar-toggler {
         margin-right: 10px;
     }
-    nav {
-        height: auto;
-    }
+   
     .navbar-nav{
         align-items: center;
     }
-    /* .nav-item::after {
+    .nav-item::after {
         transition: width 0.1s ease;
-    } */
+    }
     
 }
