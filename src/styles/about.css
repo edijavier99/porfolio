@@ -28,6 +28,15 @@
 .abt-up-img, .abt-bottom-img{
     height: 40%;
 }
+.programming-lang{
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.fa-html5, .fa-python, .fa-js, .fa-react{
+    font-size: 70px;
+    margin-right: 40px;
+}
 
 @media (max-width:790px){
     .abt-intro-img-board{

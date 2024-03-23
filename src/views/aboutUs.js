@@ -29,8 +29,13 @@ export const AboutUs = () =>{
                 </div>
             </div>
             <div className="row">
-                <div>
-
+                <div className="col-12 bg-secondary">
+                    <marquee className="programming-lang">
+                        <i className="fab fa-html5"></i>
+                        <i className="fab fa-python"></i>
+                        <i className="fab fa-js"></i>
+                        <i className="fab fa-react"></i>
+                    </marquee>
                 </div>
             </div>
             <div className="row col-md-10">
