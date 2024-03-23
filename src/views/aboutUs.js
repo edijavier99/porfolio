@@ -29,7 +29,7 @@ export const AboutUs = () =>{
                     <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  </p>
                 </div>
             </div>
-            {/* <div className="row">
+            <div className="row">
                 <div className="col-12 bg-secondary">
                     <marquee className="programming-lang">
                         <i className="fab fa-html5"></i>
@@ -38,7 +38,7 @@ export const AboutUs = () =>{
                         <i className="fab fa-react"></i>
                     </marquee>
                 </div>
-            </div> */}
+            </div>
             <section className="row col-md-10 d-flex flex-column align-items-center why-choose-board">
                 <header className="col-md-3 text-center mb-3 p-0">
                     <div class="square-box">
