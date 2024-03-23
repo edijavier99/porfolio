@@ -69,7 +69,6 @@ export const AboutUs = () =>{
                     </div>
                 </main>
             </section>
-
         </section>
     )
 }
