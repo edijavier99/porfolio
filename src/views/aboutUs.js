@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/about.css"
+import { WhyChooseCard } from "../components/whychoosecard";
 
 export const AboutUs = () =>{
     return(
@@ -38,9 +39,37 @@ export const AboutUs = () =>{
                     </marquee>
                 </div>
             </div>
-            <div className="row col-md-10">
+            <section className="row col-md-10 d-flex flex-column align-items-center why-choose-board">
+                <header className="col-md-3 text-center mb-3 p-0">
+                    <div class="square-box">
+                        <h3 className="mb-0 fw-bold">Why to choose us</h3>
+                        <p className="text-muted">As always partners grow with you!</p>
+                    </div>
+                </header>
+                <main className="col-md-9">
+                    <div className="row">
+                        <WhyChooseCard title="Professional" 
+                                       icon="fa-user-tie"
+                                       description="Our commitment to professionalism ensures
+                                        that every website we craft for your company embodies
+                                         the highest standards of web development excellence."
+                        />
+                        <WhyChooseCard title="Experience" 
+                                       icon="fa-suitcase"
+                                       description="Drawing from our extensive experience,
+                                        we guarantee that each website we create for your company
+                                         is backed by a wealth of industry knowledge and expertise."
+                        />
+                        <WhyChooseCard title="Quality" 
+                                       icon="fa-rocket"
+                                       description="Focusing on web solutions, our team combines 
+                                       technical expertise and attention to detail to produce
+                                        sites that not only meet but exceed your expectations."
+                        />
+                    </div>
+                </main>
+            </section>
 
-            </div>
         </section>
     )
 }

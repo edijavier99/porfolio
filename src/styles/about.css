@@ -37,6 +37,41 @@
     font-size: 70px;
     margin-right: 40px;
 }
+.why-choose-board{
+    margin: 60px auto 0px auto;
+}
+
+.fa-user-tie, .fa-suitcase, .fa-rocket{
+    font-size: 60px;
+}
+.fa-user-tie:hover, .fa-suitcase:hover, .fa-rocket:hover{
+    color: red;
+}
+.square-box {
+    position: relative;
+    display: inline-block;
+    background-color: white; /* Cambia esto al color de fondo deseado */
+    padding: 30px 0 5px 0;
+}
+
+.square-box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; 
+    height: 100%; 
+    border: 2px solid rgb(240, 137, 41);
+    /* border-top: 2px solid black;
+    border-bottom: 2px solid black;  */
+}
+.square-box  h3,
+.square-box  p {
+    position: relative;
+    background-color: white;
+    z-index: 3;
+}
 
 @media (max-width:790px){
     .abt-intro-img-board{
