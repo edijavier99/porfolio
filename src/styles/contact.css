@@ -171,4 +171,7 @@
         height: auto;
         width: 90%;
     }
+    .contact-heading{
+        font-size: 2rem;
+    }
 }
