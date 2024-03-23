@@ -11,21 +11,26 @@ export const AboutUs = () =>{
                     <h1 className="about-out-title">ABOUT US</h1>
                 </div>
             </header>
-            <div className="row col-md-10">
-            <div className="col-md-5 abt-intro-img-board d-flex flex-column justify-content-center align-items-end">
+            <div className="row col-md-10 m-auto">
+                <div className="col-md-12 col-lg-6 position-relative  abt-intro-img-board d-flex flex-column justify-content-center align-items-end">
                     <img className="abt-up-img mb-4 col-8" src="https://cdn.pixabay.com/photo/2015/07/17/22/42/startup-849804_1280.jpg" alt="" />
+                    <div class="today-div">
+                        <h3>Today.</h3>
+                        <h3>Tomorrow.</h3>
+                        <h3>Together.</h3>
+                    </div>
                     <img className="abt-bottom-img col-8" src="https://cdn.pixabay.com/photo/2015/07/17/22/42/startup-849804_1280.jpg" alt=""/>
                 </div>
-                <div className="col-md-7 p-5">
-                    <h2>Let tomorrow begin today:</h2>
+                <div className="col-md-12 col-lg-6  p-5">
+                    <h2>Let <strong>tomorrow</strong> begin <strong>today:</strong></h2>
                     <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
                     Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
                      </p>
-                    <h3>Our Mission</h3>
+                    <h4 className="fw-bold">Our Mission</h4>
                     <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  </p>
-                    <h3>Our Vision</h3>
+                    <h4 className="fw-bold">Our Vision</h4>
                     <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  </p>
-                    <h3>Our Strategy</h3>
+                    <h4 className="fw-bold">Our Strategy</h4>
                     <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  </p>
                 </div>
             </div>

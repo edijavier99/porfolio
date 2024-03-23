@@ -26,7 +26,22 @@
     font-size: 3.5rem;
 }
 .abt-up-img, .abt-bottom-img{
-    height: 40%;
+    margin-right: 25px;
+}
+.today-div {
+    position: absolute;
+    color: white;
+    right: -30px; /* Mueve el div 100px a la derecha */
+    background-color: rgb(227, 151, 69); /* Fondo semi-transparente */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 4;
+    height: 25vh;
+    width: 25vh;
+    border: 5px solid white;
 }
 .programming-lang{
     height: 150px;
@@ -73,7 +88,7 @@
     z-index: 3;
 }
 
-@media (max-width:790px){
+@media (max-width:1150px){
     .abt-intro-img-board{
         flex-direction: row !important;
         height: 90% !important;
@@ -83,4 +98,14 @@
     .abt-up-img{
         margin-bottom: 0 !important;
     }
+    .today-div{
+        height: 20vh;
+        width: 35vw;
+        right: 90px;
+        top: 50px;
+    }
+    .about-out-title{
+        font-size: 2.5rem;
+    }
+
 }
