@@ -1,0 +1,32 @@
+#showbar-container {
+    background-color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* Ajusta el ancho del contenedor al contenido */
+}
+
+#showbar-container ul {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 20px;
+    font-size: 23px;
+    font-weight: 700;
+    display: flex; 
+    justify-content: space-between; /* Distribuye los elementos uniformemente en el espacio disponible */
+    animation: slideRightToLeft 20s linear infinite; /* Aplica la animación de desplazamiento */
+}
+/* #showbar-container ul li{
+    width: 200px;
+    padding: 0 !important;
+    margin: 0 !important;
+} */
+
+@keyframes slideRightToLeft {
+    0% {
+        transform: translateX(100%); /* Comienza desde la posición completamente a la derecha */
+    }
+    100% {
+        transform: translateX(-100%); /* Termina desplazándose completamente a la izquierda */
+    }
+}

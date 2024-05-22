@@ -113,21 +113,4 @@ export const ContactMe = () =>{
 
 
 
-{/* <form name="contact-form" id="contact-form">
-                    <div>
-                        <label id="name-label" for="name"><strong>Your Name</strong></label>
-                        <input id="name" type="text" placeholder="Enter your name" required />
-                    </div>
-                    <div>
-                        <label for="email" id="email-label"><strong>Your Email</strong></label>
-                        <input id="email" type="email" placeholder="Enter your email" required />
-                    </div>
-                    <div>
-                        <label for="subject" id="subject-label"><strong>Your Subject</strong></label>
-                        <input id="subject" placeholder="Subject" type="text"/>
-                    </div>
-                    <textarea id="contact-message" rows={3} placeholder="Write here your message"></textarea>
-                    <input type="submit"  id="contact-submit" value="Send Message" />
-                </form>
 
- */}

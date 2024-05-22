@@ -1,59 +1,52 @@
 #introduction-board{
-    height: calc( 100vh - 80px);
-    background: linear-gradient(black,gray);
+    min-height: 100vh;
+}
+.ib-left-side{
+    padding-left: 60px;
+    padding-top: 70px;
+}
+.ib-left-side h1{
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: rgb(0, 0, 0);
+}
+.service-type-intro {
+    background: linear-gradient(90deg, rgb(123, 185, 171), gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ib-btn-container{
+    width: 500px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
 }
-.introduction-board-left-side{
-    width: 35%;
-    height: 100%;
-    background-color: black;
-    border-top: 0.5px solid gray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
+.ibBtn{
+    width: 200px;
+    border-radius: 20px;
 }
-.inner-introduction-board-left-side > h3{
-    font-size: 35px;
-    line-height: 60px;
+.btnQuote{
+    background-color: black !important;
+    color: white !important;
 }
-.inner-introduction-board-left-side{
-    z-index: 2;
-    text-align: center;
+.btnContact{
+    border: 0.5px solid black !important;
 }
-.company-name {
-    background: linear-gradient(to right, gray, rgb(245, 195, 58));
-    -webkit-background-clip: text; /* Esto es para aplicar el gradiente al texto */
-    -webkit-text-fill-color: transparent; /* Esto es para hacer el texto transparente */
-}
-.introduction-board-right-side{
-    width: 65%;
-    height: 100%;
-    background-position: center;
+
+.ib-right-side {
+    display: flex; /* Convertir en contenedor flex */
+    justify-content: flex-end; /* Alinear contenido a la derecha */
+    background-image: url("https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("https://cdn.pixabay.com/photo/2020/04/02/22/05/home-office-4996834_1280.jpg");
-}
-@media (max-width: 480px) {
-    .introduction-board-left-side {
-        position: absolute;
-        width: 100%;
-        background-color: transparent; 
-        border: none; 
-    }
-    .inner-introduction-board-left-side > h3{
-        font-size: 30px;
-        padding: 20px;
-        line-height: 10px;
-    }
-    .introduction-board-right-side {
-        width: 100%;
-        height: 100%;
-        filter: brightness(0.5);
-    }
-    #introduction-board {
-        height: calc(100vh - 70px);
-        flex-direction: column; 
-    }
+    border-radius: 20px;
+    background-position: center;
+    position: relative;
+}   
+
+.ib-right-side-img-container {
+    background-color: rgb(144, 214, 219);
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    margin: 20px;
 }

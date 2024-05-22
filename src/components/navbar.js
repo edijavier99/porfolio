@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/nabvar.css"
 
+
 export const  Navbar = (props) =>{
     const items = props.items.map((item, index )=> (
         <li className="nav-item mx-3" key={index}>
