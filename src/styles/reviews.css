@@ -1,0 +1,65 @@
+#reviews h4{
+    font-weight: 900;
+    font-size: 45px;
+}
+#reviews .title-detail{
+    font-size: 20px;
+
+}
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.description {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.fa-quote-left{
+    font-size: 70px;
+    color: rgba(209, 206, 206, 0.793);
+    border-right: 2px solid  rgba(209, 206, 206, 0.793);
+    padding-right: 20px;
+}
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+}
+
+.thumbnail.selected img {
+    border-color: #007bff;
+}
+
+.thumbnail p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.thumbnail:hover {
+    transform: scale(1.2);
+}

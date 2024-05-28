@@ -1,23 +1,21 @@
-/* WHY US CARD CSS */
-#why-us-container{
-    background: linear-gradient(90deg, rgb(229, 244, 240), rgb(232, 232, 232));
-    text-align: center;
-    width: 95%;
-    margin: 0 auto;
-}
 #why-us-container h2{
     font-weight: 900;
-    font-size: 40px;
-    transform: translateY(-50%);
+    font-size: 45px;
 }
 .why-us-card{
+    width: 500px;
 }
-.why-us-card .fa-solid{
-    font-size: 30px;
-    padding: 20px;
-    border-bottom: 1px solid black;    
-}
-.why-us-card-title{
+.card-number{
     font-weight: 800;
-    font-size: 25px;
+    font-size: 45px;
+    background: linear-gradient(90deg, rgb(123, 185, 171), gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-title{
+    font-weight: 900;
+    font-size: 30px;
+}
+.card-description{
+
 }

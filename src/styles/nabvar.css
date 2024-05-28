@@ -2,17 +2,13 @@
     margin-right: 25px;
 }
 nav {
-    /* border-radius: 20px; */
     font-size: 18px;
-    /* width: 90%; */
     margin: 0 auto;
     position: sticky !important;
     top: 0;
-    backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
     z-index: 99;
+    background-color: white;
 }
-
-
 .nav-link {
     color: black !important;
     cursor: pointer;
@@ -45,29 +41,21 @@ nav {
 }
 
 .navbar-brand {
-    transform: translateX(30%);
-    position: relative;
-    left: 5%;
-    font-size: 30px;
-    color: black !important;
-    letter-spacing: 7px;
+    height: 80px;
+    width: 110px;
+    margin-left: 30px;
 }
-
+.navbar-brand img {
+    height: 100%;
+    width: 100%;
+}
 .navbar-logo {
     width: 80px;
     height: 60px;
 }
-
-.dot-com {
-    font-size: 13px;
-}
-
 @media (max-width: 790px) {
     .nav-item {
         text-align: center;
-    }
-    .navbar-brand {
-        left: 25px;
     }
     .navbar-toggler {
         margin-right: 10px;
