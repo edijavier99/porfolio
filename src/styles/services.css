@@ -1,6 +1,6 @@
 #services {
     min-height: 100vh;
-    background-color: rgb(238, 237, 237);
+    background-color: rgb(246, 243, 243);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,6 +9,7 @@
 .category{
     font-weight: 700;
     color: rgb(141, 187, 182) !important;
+    margin: 30px 0 !important;
 }
 #services h2{
     font-weight: 900;
@@ -21,7 +22,7 @@
     margin-bottom: 50px;
     text-align: center;
 }
-  .pill-container {
+.pill-container {
     display: grid;
     gap: 20px; /* Adjust gap as needed */
     width: 90%;
@@ -34,6 +35,12 @@
       grid-template-columns: repeat(2, 1fr); /* 2 columns */
     }
   }
+
+  @media (max-width:576px){
+    .services-description{
+      max-width: 80%;
+  }
+  }
   
   @media (min-width: 992px) { /* Large devices (desktops, 992px and up) */
     .pill-container {
@@ -41,10 +48,10 @@
     }
   }
   
-  .fa-chrome {
-    font-size: 35px;
+  .fa-chrome,.fa-circle-up, .fa-toolbox {
+    font-size: 85px;
   }
-  
+/*   
   .pill {
     min-height: 350px;
     border-radius: 60px;
@@ -73,4 +80,67 @@
       -4px -4px 8px 0 rgba(255, 255, 255, 0.3);
     transform: translateY(4px);
   }
-  
+.services-btn-card{
+  width: 200px;
+  height: 25px;
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 0.5rem;
+  display: flex;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+.services-card-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  background-color: rgb(141, 187, 182)
+}
+.services-btn{
+  border-radius: 20px;
+  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+}
+.services-btn:hover{
+  box-shadow: 
+      4px 4px 8px 0 rgba(0, 0, 0, 0.25),
+      -4px -4px 8px 0 rgba(255, 255, 255, 0.3);
+    transform: translateY(4px);
+} */
+
+.pill{
+  min-height: 350px;
+  padding: 20px;
+  text-align: center;
+}
+.pill h1{
+  font-weight: 900;
+  font-size: 25px;
+}
+.icon-container{
+  height: 200px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10 !important;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(255, 253, 253);
+  box-shadow: 
+  12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+  -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin: 20px 0px !important;
+}
+.icon-container:hover {
+  box-shadow: 
+    4px 4px 8px 0 rgba(0, 0, 0, 0.25),
+    -4px -4px 8px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(4px);
+}
+.fa-chrome, .fa-toolbox, .fa-circle-up{
+  color: gray;
+}

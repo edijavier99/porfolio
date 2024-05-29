@@ -4,9 +4,6 @@
 nav {
     font-size: 18px;
     margin: 0 auto;
-    position: sticky !important;
-    top: 0;
-    z-index: 99;
     background-color: white;
 }
 .nav-link {

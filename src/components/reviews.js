@@ -4,21 +4,21 @@ import '../styles/reviews.css';
  const reviews = [
     {
         id: 1,
-        description: "Trabajar con We Coded ha sido una experiencia excepcional. Su equipo de desarrolladores es altamente profesional y logró captar perfectamente nuestra visión para el proyecto. No solo entregaron un producto de alta calidad, sino que también proporcionaron un soporte continuo, asegurándose.",
+        description: "Working with We Coded has been an exceptional experience. Their team of developers is highly professional and perfectly captured our vision for the project. Not only did they deliver a high-quality product, but they also provided continuous support, ensuring...",
         imgSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        name: "Cliente 1"
+        name: "Client 1"
     },
     {
         id: 2,
-        description: "Nos dedicamos a crear soluciones de software a medida que se adaptan perfectamente a las necesidades específicas de cada cliente. Ya sea que necesites una aplicación móvil intuitiva, un sistema de gestión empresarial robusto o una plataforma web dinámica, nuestro equipo tiene la experiencia.",
+        description: "We specialize in creating custom software solutions that perfectly fit the specific needs of each client. Whether you need an intuitive mobile app, a robust enterprise management system, or a dynamic web platform, our team has the experience...",
         imgSrc: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        name: "Cliente 2"
+        name: "Client 2"
     },
     {
         id: 3,
-        description: "En nuestra empresa, nos comprometemos a ser el socio confiable de nuestros clientes en su viaje hacia la transformación digital. Ofrecemos una gama completa de servicios de desarrollo de software, desde consultoría y planificación estratégica hasta diseño, desarrollo e implementación.",
+        description: "At our company, we are committed to being the trusted partner of our clients on their journey to digital transformation. We offer a full range of software development services, from consulting and strategic planning to design, development, and implementation.",
         imgSrc: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        name: "Cliente 3"
+        name: "Client 3"
     }
 ];
 
@@ -27,16 +27,18 @@ export const Reviews = () => {
 
     return (
         <section id="reviews" className="text-center">
+            <p className="text-muted category">TESTIMONIALS</p>
             <h4>Our Happy Clients</h4>
             <p className="title-detail text-muted">What They Say About Us</p>
+            <p className="title-description">At We Coded, we deeply value the opinions of our clients as they are integral to our commitment to excellence. Our dedication to providing the best service possible is unwavering. We take every piece of feedback into careful consideration, utilizing it as a guiding light to continuously refine and enhance our services, ensuring that we consistently exceed expectations.</p>
             <div className="carousel-container">
-                <div className="description col-10">
-                    <div className="d-flex align-items-center">
+                <div className="review-description col-9">
+                    <div className="d-flex align-items-center review-description-inner">
                         <i className="fa-solid fa-quote-left me-3"></i>
                         <p className="mb-0">{selectedReview.description}</p>
                     </div>
                 </div>
-                <div className="thumbnails">
+                <div className="thumbnails mb-5">
                     {reviews.map(review => (
                         <div 
                             key={review.id} 
@@ -52,4 +54,3 @@ export const Reviews = () => {
         </section>
     );
 };
-

@@ -6,47 +6,68 @@ export const Services = () => {
     <section id="services" className="container-fluid">
       <p className="category text-muted">SERVICES</p>
       <h2>What Services We Provide</h2>
-      <p className="services-description text-muted">At our company, we specialize in delivering top-notch web development, 
-        software solutions, regular updates, and comprehensive maintenance services.
-         Our expert team ensures that your digital presence is always cutting-edge, 
-         efficient, and secure. With our regular updates and proactive maintenance, 
+      <p className="services-description text-muted">At our company, we specialize in delivering<strong> top-notch web development, 
+        software solutions, regular updates, and comprehensive maintenance services.</strong>
+         Our expert team ensures that your digital presence is always <strong> cutting-edge, 
+         efficient, and secure. </strong> With our regular updates and proactive maintenance, 
          your operations will run smoothly and without interruption. Trust us to 
          enhance your business with innovative and reliable technology solutions.</p>
       <div className="pill-container">
         <div className="pill">
-          <i className="fab fa-chrome mb-4"></i>
-          <h1>Web</h1>
+          <h1>Web Development</h1>
+          <div className="icon-container">
+            <i className="fab fa-chrome mb-4"></i>
+          </div>
           <p>
             Our web development services provide cutting-edge solutions to create responsive and user-friendly websites. We ensure your online presence is impactful and engaging for your audience.
           </p>
-          <button className="btn btn-primary rounded-pill">Learn more </button>
+          <div className=" services-btn-card">
+              <div className="services-card-inner">
+              </div>
+          </div>
+          
         </div>
         <div className="pill">
-          <i className="fab fa-chrome mb-4"></i>
-          <h1>Software</h1>
+          <h1>Software Solutions</h1>
+          <div className="icon-container">
+            <i className="fab fa-chrome mb-4"></i>
+          </div>
           <p>
-            We offer comprehensive software development services tailored to meet your business needs. Our team delivers robust and scalable software solutions to enhance your operational efficiency.
+            Our software solutions cater to your specific needs, providing efficient and effective tools to streamline your operations. From custom software development to off-the-shelf solutions, we have you covered.
           </p>
-          <button className="btn btn-primary rounded-pill">Learn more </button>
-
+          <div className=" services-btn-card">
+              <div className="services-card-inner">
+              </div>
+          </div>
+          
         </div>
         <div className="pill">
-          <i className="fab fa-chrome mb-4"></i>
-          <h1>Updates</h1>
+          <h1>Regular Updates</h1>
+          <div className="icon-container">
+            <i className="fa-solid fa-circle-up mb-4"></i>
+          </div>
           <p>
-            Stay ahead with our regular updates and maintenance services. We ensure your software and applications are always up-to-date with the latest features and security enhancements.
+            Our regular updates ensure that your digital assets are always up-to-date with the latest features and security patches. Stay ahead of the curve with our proactive approach to maintenance and updates.
           </p>
-          <button className="btn btn-primary rounded-pill">Learn more </button>
-
+          <div className=" services-btn-card">
+              <div className="services-card-inner">
+              </div>
+          </div>
+          
         </div>
         <div className="pill">
-          <i className="fab fa-chrome mb-4"></i>
           <h1>Maintenance</h1>
+          <div className="icon-container">
+          <i class="fa-solid fa-toolbox"></i>
+          </div>
           <p>
-            Our maintenance services guarantee the smooth running of your systems. We proactively monitor and resolve issues to prevent downtime and keep your business operations uninterrupted.
+            Our comprehensive maintenance services keep your digital infrastructure running smoothly and efficiently. From server maintenance to bug fixes, we handle it all so you can focus on your core business.
           </p>
-          <button className="btn btn-primary rounded-pill">Learn more </button>
-
+          <div className=" services-btn-card">
+              <div className="services-card-inner">
+              </div>
+          </div>
+          
         </div>
       </div>
     </section>

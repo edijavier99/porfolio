@@ -3,60 +3,49 @@ import "../styles/footer.css"
 
 export const Footer = ()=>{
     return(
-        <footer className="footer-20192">
-            <div className="site-section">
-                <div className="container">
-                    <div className="cta d-block d-md-flex align-items-center px-5">
-                        <div>
-                            <h2 className="mb-0">Ready for a next project?</h2>
-                            <h3 className="text-dark">Let's get started!</h3>
-                        </div>
-                        <div className="ml-auto">
-                            <a href="#" className="btn btn-dark rounded-0 py-3 px-5">Contact us</a>
-                        </div>
+        <footer className="page-footer font-small blue p-5 pb-1">
+            <div className="container-fluid text-center text-md-left">
+                <div className="row">
+                    <div className="col-md-4 mt-md-0 mt-3">
+                        <h5 className="text-uppercase">WeCoded.co.uk</h5>
+                        <p>Discover the world of possibilities with WeCoded.co.uk. From innovative web solutions to cutting-edge software development, we're here to turn your digital dreams into reality. Our expert team is dedicated to providing you with tailored solutions that meet your unique needs. Let's collaborate and create something extraordinary together!</p>
                     </div>
-                    <div className="row">
-                        <div className="col-sm">
-                            <a href="#" className="footer-logo">Colorlib</a>
-                            <p className="copyright">
-                            <small>© 2019</small>
-                            </p>
-                        </div>
-                        <div className="col-sm">
-                            <h3>Customers</h3>
-                            <ul className="list-unstyled links">
-                                <li><a href="#">Buyer</a></li>
-                                <li><a href="#">Supplier</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-sm">
-                            <h3>Company</h3>
-                            <ul className="list-unstyled links">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-sm">
-                            <h3>Further Information</h3>
-                            <ul className="list-unstyled links">
-                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-md-3">
-                            <h3>Follow us</h3>
-                            <ul className="list-unstyled social">
-                                <li><a href="#"><span className="icon-facebook"></span></a></li>
-                                <li><a href="#"><span className="icon-twitter"></span></a></li>
-                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                                <li><a href="#"><span className="icon-medium"></span></a></li>
-                                <li><a href="#"><span className="icon-paper-plane"></span></a></li>
-                            </ul>
-                        </div>
+
+                    <hr className="clearfix w-100 d-md-none pb-0"/>
+
+                    <div className="col-md-3 mb-md-0 mb-3">
+                        <h5 className="text-uppercase text-center">Web Pagination</h5>
+                        <ul className="list-unstyled">
+                            <li><a href="#!">About Us</a></li>
+                            <li><a href="#!">Contact Us</a></li>
+                            <li><a href="#!">Services</a></li>
+                            <li><a href="#!">Home</a></li>
+                            <li><a href="#!">Cookies Policy</a></li>
+                            <li><p href="#!">London,UK</p></li>
+
+                        </ul>
+                    </div>
+
+                    <div className="col-md-3 mb-md-0 mb-3">
+                        <h5 className="text-uppercase">NEWSLETTER</h5>
+                        <p>Suscribe to our blog to find interesting information bout 
+                            the last technology features.
+                        </p>
+                        <input placeholder="your@email.com" id="newsletter" type="gmail"/>
+                    </div>
+                    <div className="col-md-2 md-md-0 mb-3">
+                        <h5 className="text-uppercase">Follow Us</h5>
+                        <ul className="list-unstyled">
+                            <li><i class="fa-brands fa-linkedin"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-</footer>
+
+            <div className="footer-copyright text-center pt-4">© 2020 Copyright:
+                <span className="mb-0"> www.wecoded.co.uk</span>
+            </div>
+        </footer>
     )
 }

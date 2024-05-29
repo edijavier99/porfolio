@@ -1,12 +1,16 @@
 import React from "react";
 import "../styles/whyus.css"
+import dots from "../img/dots.png"
 
 export const WhyUs = () =>{
     return(
         <section id="why-us-container" className="mt-5">
-            <h2 className="ms-5">WHY US ?</h2>
-            <p className="ms-5">It is a long established fact that a reader will be distracted by the readable <br/> content of a page when looking at its layout. The point of using Lorem</p>
-            <div className="row col-9 mx-auto">
+            <img src={dots} alt="" className="services-stylish-img-container"/>
+            <div className="row col-10 mx-auto">
+                <h2>WHY US ?</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable <br/> content of a page when looking at its layout. The point of using Lorem</p>
+            </div>
+            <div className="row col-9 mx-auto d-flex justify-content-between ">
                 <article className="why-us-card first-card">
                     <p className="card-number">01</p>
                     <p className="card-title">Expertise in Software Development</p>
@@ -27,7 +31,9 @@ export const WhyUs = () =>{
                     <p className="card-description text-muted">Our commitment to our clients doesn't end when the project is complete. We understand that technology is constantly evolving, and your needs may change over time. That's why we offer continuous support and maintenance services to ensure that your software remains up-to-date, secure, and performing at its best. Whether you need troubleshooting assistance, feature enhancements, or system updates, you can count on us to be there for you every step of the way.</p>
                 </article>
             </div>
-            <div className="row col-9  mx-auto d-flex justify-content-end">
+            <img src={dots} alt="" className="services-stylish-img-container-down"/>
+
+            <div className="row col-9  mx-auto d-flex justify-content-end mb-5">
                 <article className="why-us-card fourth-card">
                     <p className="card-number">04</p>
                     <p className="card-title">Continuous Support</p>
