@@ -1,4 +1,4 @@
-.intro-sustainibility {
+.intro-sustainability {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -35,25 +35,33 @@
     border-radius: 20px;
 }
 
-.sustainability-list{
+.sustainability-list {
     list-style: none;
 }
-.sustainability-list li{
+
+.sustainability-list li {
     list-style: none;
     background-color: rgb(185, 234, 185);
     margin-bottom: 20px;
     border-radius: 20px;
     padding: 20px;
 }
-.sustainability-subheader{
+
+.sustainability-subheader {
     font-size: 45px;
     font-weight: 800;
     color: green;
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
     .wc-left-side img {
         margin-top: 30px;
         width: 100%; /* Ajustado para ocupar el 100% del contenedor en pantallas pequeñas */
+    }
+    .is-left-side h3 {
+        margin-top: 20px;
+    }
+    .order-first {
+        order: -1;
     }
 }
