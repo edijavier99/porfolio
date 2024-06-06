@@ -34,16 +34,21 @@
     .pill-container {
       grid-template-columns: repeat(2, 1fr); /* 2 columns */
     }
+    /* .icon-container img{
+      width: 30% !important;
+    
+    } */
+
   }
 
   @media (max-width:576px){
     .services-description{
       max-width: 80%;
     }
-    .icon-container img{
+    /* .icon-container img{
       width: 30% !important;
     
-    }
+    } */
   }
   
   @media (min-width: 992px) { /* Large devices (desktops, 992px and up) */
@@ -137,7 +142,7 @@
   margin: 20px 0px !important;
 }
 .icon-container img{
-  width: 45%;
+  width: 100px;
   height: 70px;
 
 }

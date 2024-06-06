@@ -6,6 +6,7 @@ import { Navbar } from "./components/navbar";
 import logoo from "../src/img/logo.png"
 import { AboutUs } from "./views/aboutUs";
 import { Footer } from "./components/footer";
+import {Sustainibility}  from "./views/Sustainibility"
 
 const Layout = () =>{
     const menu = [
@@ -13,7 +14,7 @@ const Layout = () =>{
         { label: "Services", url: "/" },
         { label: "Contact Us", url: "/" },
         { label: "About Us", url: "/" },
-        { label: "Sustainability", url: "/portfolio" }
+        { label: "Sustainability", url: "/sustainibility" }
     ];
     return(
         <div>
@@ -21,6 +22,7 @@ const Layout = () =>{
             <Navbar items={menu} logo={logoo} />
                 <Routes>
                     <Route element ={<Home/>} path="/"/>
+                    <Route element ={<Sustainibility/>} path="/Sustainibility"/>
                     <Route element ={<ContactMe/>} path="/contact-me"/>
                     <Route element ={<AboutUs/>} path="/about-us"/>
                 </Routes>

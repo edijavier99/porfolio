@@ -34,8 +34,8 @@
 
 .middle-circle {
     background-color: black;
-    height: 40%;
-    width: 60%;
+    height: 50px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,10 +70,6 @@
 
 
 @media (max-width:768px) {
-    .middle-circle {
-        height: 50px;
-        width: 50px;
-    }
     .stick {
         width: 30px;
         height:100px;
@@ -81,7 +77,5 @@
     .middle-separator {
         height: 120px;
         margin-bottom: 20px;
-    }
-    
-    
+    }   
 }

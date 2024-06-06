@@ -31,14 +31,11 @@
     color: #333;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 
-    10px 10px 12px 0 rgba(0, 0, 0, 0.25),
-    -8px -8px 8px 0 rgba(255, 255, 255, 0.3);
+    background:  rgb(233, 233, 233)
 }
 .fa-quote-left{
     font-size: 70px;
-    color: rgba(209, 206, 206, 0.793);
+    color: rgb(50, 50, 50);
     border-right: 2px solid  rgba(209, 206, 206, 0.793);
     padding-right: 20px;
 }

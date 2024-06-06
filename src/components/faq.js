@@ -40,6 +40,27 @@ const showQuestions = () => {
 };
 
 export const FAQ = () => {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Aquí puedes agregar la lógica para enviar el formulario
+        console.log(formData);
+    };
+
     return (
         <section id="faq-board">
             <header className="row mx-0 px-0">
@@ -50,13 +71,23 @@ export const FAQ = () => {
                 </div>
             </header>
             <main className="row mx-0 px-0 faq-body">
-                <div className="col-md-4 faq-body-left">
-                    <div className="w-75">
-                        <h3>Any Questions?</h3>
-                        <h3>We Got You.</h3>
-                        <p className="text-muted">If you can't find what you're looking for, feel free to contact us for further assistance.</p>
-                        <button className="btn btn-primary">Contact Now</button>
+                <div className="col-md-4 faq-body-left ">
+                <form onSubmit={handleSubmit} className="bg-light p-4 rounded">
+                    <div className="form-group">
+                        <label htmlFor="name">Name:</label>
+                        <input type="text" className="form-control" id="name" name="name" value={formData.name} onChange={handleChange} required />
                     </div>
+                    <div className="form-group">
+                        <label htmlFor="email">Email address:</label>
+                        <input type="email" className="form-control" id="email" name="email" value={formData.email} onChange={handleChange} required />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="message">Message:</label>
+                        <textarea className="form-control" id="message" name="message" value={formData.message} onChange={handleChange} rows="4" required />
+                    </div>
+                    <button type="submit" className="btn btn-primary">Submit</button>
+                </form>
+
                 </div>
                 <div className="col-md-8">
                     <div className="col-md-8 mx-auto my-2">

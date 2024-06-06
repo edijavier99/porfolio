@@ -1,0 +1,43 @@
+.intro-sustainibility {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Añadir un poco de margen entre las filas */
+}
+
+.is-left-side {
+    display: flex;
+    align-items: center !important;
+    flex-direction: column;
+    min-height: 400px;
+    justify-content: center !important;
+    text-align: center;
+}
+
+.is-left-side h3 {
+    font-size: 45px;
+    font-weight: 800;
+    color: green;
+}
+
+.wc-left-side {
+    height: 100%; /* Cambiado para permitir que la imagen ocupe todo el contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wc-left-side img {
+    width: 100%; /* Asegurar que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media (max-width:576px) {
+    .wc-left-side img {
+        margin-top: 30px;
+        width: 100%; /* Ajustado para ocupar el 100% del contenedor en pantallas pequeñas */
+    }
+}
