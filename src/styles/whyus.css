@@ -43,12 +43,18 @@
 }
 @media (max-width:768px){
     .services-stylish-img-container-down{
-        left: -300px;
+        left: -260px;
+    }
+    .services-stylish-img-container{
+        right: -300px;
     }
 }
 @media (max-width:576px){
     .services-stylish-img-container-down{
         left: -350px;
         bottom: -150px;
+    }
+    .services-stylish-img-container{
+        right: -330px;
     }
 }

@@ -30,7 +30,7 @@ export const Services = () => {
         <div className="pill">
           <h1>Software Solutions</h1>
           <div className="icon-container">
-            <i className="fab fa-chrome mb-4"></i>
+            <i className="fa-solid fa-gear"></i>
           </div>
           <p>
             Our software solutions cater to your specific needs, providing efficient and effective tools to streamline your operations. From custom software development to off-the-shelf solutions, we have you covered.

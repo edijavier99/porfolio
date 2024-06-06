@@ -47,10 +47,7 @@
       grid-template-columns: repeat(4, 1fr); /* 4 columns */
     }
   }
-  
-  .fa-chrome,.fa-circle-up, .fa-toolbox {
-    font-size: 85px;
-  }
+ 
 /*   
   .pill {
     min-height: 350px;
@@ -141,6 +138,11 @@
     -4px -4px 8px 0 rgba(255, 255, 255, 0.3);
   transform: translateY(4px);
 }
-.fa-chrome, .fa-toolbox, .fa-circle-up{
-  color: gray;
+.fa-chrome, .fa-toolbox, .fa-circle-up, .fa-gear{
+  color: rgb(99, 99, 99);
+  font-size: 85px;
+  transition: transform 0.3s ease-in-out;
+}
+.fa-chrome:hover{
+  transform: translateY(-10%);
 }

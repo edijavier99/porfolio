@@ -1,24 +1,26 @@
 import React, { useState } from "react";
 import '../styles/reviews.css';
+import Acs from "../img/acs.PNG"
+import Vc from "../img/vcclinic.png"
 
  const reviews = [
     {
         id: 1,
         description: "Working with We Coded has been an exceptional experience. Their team of developers is highly professional and perfectly captured our vision for the project. Not only did they deliver a high-quality product, but they also provided continuous support, ensuring...",
-        imgSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        name: "Client 1"
+        imgSrc: Acs,
+        name: "AC Services"
     },
     {
         id: 2,
         description: "We specialize in creating custom software solutions that perfectly fit the specific needs of each client. Whether you need an intuitive mobile app, a robust enterprise management system, or a dynamic web platform, our team has the experience...",
         imgSrc: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        name: "Client 2"
+        name: "Jesus Coach"
     },
     {
         id: 3,
         description: "At our company, we are committed to being the trusted partner of our clients on their journey to digital transformation. We offer a full range of software development services, from consulting and strategic planning to design, development, and implementation.",
-        imgSrc: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        name: "Client 3"
+        imgSrc: Vc,
+        name: "VC Dental Clinic"
     }
 ];
 
@@ -46,7 +48,7 @@ export const Reviews = () => {
                             onClick={() => setSelectedReview(review)}
                         >
                             <img src={review.imgSrc} alt={review.name} />
-                            <p>{review.name}</p>
+                            <p><strong>{review.name}</strong></p>
                         </div>
                     ))}
                 </div>

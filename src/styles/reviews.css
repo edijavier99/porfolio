@@ -30,9 +30,11 @@
     font-size: 18px;
     color: #333;
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #f9f9f9;
+    box-shadow: 
+    10px 10px 12px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 8px 0 rgba(255, 255, 255, 0.3);
 }
 .fa-quote-left{
     font-size: 70px;
