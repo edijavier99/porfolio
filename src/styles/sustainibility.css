@@ -35,6 +35,22 @@
     border-radius: 20px;
 }
 
+.sustainability-list{
+    list-style: none;
+}
+.sustainability-list li{
+    list-style: none;
+    background-color: rgb(185, 234, 185);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.sustainability-subheader{
+    font-size: 45px;
+    font-weight: 800;
+    color: green;
+}
+
 @media (max-width:576px) {
     .wc-left-side img {
         margin-top: 30px;

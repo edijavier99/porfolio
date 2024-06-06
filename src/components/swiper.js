@@ -20,15 +20,6 @@ export const SwiperCard = () =>{
           className="mySwiper"
         >
           <SwiperSlide>
-            <img alt="" src="https://plus.unsplash.com/premium_photo-1678656090963-c2f1d6874b9a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXJib2xlcyUyMHBsYW50YXJ8ZW58MHx8MHx8fDA%3D" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img alt="" src="https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img alt="" src="https://images.unsplash.com/photo-1625758475456-1f26727c0f99?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img alt="" src="https://plus.unsplash.com/premium_photo-1681140560745-db9be86fa713?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
           </SwiperSlide>
           <SwiperSlide>
@@ -36,6 +27,15 @@ export const SwiperCard = () =>{
           </SwiperSlide>
           <SwiperSlide>
             <img alt="" src="https://plus.unsplash.com/premium_photo-1681140559027-ebda062237e6?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img alt="" src="https://plus.unsplash.com/premium_photo-1678656090963-c2f1d6874b9a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXJib2xlcyUyMHBsYW50YXJ8ZW58MHx8MHx8fDA%3D" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img alt="" src="https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img alt="" src="https://images.unsplash.com/photo-1625758475456-1f26727c0f99?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D" />
           </SwiperSlide>
         </Swiper>
       </>
