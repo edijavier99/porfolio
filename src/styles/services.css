@@ -1,6 +1,6 @@
 #services {
     min-height: 100vh;
-    background-color: rgb(246, 243, 243);
+    background-color: #FFFFFF; /* Blanco */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,11 @@
   @media (max-width:576px){
     .services-description{
       max-width: 80%;
-  }
+    }
+    .icon-container img{
+      width: 30% !important;
+    
+    }
   }
   
   @media (min-width: 992px) { /* Large devices (desktops, 992px and up) */
@@ -116,7 +120,7 @@
   font-size: 25px;
 }
 .icon-container{
-  height: 200px;
+  height: 160px;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -132,6 +136,11 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin: 20px 0px !important;
 }
+.icon-container img{
+  width: 45%;
+  height: 70px;
+
+}
 .icon-container:hover {
   box-shadow: 
     4px 4px 8px 0 rgba(0, 0, 0, 0.25),
@@ -140,7 +149,7 @@
 }
 .fa-chrome, .fa-toolbox, .fa-circle-up, .fa-gear{
   color: rgb(99, 99, 99);
-  font-size: 85px;
+  font-size: 65px;
   transition: transform 0.3s ease-in-out;
 }
 .fa-chrome:hover{

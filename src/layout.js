@@ -10,9 +10,10 @@ import { Footer } from "./components/footer";
 const Layout = () =>{
     const menu = [
         { label: "Home", url: "/" },
-        { label: "Contact Us", url: "/contact-me" },
-        { label: "About Us", url: "/about-us" },
-        { label: "Portfolio", url: "/portfolio" }
+        { label: "Services", url: "/" },
+        { label: "Contact Us", url: "/" },
+        { label: "About Us", url: "/" },
+        { label: "Sustainability", url: "/portfolio" }
     ];
     return(
         <div>

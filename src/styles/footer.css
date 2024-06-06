@@ -1,5 +1,6 @@
 .page-footer{
-	background-color: rgb(232, 231, 231);
+    background-color: #343A40; /* Gris Oscuro */
+	color: white;
 }
 
 #newsletter{
@@ -8,6 +9,6 @@
 	padding: 10px;
 }
 footer a {
-    color: black !important;
+    color: white !important;
 	text-decoration: none;
 }

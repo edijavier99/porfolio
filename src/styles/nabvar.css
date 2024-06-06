@@ -1,18 +1,21 @@
+.navbar{
+    border-bottom: 1px solid white;
+}
 .navbar-toggler {
     margin-right: 25px;
 }
 nav {
     font-size: 18px;
     margin: 0 auto;
-    background-color: white;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 24%, rgb(211, 228, 232) 100%);
 }
 .nav-link {
     color: black !important;
     cursor: pointer;
-    padding-left: 15px;
     width: 120px;
     position: relative;
     text-align: center;
+    font-weight: 800;
 }
 .nav-item {
     position: relative;
@@ -21,22 +24,6 @@ nav {
 .nav-item:hover{
     transform: translateY(-13%)
 }
-.nav-item::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: transparent;
-    transition: width 0.5s ease;
-}
-
-.nav-item:hover::after { 
-    width: 100%;
-    background-color: rgb(226, 163, 38);
-}
-
 .navbar-brand {
     height: 80px;
     width: 110px;

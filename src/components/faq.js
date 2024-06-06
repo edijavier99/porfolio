@@ -55,12 +55,10 @@ export const FAQ = () => {
                         <h3>Any Questions?</h3>
                         <h3>We Got You.</h3>
                         <p className="text-muted">If you can't find what you're looking for, feel free to contact us for further assistance.</p>
-                        <a href="/contact-me" className="contact-link">Contact Now</a>
+                        <button className="btn btn-primary">Contact Now</button>
                     </div>
                 </div>
                 <div className="col-md-8">
-                    <h2 className="text-center">Frequently Asked Questions</h2>
-                    <p className="text-center text-muted">Everything you need to know about our services</p>
                     <div className="col-md-8 mx-auto my-2">
                         <div className="accordion" id="accordionExample">
                             {showQuestions()}

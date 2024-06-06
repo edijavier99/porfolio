@@ -4,7 +4,7 @@ import dots from "../img/dots.png"
 
 export const WhyUs = () =>{
     return(
-        <section id="why-us-container" className="mt-5">
+        <section id="why-us-container" className="pt-5">
             <img src={dots} alt="" className="services-stylish-img-container"/>
             <div className="row col-10 mx-auto">
                 <h2>WHY US ?</h2>
