@@ -37,50 +37,53 @@
     font-weight: 800;
     font-size: 30px;
 }
-.faq-body-left p{
-}
-
-.contact-form label {
-    font-weight: bold;
-}
 .contact-form {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
+.contact-form .form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
 .contact-form input,
 .contact-form textarea {
     border: none;
-    border-bottom: 1px solid black;
     background-color: transparent;
     width: 100%;
     padding: 10px 0;
+    font-size: 16px;
 }
 
-.form-control {
-    position: relative;
-    padding-top: 20px;
-    border: none;
-}
-
-.form-control label {
+.contact-form label {
     position: absolute;
-    bottom: 20px;
     left: 10px;
+    top: 10px;
+    pointer-events: none;
     transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-.form-control input:not(:placeholder-shown) + label,
-.form-control textarea:not(:placeholder-shown) + label {
-    transform: translateY(-35px);
-    font-size: 15px;
-}
-
-.form-control:focus {
+.contact-form input:focus,
+.contact-form input:not(:placeholder-shown),
+.contact-form textarea:focus,
+.contact-form textarea:not(:placeholder-shown) {
     outline: none;
 }
+
+.contact-form input:focus + label,
+.contact-form input:not(:placeholder-shown) + label,
+.contact-form textarea:focus + label,
+.contact-form textarea:not(:placeholder-shown) + label {
+    top: -20px;
+    font-size: 15px;
+    color: #000;
+}
+
 
 /* -----acordion css ----- */
 .accordion-button:focus {
@@ -114,5 +117,14 @@ div.accordion-item .show{
     border-radius: 10px;
     transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
 
+}
+.faq-img-container{
+    height: 400px;
+    position: absolute;
+    right: -200px;
+}
+.faq-img-container img{
+    height: 100%;
+    transform: rotate(55deg);
 }
 

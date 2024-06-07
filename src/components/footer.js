@@ -16,11 +16,11 @@ export const Footer = ()=>{
                     <div className="col-md-3 mb-md-0 mb-3">
                         <h5 className="text-uppercase text-center">Web Pagination</h5>
                         <ul className="list-unstyled">
-                            <li><a href="#!">About Us</a></li>
-                            <li><a href="#!">Contact Us</a></li>
+                            <li><a href="/about-us">About Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
                             <li><a href="#!">Services</a></li>
-                            <li><a href="#!">Home</a></li>
-                            <li><a href="#!">Cookies Policy</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/sustainibility">Sustainibility</a></li>
                             <li><p href="#!">London,UK</p></li>
 
                         </ul>

@@ -12,7 +12,7 @@ const Layout = () =>{
     const menu = [
         { label: "Home", url: "/" },
         { label: "Services", url: "/" },
-        { label: "Contact Us", url: "#faq-board" },
+        { label: "Contact Us", url: "/#faq-board" },
         { label: "About Us", url: "/about-us" },
         { label: "Sustainability", url: "/sustainibility" }
     ];
@@ -23,7 +23,6 @@ const Layout = () =>{
                 <Routes>
                     <Route element ={<Home/>} path="/"/>
                     <Route element ={<Sustainibility/>} path="/Sustainibility"/>
-                    <Route element ={<ContactMe/>} path="/contact-me"/>
                     <Route element ={<AboutUs/>} path="/about-us"/>
                 </Routes>
             <Footer />

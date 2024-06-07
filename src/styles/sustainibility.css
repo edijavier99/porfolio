@@ -1,3 +1,7 @@
+#sustainability{
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 24%, rgb(211, 228, 232) 100%);
+
+}
 .intro-sustainability {
     display: flex;
     flex-direction: row;
@@ -51,6 +55,13 @@
     font-size: 45px;
     font-weight: 800;
     color: green;
+}
+
+@media (max-width: 768px) {
+    .sustainability-list {
+        padding: 0px;
+    }
+    
 }
 
 @media (max-width: 576px) {

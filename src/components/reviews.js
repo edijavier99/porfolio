@@ -6,19 +6,19 @@ import Vc from "../img/vcclinic.png"
  const reviews = [
     {
         id: 1,
-        description: "Working with We Coded has been an exceptional experience. Their team of developers is highly professional and perfectly captured our vision for the project. Not only did they deliver a high-quality product, but they also provided continuous support, ensuring...",
+        description: "Working with We Coded has been an incredible experience. Their team of developers is highly professional and perfectly captured our vision for the project. Not only did they deliver a high-quality product, but they also provided continuous support, ensuring everything ran smoothly. Whenever an issue arose, they resolved it quickly and efficiently.😊",
         imgSrc: Acs,
         name: "AC Services"
     },
     {
         id: 2,
-        description: "We specialize in creating custom software solutions that perfectly fit the specific needs of each client. Whether you need an intuitive mobile app, a robust enterprise management system, or a dynamic web platform, our team has the experience...",
-        imgSrc: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        description: "Our collaboration with We Coded has been exceptional. From the start, they demonstrated attention to detail and efficient communication, making us feel confident throughout. The quality of the final product exceeded our expectations, and their ability to quickly resolve any issues was impressive.",
+        imgSrc: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         name: "Jesus Coach"
     },
     {
         id: 3,
-        description: "At our company, we are committed to being the trusted partner of our clients on their journey to digital transformation. We offer a full range of software development services, from consulting and strategic planning to design, development, and implementation.",
+        description: "We Coded has become our trusted partner in digital transformation. Their commitment to quality and their ability to understand our specific needs has been crucial to the success of our projects. Every problem was addressed swiftly and professionally, allowing us to move forward without any hitches.",
         imgSrc: Vc,
         name: "VC Dental Clinic"
     }

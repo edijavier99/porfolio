@@ -27,11 +27,11 @@
 }
 .review-description {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
     padding: 20px;
     border-radius: 10px;
-    background:  rgb(233, 233, 233)
+    background: white
 }
 .fa-quote-left{
     font-size: 70px;
