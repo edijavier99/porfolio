@@ -12,8 +12,8 @@ const Layout = () =>{
     const menu = [
         { label: "Home", url: "/" },
         { label: "Services", url: "/" },
-        { label: "Contact Us", url: "/" },
-        { label: "About Us", url: "/" },
+        { label: "Contact Us", url: "#faq-board" },
+        { label: "About Us", url: "/about-us" },
         { label: "Sustainability", url: "/sustainibility" }
     ];
     return(

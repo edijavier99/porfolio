@@ -1,107 +1,74 @@
 import React from "react";
 import "../styles/about.css"
-import { WhyChooseCard } from "../components/whychoosecard";
 
 export const AboutUs = () =>{
     return(
-        <section className="container-fluid">
-            <header className="row">
-                <div className="col-12 about-back-img d-flex flex-column align-items-center justify-content-center ">
-                    <h3 className="about-out-title">COMPANY PROFILE</h3>
-                    <h1 className="about-out-title">ABOUT US</h1>
-                </div>
-            </header>
-            <div className="col-md-9 aboutUsHistory">
-                <div className="card">
-                    <img alt="company-img" src="https://cdn.pixabay.com/photo/2018/03/27/21/43/startup-3267505_1280.jpg"/>
-                    <div>
-                        <h2>Ilarazi </h2>
-                        <p>
-                        Ilarazi was founded in 2010 to address the increasing demand for digital solutions 
-                        in the business world. With technology rapidly advancing, many companies struggled
-                        to capitalize on online opportunities. Recognizing this, a group of entrepreneurs
-                        established Ilarazi with a clear mission: to provide innovative web solutions 
-                        to help businesses adapt to the evolving digital landscape. Since then, we've 
-                        remained dedicated to empowering our clients with the tools and expertise needed 
-                        to succeed in the dynamic digital realm
+        <section id="aboutUs">
+            <section className="aboutUs-hero container-fluid">
+                <div className="row col-md-10 mx-auto hero-aboutUs">
+                    <div className="col-md-4 d-flex align-items-center justify-content-center hero-left-side">
+                        <p style={{fontSize: "20px", fontWeight: "bold"}}> <strong>About Us. <br/> Our Team. <br/>Press.</strong></p>
+                    </div>
+                    <div className="col-md-8 mt-5">
+                        <h4 className="aboutUs-title">ABOUT US.</h4>
+                        <p className="aboutUs-description">Welcome to We Coded, a premier software development 
+                            company dedicated to bringing innovative digital solutions to life. Our expertise spans 
+                            across custom software development and website design. We pride 
+                            ourselves on delivering high-quality, scalable, and user-centric products that empower
+                            businesses to achieve their goals. At We Coded, we combine cutting-edge technology
+                            with creative vision to turn your ideas into reality. Partner with us and experience
+                            the future of software development today.
                         </p>
-                        <button>Contact</button>
                     </div>
                 </div>
-            </div>
-            <hr className="middle-line"/>
-            <div className="row col-md-9 m-auto">
-                <div className="col-md-12 col-lg-6 position-relative  abt-intro-img-board d-flex flex-column justify-content-center align-items-">
-                    <img className="abt-up-img mb-4 col-8  " src="https://cdn.pixabay.com/photo/2015/07/17/22/42/startup-849804_1280.jpg" alt="" />
-                    <div class="today-div">
-                        <h3>Today.</h3>
-                        <h3>Tomorrow.</h3>
-                        <h3>Together.</h3>
+                <div className="row col-md-10 mx-auto my-5 ">
+                    <div className="col-md-5 offset-md-1 quote-container">
+                        <img alt="quote-img" src="https://images.unsplash.com/photo-1564410267845-ae5acf1ce8d9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                     </div>
-                    <img className="abt-bottom-img col-8" src="https://cdn.pixabay.com/photo/2015/07/17/22/42/startup-849804_1280.jpg" alt=""/>
+                    <div className="col-md-4 offset-md-1  d-flex align-items-center justify-content-center">
+                        <blockquote>
+                            "Quality in a service or product is not what you put into it. It is what the customer gets out of it." <br/>
+                            <cite className="text-muted">- Peter Drucker</cite>
+                        </blockquote>
+                    </div>    
                 </div>
-                <div className="col-md-12 col-lg-6 firstpartAbout p-5">
-                    <h2>Let <strong>tomorrow</strong> begin <strong>today:</strong></h2>
-                    <p>
-                        At Ilarazi, we understand that the future of your business starts today.
-                        We create web solutions that help you stand out in the digital world, leading your company to success.
-                    </p>
-                    <h4 className="fw-bold">Our Mission</h4>
-                    <p>
-                        Our mission is to provide every business with the digital tools necessary to reach its full potential online.
-                        We translate the unique needs of each client into effective and personalized web solutions.
-                    </p>
-                    <h4 className="fw-bold">Our Vision</h4>
-                    <p>
-                        In our vision, we see a world where every business has a strong and effective digital presence.
-                        We provide cutting-edge web services that drive growth and innovation for our clients.
-                    </p>
-                    <h4 className="fw-bold">Our Strategy</h4>
-                    <p>
-                        Our strategy is based on close collaboration with our clients to understand their business goals and unique challenges.
-                        We create web experiences that deliver tangible results and lead to long-term success.
-                    </p>
+                <div className="row col-md-10 mx-auto my-3" id="history">
+                    <h4 className="subtitle-aboutUs mb-5" >Our History</h4>
+                    <p>Our journey began with a simple realization: businesses needed to adapt to the rapidly evolving technological landscape. We saw an opportunity to help our clients navigate this dynamic world, and from that vision, We Coded was born. Fueled by our passion for innovation and excellence, we dedicated ourselves to creating cutting-edge software solutions, and websites. Our mission is to empower businesses to thrive in the digital age, transforming their ideas into reality with creativity and technical expertise. Join us on this exciting journey and let's shape the future together.</p>
+
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-12 bg-secondary">
-                    <marquee className="programming-lang">
-                        <i className="fab fa-html5"></i>
-                        <i className="fab fa-python"></i>
-                        <i className="fab fa-js"></i>
-                        <i className="fab fa-react"></i>
-                    </marquee>
-                </div>
-            </div>
-            <section className="row col-md-10 d-flex flex-column align-items-center why-choose-board">
-                <header className="col-md-3 text-center mb-3 p-0">
-                    <div class="square-box">
-                        <h3 className="mb-0 fw-bold">Why to choose us</h3>
-                        <p className="text-muted">As always partners grow with you!</p>
+                <div className="row col-md-10 mx-auto py-5" id="values">
+                    <h4 className="subtitle-aboutUs">Our Values</h4>
+                    <div className="row values-cards-container mx-auto">
+                        <div className="value-card">
+                            <header>
+                                <img alt="value-card-image" src="https://media-public.canva.com/bPpFw/MAFuCvbPpFw/1/tl.png" />
+                            </header>   
+                            <main>
+                                <h6 className="fw-bold">Team Work</h6>
+                                <p>We believe in the power of collaboration, where every team member contributes to achieving common goals.</p>
+                            </main>
+                        </div>
+                        <div className="value-card">
+                            <header>
+                                <img alt="value-card-image" src="https://media-public.canva.com/p4Hng/MAFOFxp4Hng/1/tl.png" />
+                            </header>   
+                            <main>
+                                <h6 className="fw-bold">Take Ownership</h6>
+                                <p>We take responsibility for our actions and outcomes, ensuring the highest quality in everything we do.</p>
+                            </main>
+                        </div>
+                        <div className="value-card">
+                            <header>
+                                <img alt="value-card-image" src="https://media-public.canva.com/2MNwI/MAFa312MNwI/1/tl.png" />
+                            </header>   
+                            <main>
+                                <h6 className="fw-bold">Work Smart</h6>
+                                <p>We prioritize efficiency and innovation, finding the best solutions through intelligent and strategic efforts.</p>
+                            </main>
+                        </div>
                     </div>
-                </header>
-                <main className="col-md-9">
-                    <div className="row">
-                        <WhyChooseCard title="Professional" 
-                                       icon="fa-user-tie"
-                                       description="Our commitment to professionalism ensures
-                                        that every website we craft for your company embodies
-                                         the highest standards of web development excellence."
-                        />
-                        <WhyChooseCard title="Experience" 
-                                       icon="fa-suitcase"
-                                       description="Drawing from our extensive experience,
-                                        we guarantee that each website we create for your company
-                                         is backed by a wealth of industry knowledge and expertise."
-                        />
-                        <WhyChooseCard title="Quality" 
-                                       icon="fa-rocket"
-                                       description="Focusing on web solutions, our team combines 
-                                       technical expertise and attention to detail to produce
-                                        sites that not only meet but exceed your expectations."
-                        />
-                    </div>
-                </main>
+                </div>
             </section>
         </section>
     )

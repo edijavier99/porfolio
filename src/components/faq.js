@@ -72,21 +72,24 @@ export const FAQ = () => {
             </header>
             <main className="row mx-0 px-0 faq-body">
                 <div className="col-md-4 faq-body-left ">
-                <form onSubmit={handleSubmit} className="bg-light p-4 rounded">
-                    <div className="form-group">
-                        <label htmlFor="name">Name:</label>
-                        <input type="text" className="form-control" id="name" name="name" value={formData.name} onChange={handleChange} required />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="email">Email address:</label>
-                        <input type="email" className="form-control" id="email" name="email" value={formData.email} onChange={handleChange} required />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="message">Message:</label>
-                        <textarea className="form-control" id="message" name="message" value={formData.message} onChange={handleChange} rows="4" required />
-                    </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
-                </form>
+                    <h4>Conctact Us</h4>
+                    <p>Contact us for more information or to request a quote for your next project. We pride ourselves on our quick response time, ensuring that all inquiries are addressed on the same day.</p>
+                    <form onSubmit={handleSubmit} className="p-4 rounded contact-form">
+                        <div className="form-group form-control">
+                            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required placeholder=" " />
+                            <label htmlFor="name">Name:</label>
+                        </div>
+                        <div className="form-group form-control">
+                            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required placeholder=" " />
+                            <label htmlFor="email">Email address:</label>
+                        </div>
+                        <div className="form-group form-control">
+                            <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="4" required placeholder=" "></textarea>
+                            <label htmlFor="message">Message:</label>
+                        </div>
+                        <button type="submit" className="btn btn-primary col-5 mx-auto mt-4">Submit</button>
+                    </form>
+
 
                 </div>
                 <div className="col-md-8">

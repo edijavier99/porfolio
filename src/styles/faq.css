@@ -33,20 +33,55 @@
     align-items:center;
     justify-content: center;
 }
-.faq-body-left h3{
+.faq-body-left h4{
     font-weight: 800;
     font-size: 30px;
 }
-.contact-link{
-    text-decoration: none;
-    color: black !important;
-    background-color: aquamarine;
-    width: 150px;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
+.faq-body-left p{
 }
+
+.contact-form label {
+    font-weight: bold;
+}
+.contact-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.form-control {
+    position: relative;
+    padding-top: 20px;
+    border: none;
+}
+
+.form-control label {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-control input:not(:placeholder-shown) + label,
+.form-control textarea:not(:placeholder-shown) + label {
+    transform: translateY(-35px);
+    font-size: 15px;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
 /* -----acordion css ----- */
 .accordion-button:focus {
     outline: none !important; /* Elimina el outline */
@@ -80,12 +115,4 @@ div.accordion-item .show{
     transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
 
 }
-
-
-/* CSS FORMULARIO */
-/* Estilos personalizados */
-.form-group label {
-    font-weight: bold;
-}
-
 
