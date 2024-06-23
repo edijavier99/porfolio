@@ -32,8 +32,7 @@
     scale: 100%;
   }
 }
-
-#services, #timeline, #why-us-container, #reviews, #faq-board{
+ #timeline,.accordion,.faq-body-left,.why-us-card, #reviews,.two-same-cards,#second-service-article, #first-service-article{
   view-timeline-name : --container;
   view-timeline-axis: block;
   animation-timeline: --container;

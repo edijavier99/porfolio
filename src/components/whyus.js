@@ -5,12 +5,11 @@ import dots from "../img/dots.png"
 export const WhyUs = () =>{
     return(
         <section id="why-us-container" className="pt-5">
-            <img src={dots} alt="" className="services-stylish-img-container"/>
             <div className="row col-10 mx-auto">
                 <h2>WHY US ?</h2>
                 <p>It is a long established fact that a reader will be distracted by the readable <br/> content of a page when looking at its layout. The point of using Lorem</p>
             </div>
-            <div className="row col-9 mx-auto d-flex justify-content-between ">
+            <div className="row col-9 mx-auto d-flex justify-content-between row-why-us ">
                 <article className="why-us-card first-card">
                     <p className="card-number">01</p>
                     <p className="card-title">Expertise in Software Development</p>

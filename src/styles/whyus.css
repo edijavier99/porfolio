@@ -1,7 +1,4 @@
-#why-us-container{
-    overflow: hidden;
-    position: relative;
-}
+
 #why-us-container h2{
     font-weight: 900;
     font-size: 45px;
@@ -20,14 +17,7 @@
     font-weight: 900;
     font-size: 30px;
 }
-.services-stylish-img-container{
-    height: 400px;
-    width: 400px;
-    top: 50px;
-    position: absolute;
-    right: -200px;
-    transform: rotate(45deg);
-}
+
 .services-stylish-img-container-down{
     position: absolute;
     height: 400px;
@@ -45,16 +35,11 @@
     .services-stylish-img-container-down{
         left: -260px;
     }
-    .services-stylish-img-container{
-        right: -300px;
-    }
+    
 }
 @media (max-width:576px){
     .services-stylish-img-container-down{
         left: -350px;
         bottom: -150px;
-    }
-    .services-stylish-img-container{
-        right: -330px;
     }
 }

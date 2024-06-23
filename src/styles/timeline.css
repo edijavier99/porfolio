@@ -13,69 +13,73 @@
     margin-bottom: 50px;
     text-align: center;
 }
-.steps-timeline {
-    min-height: 150px;
-}
 
-.steps-name p{
-    font-weight: 800;
-    font-size: 20px;
-    text-transform: uppercase;    
-}
 
-.middle-separator {
-    padding: 0;
+.container-fluid {
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .category {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #6c757d;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .col-8 {
+    max-width: 80%;
+  }
+  
+  .StepLabel {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    position: relative; /* Add relative positioning */
-}
-
-.middle-circle {
-    background-color: black;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: relative; /* Add relative positioning */
-    top: 0;
-    z-index: 2; /* Ensure it stays in front */
-}
-
-.inner-middle-circle {
-    background-color: white;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-}
-
-.stick {
-    /* background-color: rgb(220, 220, 220); */
-    width: 30px;
-    height: 100%;
-    position: absolute; /* Change to absolute positioning */
-    top: 50%; /* Adjust to align with the middle-circle */
-    transform: translateY(-50%); /* Center vertically */
-    z-index: 1; /* Ensure it stays behind the middle-circle */
-}
-
-.steps-description .subtitle{
-    font-weight:800 ;
-    font-size: 17px;
-    text-transform: uppercase;    
-}
-
-
-@media (max-width:768px) {
-    .stick {
-        width: 30px;
-        height:100px;
-    }
-    .middle-separator {
-        height: 120px;
-        margin-bottom: 20px;
-    }   
-}
+    font-size: 1.2rem;
+  }
+  
+  .StepLabel .MuiStepLabel-labelContainer {
+    margin-left: 10px;
+  }
+  
+  .StepContent {
+    padding-left: 40px;
+    padding-bottom: 20px;
+  }
+  
+  .StepContent .MuiTypography-h6 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .StepContent .MuiTypography-body1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .MuiButton-contained {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+  }
+  
+  .MuiButton-contained:hover {
+    background-color: #0056b3;
+  }
+  
+  .MuiButton-outlined {
+    border-color: #007bff;
+    color: #007bff;
+    border-radius: 20px;
+  }
+  
+  .MuiButton-outlined:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
