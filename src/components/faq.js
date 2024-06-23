@@ -76,13 +76,17 @@ export const FAQ = () => {
         <section id="faq-board">
             <header className="row mx-0 px-0">
                 <div className="col-md-12 section-name d-flex flex-column align-items-center">
-                    <h4>SUPPORT</h4>
+                    <h4 className="category">SUPPORT</h4>
                     <h1 className="text-center">Everything You Need To Know</h1>
                     <p className="text-muted text-center">Need something cleared up? Here are our most frequently asked questions.</p>
                 </div>
             </header>
             <main className="row mx-0 px-0 faq-body">
-                <div className="col-md-6 faq-body-left ">
+                <div className="accordion col-11 col-md-7 col-lg-7 mx-auto my-2" id="accordionExample">
+                    {showQuestions()}
+                </div>
+            </main>
+            {/* <div className="col-md-6 faq-body-left ">
                     <h4>Contact Us</h4>
                     <p>Contact us for more information or to request a quote for your next project. We pride ourselves on our quick response time, ensuring that all inquiries are addressed on the same day.</p>
                     <form onSubmit={handleSubmit} className="p-4 rounded contact-form" id="contact">
@@ -100,15 +104,7 @@ export const FAQ = () => {
                         </div>
                         <button type="submit" className="btn btn-primary col-5 mx-auto mt-1">Submit</button>
                     </form>
-                </div>
-                <div className="col-md-6">
-                    <div className="col-md-10 mx-auto my-2">
-                        <div className="accordion" id="accordionExample">
-                            {showQuestions()}
-                        </div>
-                    </div>
-                </div>
-            </main>
+                </div> */}
         </section>
     );
 };

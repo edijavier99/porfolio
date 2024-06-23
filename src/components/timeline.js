@@ -74,7 +74,7 @@ export const Timeline = () => {
     <section id="timeline" className="container-fluid">
       <p className="category text-muted">PROJECTS TIMELINE</p>
       <h2>Workflow Process</h2>
-      <div className="col-8 mx-auto">
+      <div className="col-11 col-md-8 col-lg-8 mx-auto">
         <Box>
           <Stepper activeStep={activeStep} orientation="vertical">
             {steps.map((step, index) => (
