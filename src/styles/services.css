@@ -3,7 +3,6 @@
     background-color: #FFFFFF; /* Blanco */
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 .category{
@@ -22,141 +21,59 @@
     margin-bottom: 50px;
     text-align: center;
 }
-.pill-container {
-    display: grid;
-    gap: 20px; /* Adjust gap as needed */
-    width: 90%;
-    margin: 0 auto;
-    grid-template-columns: repeat(1, 1fr); /* 1 column by default */
-  }
-  
-  @media (min-width: 576px) { /* Small devices (landscape phones, 576px and up) */
-    .pill-container {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    }
-    /* .icon-container img{
-      width: 30% !important;
-    
-    } */
 
+@keyframes show {
+  from  {
+    opacity: 0;
+    scale: 25%;
   }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
 
-  @media (max-width:576px){
-    .services-description{
-      max-width: 80%;
-    }
-    /* .icon-container img{
-      width: 30% !important;
-    
-    } */
-  }
-  
-  @media (min-width: 992px) { /* Large devices (desktops, 992px and up) */
-    .pill-container {
-      grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    }
-  }
- 
-/*   
-  .pill {
-    min-height: 350px;
-    border-radius: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 10 !important;
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(255, 253, 253);
-    box-shadow: 
-      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-  }
-  
-  .pill h1 {
-    font-weight: 800;
-    font-size: 18px;
-  }
-  
-  .pill:hover {
-    box-shadow: 
-      4px 4px 8px 0 rgba(0, 0, 0, 0.25),
-      -4px -4px 8px 0 rgba(255, 255, 255, 0.3);
-    transform: translateY(4px);
-  }
-.services-btn-card{
-  width: 200px;
-  height: 25px;
-  border-radius: 40px;
-  overflow: hidden;
-  padding: 0.5rem;
-  display: flex;
-  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+#services, #timeline, #why-us-container, #reviews, #faq-board{
+  view-timeline-name : --container;
+  view-timeline-axis: block;
+  animation-timeline: --container;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+
 }
-.services-card-inner {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  border-radius: 40px;
-  background-color: rgb(141, 187, 182)
-}
-.services-btn{
+
+.service-article{
   border-radius: 20px;
-  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
-    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  background:  rgb(211, 228, 232) ;
 }
-.services-btn:hover{
-  box-shadow: 
-      4px 4px 8px 0 rgba(0, 0, 0, 0.25),
-      -4px -4px 8px 0 rgba(255, 255, 255, 0.3);
-    transform: translateY(4px);
-} */
-
-.pill{
-  min-height: 350px;
-  padding: 20px;
-  text-align: center;
+.service-article-two{
+  border-radius: 20px;
+  background:  rgb(211, 228, 232) ;
 }
-.pill h1{
-  font-weight: 900;
-  font-size: 25px;
+.service-article header i{
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px
 }
-.icon-container{
-  height: 160px;
-  border-radius: 30px;
+.service-article main ul{
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+}
+.article-img-container {
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  z-index: 10 !important;
-  text-align: center;
-  padding: 20px;
-  background-color: rgb(255, 253, 253);
-  box-shadow: 
-  12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-  -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  margin: 20px 0px !important;
+  overflow: hidden;
 }
-.icon-container img{
-  width: 100px;
-  height: 70px;
-
-}
-.icon-container:hover {
-  box-shadow: 
-    4px 4px 8px 0 rgba(0, 0, 0, 0.25),
-    -4px -4px 8px 0 rgba(255, 255, 255, 0.3);
-  transform: translateY(4px);
-}
-.fa-chrome, .fa-toolbox, .fa-circle-up, .fa-gear{
-  color: rgb(99, 99, 99);
-  font-size: 65px;
-  transition: transform 0.3s ease-in-out;
-}
-.fa-chrome:hover{
-  transform: translateY(-10%);
+.article-img-container img {
+  height: 100%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 20px;
 }
