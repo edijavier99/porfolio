@@ -1,10 +1,17 @@
+#why-us-container{
+    /* background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 24%, rgb(211, 228, 232) 100%); */
+    background-color: #F6F9FC;
 
+}
 #why-us-container h2{
     font-weight: 900;
     font-size: 45px;
 }
 .why-us-card{
     width: 500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
 }
 .card-number{
     font-weight: 800;
@@ -16,6 +23,7 @@
 .card-title{
     font-weight: 900;
     font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .services-stylish-img-container-down{

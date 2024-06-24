@@ -9,7 +9,7 @@
     scale: 100%;
   }
 }
- #timeline,.accordion,.faq-body-left,.why-us-card, #reviews,.services-card-article{
+ .timeline-board,.accordion,.faq-body-left,.why-us-card,.carousel-container,.sc-image-side,.sameTwoCards{
   view-timeline-name : --container;
   view-timeline-axis: block;
   animation-timeline: --container;
@@ -18,3 +18,7 @@
   animation-range: entry 25% cover 50%;
   animation-fill-mode: both;
 }
+*{
+  font-family:"sohne-var","Helvetica Neue","Arial",sans-serif;
+}
+

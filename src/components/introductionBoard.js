@@ -13,7 +13,8 @@ export const  IntroductionBoard= (props) =>{
             </div>
        </div>
        <div className="ib-right-side col-md-5 px-0">
-       </div>
+            <div className="background-image"></div>
+        </div>
     </section>
     )
 }

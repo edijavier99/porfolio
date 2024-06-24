@@ -7,7 +7,7 @@
 nav {
     font-size: 18px;
     margin: 0 auto;
-    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 24%, rgb(211, 228, 232) 100%);
+    /* background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 24%, rgb(211, 228, 232) 100%); */
 }
 .nav-link {
     color: black !important;
@@ -15,7 +15,7 @@ nav {
     width: 120px;
     position: relative;
     text-align: center;
-    font-weight: 800;
+    font-weight: 550;
 }
 .nav-item {
     position: relative;

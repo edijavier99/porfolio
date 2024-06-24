@@ -1,6 +1,8 @@
 #services {
     min-height: 100vh;
-    background-color: #FFFFFF; /* Blanco */
+    /* background-color: #FFFFFF;  */
+    /* background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 24%, rgb(211, 228, 232) 100%); */
+    /* background-color: #F6F9FC; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,9 +24,11 @@
     text-align: center;
 }
 .services-card-article{
-  background: #d3e4e8 !important;
+  /* background: #d3e4e8 !important; */
+  background-color:  #F6F9FC;
   border-radius:20px;
   margin-bottom: 30px;
+  
 }
 .services-card-article header i {
   padding: 15px;

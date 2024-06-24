@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F8F9FA; /* Gris Claro */
-
+    /* background-color: #F8F9FA;  */
+    /* background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 24%, rgb(211, 228, 232) 100%); */
 }
 #reviews h4{
     font-weight: 900;
@@ -28,14 +28,16 @@
 .review-description {
     margin-bottom: 40px;
     font-size: 16px;
-    color: #333;
+    color: black;
     padding: 20px;
     border-radius: 10px;
-    background: white
+    font-style: oblique;
+    /* background: white */
+    background-color: #F6F9FC;
 }
 .fa-quote-left{
     font-size: 70px;
-    color: rgb(50, 50, 50);
+    color:black;
     border-right: 2px solid  rgba(209, 206, 206, 0.793);
     padding-right: 20px;
 }
@@ -65,7 +67,7 @@
 .thumbnail.selected img {
     padding: 5px;
     border-style:dashed;
-    border-color: rgb(101, 190, 202);
+    border-color: #F6F9FC;
 }
 
 .thumbnail p {

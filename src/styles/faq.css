@@ -1,8 +1,7 @@
 #faq-board{
     min-height: 100vh;
     width: 100%;
-    background-color: #FFFFFF; /* Blanco */
-
+    background-color: #F6F9FC;; 
 }
 .section-name{
     padding: 40px 0px;
@@ -113,7 +112,7 @@
     border: none;
 }
 div.accordion-item .show{
-    background-color:rgb(230, 230, 230);
+    background-color:white;
     border-radius: 10px;
     transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
 

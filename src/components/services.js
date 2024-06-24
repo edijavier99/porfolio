@@ -3,7 +3,7 @@ import "../styles/services.css";
 
 export const ServicesCard = (props) => {
   return (
-    <article className="container-fluid services-card-article row col-11 mx-auto">
+    <article className={`container-fluid services-card-article row col-11 mx-auto p-4 ${props.sameTwoCards ? "sameTwoCards": ""} ${props.reverse ? 'flex-row-reverse' : ''}`}>
       <div className={`col-12 ${props.image ? 'col-lg-6' : ''} sc-text-side`}>
         <header className="d-flex align-items-center">
           <i className={`fa-solid ${props.icon}`}></i>
@@ -37,7 +37,7 @@ export const Services = () => {
     <section id="services">
       <p className="category text-muted">SERVICES</p>
       <h2>What Problems We Solve</h2>
-      <p className="services-description text-muted">
+      <p className="services-description">
         At our company, we specialize in delivering<strong> top-notch web development,
         software solutions, regular updates, and comprehensive maintenance services.</strong>
         Our expert team ensures that your digital presence is always <strong> cutting-edge,
@@ -67,6 +67,7 @@ export const Services = () => {
         OfferTree="Mobile App Development"
         image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         imageAlt="Software Development"
+        reverse={true}  // Aquí se indica que la imagen debe estar al otro lado
       />
 
       <div className="row col-11 mx-auto d-flex justify-content-around mt-4 same-cards-row">
@@ -77,6 +78,7 @@ export const Services = () => {
           offerOne="Regular System Updates"
           offerTwo="Performance Monitoring"
           OfferTree="Security Enhancements"
+          sameTwoCards = {true}
         />
         <ServicesCard
           title="Updates"
@@ -85,6 +87,7 @@ export const Services = () => {
           offerOne="Feature Updates"
           offerTwo="Security Patches"
           OfferTree="Compatibility Improvements"
+          sameTwoCards = {true}
         />
       </div>
     </section>
