@@ -12,7 +12,7 @@ const Layout = () =>{
         { label: "Home", url: "/" },
         { label: "Services", url: "/" },
         { label: "About Us", url: "/about-us" },
-        { label: "Sustainability", url: "/sustainibility" }
+        { label: "Sustainability", url: "/sustainibility" },
     ];
     return(
         <div>

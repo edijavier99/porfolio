@@ -19,6 +19,9 @@
 }
 .ib-btn-container{
     width: 500px;
+    display: flex;
+    align-items: center;
+    
 }
 .ibBtn{
     width: 200px;
@@ -31,9 +34,15 @@
 .btnQuote{
     font-weight: 800;
 }
+
+
 .ib-right-side {
     border-radius: 20px;
     overflow: hidden;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .background-image {
@@ -67,6 +76,40 @@
   }
   
 
+  @media (max-width:1200px){
+    .background-image {
+      height: 68%;
+    }
+    .ib-left-side h1{
+      font-weight: 900;
+      font-size: 2.6rem;
+      color: rgb(0, 0, 0);
+  }
+}
+
+  @media (max-width:992px){
+    .ib-right-side {
+      max-height: 700px;
+    }
+    .background-image {
+      width: 90%;
+      height: 58%;
+    }
+    .ib-left-side h1{
+      font-weight: 900;
+      font-size: 2.3rem;
+      color: rgb(0, 0, 0);
+  }
+}
+@media (max-width:768px){
+  .ib-right-side {
+    height: 500px;
+  }
+  .background-image {
+    width: 80%;
+    height: 80%;
+  }
+}
 
 @media (max-width:576px){
     .ib-btn-container{
@@ -89,7 +132,6 @@
        display: none !important;
        height: 0 !important;
     }
-
 }
 
 
