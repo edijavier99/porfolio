@@ -4,11 +4,11 @@ import { ContactForm } from "./contactForm";
 export const ContactModal = () =>{
     return(
         <>
-            <button type="button" className="btn btn-primary navbarBtnModal" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <button type="button" className="btn btn-primary navbarBtnModal mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
             Contact Us
             </button>
 
-            <div className="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div className="modal fade" id="contactModal" tabIndex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
                         <div className="modal-header">

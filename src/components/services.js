@@ -4,7 +4,7 @@ import { ContactBtn } from "./button";
 
 export const ServicesCard = (props) => {
   return (
-    <article className={`container-fluid services-card-article row col-11 mx-auto p-4 ${props.sameTwoCards ? "sameTwoCards": ""} ${props.reverse ? 'flex-row-reverse' : ''}`}>
+    <article className={`container-fluid services-card-article row col-11 mx-auto p-4 ${props.sameTwoCards ? "sameTwoCards": ""}`}>
       <div className={`col-12 ${props.image ? 'col-lg-6' : ''} sc-text-side`}>
         <header className="d-flex align-items-center">
           <i className={`fa-solid ${props.icon}`} style={{ backgroundColor: props.iconColor }}></i>
@@ -69,7 +69,6 @@ export const Services = () => {
         OfferTree="Mobile App Development"
         image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         imageAlt="Software Development"
-        reverse={true}
         iconColor = "greenyellow"
       />
 
