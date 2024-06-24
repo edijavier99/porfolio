@@ -18,9 +18,11 @@
     -webkit-text-fill-color: transparent;
 }
 .ib-btn-container{
-    width: 500px;
+    width: 100% !important;
     display: flex;
     align-items: center !important;
+    margin: 0 auto;
+    justify-content: center;
     
 }
 .ibBtn{
