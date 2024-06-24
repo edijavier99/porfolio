@@ -20,10 +20,6 @@
 .ib-btn-container{
     width: 100% !important;
     display: flex;
-    align-items: center !important;
-    margin: 0 auto;
-    justify-content: center;
-    
 }
 .ibBtn{
     width: 200px;
@@ -116,8 +112,15 @@
     text-align: center;
   }
   .ib-btn-container{
-    width: auto;
-    flex-direction: column;
+    width: 100% !important;
+    display: flex;
+    align-items: center !important;
+    margin: 0 auto;
+    justify-content: center;
+    
+  }
+  .ib-left-side h1{
+    margin-top: 50px !important;
   }
 }
 
@@ -135,6 +138,9 @@
     .ib-right-side {
        display: none !important;
        height: 0 !important;
+    }
+    .ib-left-side h1{
+      margin-top: 65px !important;
     }
 }
 
