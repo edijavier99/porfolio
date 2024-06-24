@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/nabvar.css"
 import Logo from "../img/logowecoded.jpg"
+import { ContactModal } from "./contactModal";
 
 export const  Navbar = (props) =>{
     const items = props.items.map((item, index )=> (
@@ -18,6 +19,7 @@ export const  Navbar = (props) =>{
             </button>
             <div className="collapse navbar-collapse justify-content-end pe-4" id="navbarNav">
                 <ul className="navbar-nav mr-auto">{items}</ul>
+                <ContactModal />
             </div>
     </nav>
     )

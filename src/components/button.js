@@ -1,8 +1,8 @@
 import React from "react";
 
-export const Button = (props) =>{
-    const {name,color,url} = props
+export const ContactBtn = (props) =>{
+    const {name} = props
     return(
-        <a className={`btn btn-${color}`} href={url} role="button">{name}</a>
+        <button className={`btn btn-primary my-3`} data-bs-toggle="modal" data-bs-target="#contactModal" type="button" role="button">{name}</button>
     )
 }

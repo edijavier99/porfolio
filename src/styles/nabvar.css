@@ -21,6 +21,9 @@ nav {
     position: relative;
     transition: transform 0.3s ease; 
 }
+.navbarBtnModal{
+    margin-left: 15px;
+}
 .nav-item:hover{
     transform: translateY(-13%)
 }
@@ -37,7 +40,7 @@ nav {
     width: 80px;
     height: 60px;
 }
-@media (max-width: 790px) {
+@media (max-width: 992px) {
     .nav-item {
         text-align: center;
     }
@@ -48,8 +51,16 @@ nav {
     .navbar-nav{
         align-items: center;
     }
+    .navbar-collapse{
+        padding-right: 0px !important;
+    }
     .nav-item::after {
         transition: width 0.1s ease;
     }
-    
+    .navbarBtnModal{
+        width: 90%;
+        margin-left: 0;
+        margin: 8px  auto !important;
+        display: flex;
+    }
 }

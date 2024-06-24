@@ -38,7 +38,7 @@ export const AboutUs = () =>{
 
                 </div>
                 <div className="row col-md-10 mx-auto py-5" id="values">
-                    <h4 className="subtitle-aboutUs">Our Values</h4>
+                    <h4 className="subtitle-aboutUs mb-5">Our Values</h4>
                     <div className="row values-cards-container mx-auto">
                         <div className="value-card">
                             <header>

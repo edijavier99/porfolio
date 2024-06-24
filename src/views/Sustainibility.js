@@ -47,6 +47,7 @@ export const Sustainibility = () =>{
                 <p>We Coded is committed to continuously improving our sustainability efforts. We regularly review and update our practices to ensure they align with the latest environmental standards and innovations. By fostering a culture of sustainability within our organization, we empower our employees and clients to contribute to a more sustainable future.</p>
             </div>
         </div>
+        <hr/>
     </section>
     )
 }

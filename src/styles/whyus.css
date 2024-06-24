@@ -12,11 +12,12 @@
     background-color: white;
     padding: 30px;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 .card-number{
     font-weight: 800;
     font-size: 45px;
-    background: linear-gradient(90deg, rgb(123, 185, 171), gray);
+    /* background: linear-gradient(90deg, rgb(123, 185, 171), gray); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

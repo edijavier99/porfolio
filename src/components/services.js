@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles/services.css";
+import { ContactBtn } from "./button";
 
 export const ServicesCard = (props) => {
   return (
     <article className={`container-fluid services-card-article row col-11 mx-auto p-4 ${props.sameTwoCards ? "sameTwoCards": ""} ${props.reverse ? 'flex-row-reverse' : ''}`}>
       <div className={`col-12 ${props.image ? 'col-lg-6' : ''} sc-text-side`}>
         <header className="d-flex align-items-center">
-          <i className={`fa-solid ${props.icon}`}></i>
+          <i className={`fa-solid ${props.icon}`} style={{ backgroundColor: props.iconColor }}></i>
           <h6 className="mb-0 ms-3 fw-bold">{props.title}</h6>
         </header>
         <main>
@@ -21,7 +22,7 @@ export const ServicesCard = (props) => {
             <li><i className="fa-solid fa-square-check me-3"></i> {props.OfferTree}</li>
           </ul>
         </main>
-        <button className="btn btn-primary my-3">Get In Touch</button>
+        <ContactBtn name="Get In Touch" />
       </div>
       {props.image && (
         <div className="col-12 col-md-12 col-lg-6 sc-image-side">
@@ -56,6 +57,7 @@ export const Services = () => {
         OfferTree=" E-commerce Solutions"
         image="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&amp;w=2864&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         imageAlt="websites development"
+        iconColor = "tomato"
       />
 
       <ServicesCard
@@ -67,7 +69,8 @@ export const Services = () => {
         OfferTree="Mobile App Development"
         image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         imageAlt="Software Development"
-        reverse={true}  // Aquí se indica que la imagen debe estar al otro lado
+        reverse={true}
+        iconColor = "greenyellow"
       />
 
       <div className="row col-11 mx-auto d-flex justify-content-around mt-4 same-cards-row">
@@ -79,6 +82,7 @@ export const Services = () => {
           offerTwo="Performance Monitoring"
           OfferTree="Security Enhancements"
           sameTwoCards = {true}
+          iconColor =  "violet"
         />
         <ServicesCard
           title="Updates"
@@ -88,6 +92,7 @@ export const Services = () => {
           offerTwo="Security Patches"
           OfferTree="Compatibility Improvements"
           sameTwoCards = {true}
+          iconColor = "orange"
         />
       </div>
     </section>

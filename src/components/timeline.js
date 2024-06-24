@@ -20,6 +20,7 @@ const steps = [
     understanding of your vision. Our goal is to ensure we capture every 
     detail, laying a strong foundation for a successful project.`,
     optional: <Typography variant="caption">Step 1</Typography>,
+    color: 'tomato', // color para este paso
   },
   {
     label: 'DESIGN PHASE',
@@ -31,6 +32,7 @@ const steps = [
     bringing your ideas to life, ensuring that the visual representation 
     aligns perfectly with your brand identity and resonates with your audience.`,
     optional: <Typography variant="caption">Step 2</Typography>,
+    color: 'greenyellow', // color para este paso
   },
   {
     label: 'DEVELOPMENT PHASE',
@@ -41,6 +43,7 @@ const steps = [
     This phase is where the magic happens, turning static designs into 
     interactive, dynamic platforms that offer a seamless user experience.`,
     optional: <Typography variant="caption">Step 3</Typography>,
+    color: 'purple', // color para este paso
   },
   {
     label: 'LAUNCH & MAINTENANCE',
@@ -52,6 +55,7 @@ const steps = [
     digital presence remains robust, secure, and up-to-date, allowing 
     you to focus on your core business.`,
     optional: <Typography variant="caption">Last step</Typography>,
+    color: 'darkorange', // color para este paso
   },
 ];
 
@@ -85,33 +89,37 @@ export const Timeline = () => {
                   {step.label}
                 </StepLabel>
                 <StepContent>
-                  <Typography variant="h6" fontWeight="bold">{step.title}</Typography>
-                  <Typography>{step.description}</Typography>
-                  <Box sx={{ mb: 2 }}>
-                    <div>
+                    <Box  sx={{
+                      backgroundColor: activeStep === index ? '#F6F9FC' : 'transparent',
+                      padding: '20px',
+                      borderRadius: "20px"
+                    }}>
+                    <Typography variant="h5" fontWeight="bold">{step.title}</Typography>
+                    <Typography sx={{mt:2}}>{step.description}</Typography>
+                    <Box sx={{ mt: 2 }}>
                       <Button
                         variant="contained"
                         onClick={handleNext}
-                        sx={{ mt: 1, mr: 1 }}
+                        sx={{ mr: 1 }}
                       >
                         {index === steps.length - 1 ? 'Finish' : 'Continue'}
                       </Button>
                       <Button
                         disabled={index === 0}
                         onClick={handleBack}
-                        sx={{ mt: 1, mr: 1 }}
+                        sx={{ mr: 1 }}
                       >
                         Back
                       </Button>
-                    </div>
-                  </Box>
-                </StepContent>
+                    </Box>
+                    </Box>
+                  </StepContent>
               </Step>
             ))}
           </Stepper>
           {activeStep === steps.length && (
-            <Paper square elevation={0} sx={{ p: 3, borderRadius: "20px", bgcolor: 'white', marginTop: "20px" }}>
-              <Typography variant="h6" gutterBottom>
+            <Paper square elevation={0} sx={{ p: 3, borderRadius: "20px", bgcolor: '#F6F9FC', marginTop: "20px" }}>
+              <Typography variant="h5" gutterBottom sx={{fontWeight: "bold"}}>
                 Project Successfully Completed
               </Typography>
               <Typography>
