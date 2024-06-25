@@ -10,7 +10,6 @@ import {Sustainibility}  from "./views/Sustainibility"
 const Layout = () =>{
     const menu = [
         { label: "Home", url: "/" },
-        { label: "Services", url: "/" },
         { label: "About Us", url: "/about-us" },
         { label: "Sustainability", url: "/sustainibility" },
     ];
