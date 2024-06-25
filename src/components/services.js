@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/services.css";
 import { ContactBtn } from "./button";
+import TypingEffect from './type';
+
 
 export const ServicesCard = (props) => {
   return (
@@ -8,7 +10,7 @@ export const ServicesCard = (props) => {
       <div className={`col-12 ${props.image ? 'col-lg-6' : ''} sc-text-side`}>
         <header className="d-flex align-items-center">
           <i className={`fa-solid ${props.icon}`} style={{ backgroundColor: props.iconColor }}></i>
-          <h6 className="mb-0 ms-3 fw-bold">{props.title}</h6>
+          <h6 className="mb-0 ms-3 fw-bold"><TypingEffect strings={[props.title]}/></h6>
         </header>
         <main>
           <h3 className="fw-bold my-5">

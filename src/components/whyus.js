@@ -7,7 +7,7 @@ export const WhyUs = () =>{
         <section id="why-us-container" className="pt-5">
             <div className="row col-10 mx-auto">
                 <h2>WHY US ?</h2>
-                <p>It is a long established fact that a reader will be distracted by the readable <br/> content of a page when looking at its layout. The point of using Lorem</p>
+                <p>Discover why choosing us matters.With our dedication to excellence, we <br/> provide solutions that surpass expectations, ensuring your journey to <br/> success is smooth and fulfilling.</p>
             </div>
             <div className="row col-11 col-md-9 col-lg-9 mx-auto d-flex justify-content-between row-why-us ">
                 <article className="why-us-card first-card">
