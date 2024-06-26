@@ -32,7 +32,6 @@ const steps = [
     bringing your ideas to life, ensuring that the visual representation 
     aligns perfectly with your brand identity and resonates with your audience.`,
     optional: <Typography variant="caption">Step 2</Typography>,
-    color: 'greenyellow', // color para este paso
   },
   {
     label: 'DEVELOPMENT PHASE',
@@ -43,7 +42,6 @@ const steps = [
     This phase is where the magic happens, turning static designs into 
     interactive, dynamic platforms that offer a seamless user experience.`,
     optional: <Typography variant="caption">Step 3</Typography>,
-    color: 'purple', // color para este paso
   },
   {
     label: 'LAUNCH & MAINTENANCE',
@@ -55,7 +53,6 @@ const steps = [
     digital presence remains robust, secure, and up-to-date, allowing 
     you to focus on your core business.`,
     optional: <Typography variant="caption">Last step</Typography>,
-    color: 'darkorange', // color para este paso
   },
 ];
 
@@ -78,7 +75,7 @@ export const Timeline = () => {
     <section id="timeline" className="container-fluid">
       <p className="category text-muted">PROJECTS TIMELINE</p>
       <h2>Workflow Process</h2>
-      <div className="col-11 col-md-8 col-lg-8 mx-auto timeline-board">
+      <div className="col-11 col-md-8 col-lg-8 mx-auto timeline-board mb-5">
         <Box>
           <Stepper activeStep={activeStep} orientation="vertical">
             {steps.map((step, index) => (

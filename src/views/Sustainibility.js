@@ -5,7 +5,7 @@ import "../styles/sustainibility.css"
 export const Sustainibility = () =>{
     return(
         <section id="sustainability" className="container-fluid">
-        <div className="row col-10 mx-auto intro-sustainability pt-5">
+        <div className="row col-11 mx-auto intro-sustainability pt-5">
             <div className="col-12 col-md-6 wc-left-side">
                 <img alt="" src="https://images.unsplash.com/photo-1590930180621-fc7027a21559?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             </div>
@@ -16,7 +16,7 @@ export const Sustainibility = () =>{
                 </p>
             </div>
         </div>
-        <div className="row col-10 mx-auto intro-sustainability">
+        <div className="row col-11 mx-auto intro-sustainability">
             <div className="col-12 col-md-6 is-left-side">
                 <h3>How We Collaborate</h3>
                 <p>
@@ -27,7 +27,7 @@ export const Sustainibility = () =>{
                 <SwiperCard />
             </div>
         </div>
-        <div className="row col-10 mx-auto intro-sustainability">
+        <div className="row col-11 mx-auto intro-sustainability">
             <div className="col-12 col-md-6 wc-left-side">
                 <img alt="" src="https://cdn.pixabay.com/photo/2023/06/22/07/13/soil-8080788_1280.jpg" />
             </div>
@@ -41,7 +41,7 @@ export const Sustainibility = () =>{
                 </ul>
             </div>
         </div>
-        <div className="row col-md-10 mx-auto py-5">
+        <div className="row col-md-11 mx-auto py-5">
             <div className="col-md-8 mx-auto text-center">
                 <h4 className="sustainability-subheader">Commitment to Continuous Improvement</h4>
                 <p>We Coded is committed to continuously improving our sustainability efforts. We regularly review and update our practices to ensure they align with the latest environmental standards and innovations. By fostering a culture of sustainability within our organization, we empower our employees and clients to contribute to a more sustainable future.</p>

@@ -17,12 +17,9 @@ export const Footer = ()=>{
                         <h5 className="text-uppercase text-center">Web Pagination</h5>
                         <ul className="list-unstyled">
                             <li><a href="/about-us">About Us</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                            <li><a href="#!">Services</a></li>
                             <li><a href="/">Home</a></li>
                             <li><a href="/sustainibility">Sustainibility</a></li>
                             <li><p href="#!">London,UK</p></li>
-
                         </ul>
                     </div>
 
