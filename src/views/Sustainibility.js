@@ -1,13 +1,15 @@
 import React from "react";
 import { SwiperCard } from "../components/swiper";
 import "../styles/sustainibility.css"
+import Sus1  from "../img/sus1.png"
+import Sus3  from "../img/sus3.png"
 
 export const Sustainibility = () =>{
     return(
         <section id="sustainability" className="container-fluid">
         <div className="row col-11 mx-auto intro-sustainability pt-5">
             <div className="col-12 col-md-6 wc-left-side">
-                <img alt="" src="https://images.unsplash.com/photo-1590930180621-fc7027a21559?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <img alt="sustainibility-forest" src={Sus1} />
             </div>
             <div className="col-12 col-md-6 is-left-side">
                 <h3>Real Impact On Environment</h3>
@@ -29,7 +31,7 @@ export const Sustainibility = () =>{
         </div>
         <div className="row col-11 mx-auto intro-sustainability">
             <div className="col-12 col-md-6 wc-left-side">
-                <img alt="" src="https://cdn.pixabay.com/photo/2023/06/22/07/13/soil-8080788_1280.jpg" />
+                <img alt="sustainibility-plant-tree" src={Sus3} />
             </div>
             <div className="col-12 col-md-6 is-left-side">
                 <h3 className="sustainability-subheader-small py-4">Additional Initiatives</h3>

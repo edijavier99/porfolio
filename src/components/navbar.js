@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/nabvar.css";
-import Logo from "../img/logowecoded.jpg";
-import { ContactModal } from "./contactModal";
+import Logo from "../img/logo.png";
 
 export const Navbar = (props) => {
   const items = props.items.map((item, index) => (

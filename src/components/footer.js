@@ -30,7 +30,7 @@ export const Footer = ()=>{
                         </p>
                         <form className="signUpForm  d-flex flex-column ">
                             <label htmlFor="newsletterInput" className="d-block fw-bold">Suscribe</label>
-                            <input placeholder="your@email.com" id="newsletterInput" className="my-3" type="gmail"/>
+                            <input placeholder="Coming Soon" id="newsletterInput" className="my-3" type="gmail"/>
                             <button className="btn btn-primary">Sign Up</button>
                         </form>
                        

@@ -1,25 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/faq.css";
-import dots from "../img/dots.png";
 
 const faqData = [
     {
         question: "What services do you offer?",
-        answer: "We offer a wide range of software development services, including mobile applications, enterprise management systems, and custom web platforms."
+        answer: "We offer a wide range of software development services, including enterprise management systems, custom web platforms, and websites. Our enterprise management systems are tailored to enhance operational efficiency and productivity. Custom web platforms are designed to meet specific business needs, ensuring scalability and robust performance. We also develop websites that provide a strong online presence and exceptional user experience."
     },
     {
         question: "What is the project delivery time?",
-        answer: "The project delivery time varies depending on the scope and complexity of the project. Generally, our projects take between 3 and 6 months to complete."
+        answer: "The project delivery time varies depending on the scope and complexity of the project. Generally, our projects take between 1 and 3 months to complete. We follow a structured project management approach to ensure timely delivery while maintaining high-quality standards."
     },
     {
         question: "How do you guarantee the quality of your products?",
-        answer: "We use agile methodologies and continuous testing throughout the development process to ensure the highest quality in our products."
+        answer: "We use agile methodologies and continuous testing throughout the development process to ensure the highest quality in our products. Additionally, we hold meetings and provide reports every Friday with our clients to keep them updated and ensure they are satisfied and in agreement with the results. This regular communication helps us maximize results according to the client's expectations."
     },
     {
         question: "Do you offer support after delivery?",
-        answer: "Yes, we offer continuous support and maintenance after delivery to ensure that our clients are completely satisfied with our services."
-    }
+        answer: "Yes, we offer continuous support and maintenance after delivery to ensure that our clients are completely satisfied with our services. Our support services include troubleshooting, updates, and enhancements to keep your software running smoothly."
+    },
+    {
+        question: "Do you implement AI solutions?",
+        answer: "Yes, we implement AI solutions if required by the client or if it can be beneficial for the client's business. As the AI industry continues to grow, we stay updated with the latest advancements and integrate AI technologies to enhance business operations, provide data-driven insights, and improve overall efficiency."
+    },
+    {
+        question: "What technologies do you specialize in?",
+        answer: "We specialize in a variety of technologies including Python, Django, Flask, Node, Express for backend development. For frontend development, we use frameworks such as React, Angular. Our mobile development expertise includes React Native. We also work with various databases like MySQL, PostgreSQL, and MongoDB."
+    },
 ];
+
 
 const showQuestions = () => {
     return faqData.map((item, index) => {
@@ -52,26 +60,6 @@ const showQuestions = () => {
 };
 
 export const FAQ = () => {
-    const initialFormData = { name: '', email: '', message: '' };
-    const [formData, setFormData] = useState(initialFormData);
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Aquí puedes manejar el envío del formulario, por ejemplo, enviando los datos a una API
-        console.log('Form data submitted:', formData);
-
-        // Resetear los campos del formulario
-        setFormData(initialFormData);
-    };
-
     return (
         <section id="faq-board">
             <header className="row mx-0 px-0">
@@ -86,25 +74,6 @@ export const FAQ = () => {
                     {showQuestions()}
                 </div>
             </main>
-            {/* <div className="col-md-6 faq-body-left ">
-                    <h4>Contact Us</h4>
-                    <p>Contact us for more information or to request a quote for your next project. We pride ourselves on our quick response time, ensuring that all inquiries are addressed on the same day.</p>
-                    <form onSubmit={handleSubmit} className="p-4 rounded contact-form" id="contact">
-                        <div className="form-group form-control">
-                            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required placeholder=" " />
-                            <label htmlFor="name">Name:</label>
-                        </div>
-                        <div className="form-group form-control">
-                            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required placeholder=" " />
-                            <label htmlFor="email">Email address:</label>
-                        </div>
-                        <div className="form-group form-control">
-                            <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="4" required placeholder=" "></textarea>
-                            <label htmlFor="message">Message:</label>
-                        </div>
-                        <button type="submit" className="btn btn-primary col-5 mx-auto mt-1">Submit</button>
-                    </form>
-                </div> */}
         </section>
     );
 };

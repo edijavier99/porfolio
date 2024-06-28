@@ -9,11 +9,12 @@
 #reviews h4{
     font-weight: 900;
     font-size: 45px;
+    margin-bottom: 25px;
 }
 #reviews .title-detail{
     font-size: 20px;
     font-weight: 900;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 .title-description{
     width: 60%;

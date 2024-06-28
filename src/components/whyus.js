@@ -13,7 +13,7 @@ export const WhyUs = () =>{
                 <article className="why-us-card first-card">
                     <p className="card-number" style={{backgroundColor: "tomato"}}>01</p>
                     <p className="card-title">Expertise in Software Development</p>
-                    <p className="card-description ">With over a decade of experience in the software development industry, we have honed our skills to provide cutting-edge solutions to our clients. From mobile applications to enterprise-level systems, our team of experts is dedicated to delivering high-quality, scalable software tailored to your specific needs.</p>
+                    <p className="card-description">With years of experience in the software development industry, we have honed our skills to provide cutting-edge solutions to our clients. From enterprise-level systems to custom web platforms and websites, our team of experts is dedicated to delivering high-quality, scalable software tailored to your specific needs.</p>
                 </article>
             </div>
             <div className="row col-11 col-md-9 col-lg-9  mx-auto d-flex justify-content-end">
@@ -30,7 +30,7 @@ export const WhyUs = () =>{
                     <p className="card-description ">Our commitment to our clients doesn't end when the project is complete. We understand that technology is constantly evolving, and your needs may change over time. That's why we offer continuous support and maintenance services to ensure that your software remains up-to-date, secure, and performing at its best. Whether you need troubleshooting assistance, feature enhancements, or system updates, you can count on us to be there for you every step of the way.</p>
                 </article>
             </div>
-            <img src={dots} alt="" className="services-stylish-img-container-down"/>
+            <img src={dots} alt="stylish-dots" className="services-stylish-img-container-down"/>
 
             <div className="row col-11 col-md-9 col-lg-9  mx-auto d-flex justify-content-end pb-5">
                 <article className="why-us-card fourth-card">

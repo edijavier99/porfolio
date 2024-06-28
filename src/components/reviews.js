@@ -32,7 +32,7 @@ export const Reviews = () => {
             <p className="text-muted category">TESTIMONIALS</p>
             <h4>Our Happy Clients</h4>
             <p className="title-detail text-muted">What They Say About Us</p>
-            <p className="title-description">At We Coded, we deeply value the opinions of our clients as they are integral to our commitment to excellence. Our dedication to providing the best service possible is unwavering. We take every piece of feedback into careful consideration, utilizing it as a guiding light to continuously refine and enhance our services, ensuring that we consistently exceed expectations.</p>
+            <p className="title-description">At We Coded, <strong>we deeply value the opinions of our clients</strong> as they are integral to our commitment to excellence. Our dedication to providing the best service possible is unwavering. We take every piece of feedback into careful consideration, utilizing it as a guiding light to continuously refine and enhance our services, ensuring that we consistently exceed expectations.</p>
             <div className="carousel-container">
                 <div className="review-description col-11 col-md-9 col-lg-9">
                     <div className="d-flex align-items-center review-description-inner">
