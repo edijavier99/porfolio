@@ -6,19 +6,19 @@ import Vc from "../img/vcclinic.png"
  const reviews = [
     {
         id: 1,
-        description: "Working with We Coded has been an incredible experience. Their team of developers is highly professional and perfectly captured our vision for the project. Not only did they deliver a high-quality product, but they also provided continuous support, ensuring everything ran smoothly. Whenever an issue arose, they resolved it quickly and efficiently.😊",
+        description: "We are a facilities company based in London, and recently many of our potential clients were requesting our website to view our services and more, something we hadn't considered until now. After recognizing the demand, we contacted We Coded to create a presentation of our company, services, clients, and more. It has been a straightforward process, easy to manage alongside our existing workload, and they have been very patient when gathering the required information from us. We are very pleased with the work done and would definitely recommend them.😊",
         imgSrc: Acs,
         name: "AC Services"
     },
     {
         id: 2,
-        description: "Our collaboration with We Coded has been exceptional. From the start, they demonstrated attention to detail and efficient communication, making us feel confident throughout. The quality of the final product exceeded our expectations, and their ability to quickly resolve any issues was impressive.",
+        description: "I am a personal trainer and fitness coach, and due to the volume of work and the fact that I need to travel to different locations frequently, I decided to make everything more remote and online. I didn't have much idea about the process or how to do it, but We Coded guided me through it, making everything simple. Whenever I had a question or concern, they were there to help me out. The final product exceeded my expectations and is now helping me manage, administer, and track my clients and appointments remotely.",
         imgSrc: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        name: "Jesus Coach"
+        name: "Jesus Antonio"
     },
     {
         id: 3,
-        description: "We Coded has become our trusted partner in digital transformation. Their commitment to quality and their ability to understand our specific needs has been crucial to the success of our projects. Every problem was addressed swiftly and professionally, allowing us to move forward without any hitches.",
+        description: "We are a family-owned dental clinic with 10 years in the market. Due to the increasing demand from clients to find us online, we decided to trust We Coded and work with them to create our website. We were a bit apprehensive at first, but it turned out to be a pleasant process. We are very happy with the final result. Thank you so much, guys!",
         imgSrc: Vc,
         name: "VC Dental Clinic"
     }
