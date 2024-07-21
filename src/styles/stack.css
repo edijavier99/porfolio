@@ -1,0 +1,49 @@
+/* stack.css */
+
+/* Asegúrate de que el botón del acordeón no tenga borde y que el color sea consistente */
+
+
+.accordion-button:not(.collapsed) {
+    color: white !important; /* Color del texto cuando está expandido */
+    background-color: #0767ce !important; /* Color de fondo cuando está expandido */
+}
+
+/* Estilos del cuerpo del acordeón */
+.collapse .card-body {
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Ajustes para los badges */
+.badge {
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Estilos del cuerpo del acordeón */
+.card-body h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    margin-bottom: 20px;
+}
+
+.accordion-body {
+    padding: 20px;
+    background-color: #F6F9FC !important;
+    border-radius: 10px !important;
+}
+
+.accordion-header {
+    margin-bottom: 10px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 568px) {
+   
+    .sc-text-side {
+        padding: 0; /* Sin relleno en pantallas pequeñas */
+    }
+}

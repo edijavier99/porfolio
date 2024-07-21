@@ -38,7 +38,7 @@ export const Footer = ()=>{
                 </div>
             </div>
 
-            <div className="footer-copyright text-center pt-4">© 2020 Copyright:
+            <div className="footer-copyright text-center pt-4">© 2024 Copyright:
                 <span className="mb-0"> www.wecoded.co.uk</span>
             </div>
         </footer>

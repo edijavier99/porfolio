@@ -124,7 +124,7 @@ export const ContactForm = () => {
           Submit
         </button>
         <p className="mt-3 mb-3 text-body-secondary">
-          © 2017–2024 wecoded.co.uk
+          ©2024 wecoded.co.uk
         </p>
         </form>
         {showAlert && <div className="alert alert-success" role="alert">

@@ -81,7 +81,7 @@
 @media (max-width: 576px) {
   #services h2{ 
     font-size: 35px;
-    max-width: 65%;
+    /* max-width: 65%; */
   }
   .services-description{
     max-width: 85%;
