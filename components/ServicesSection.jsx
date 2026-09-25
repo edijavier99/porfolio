@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useContactModal } from './ContactModalContext';
 import Link from 'next/link';
 
 /* ── Software Engineering: stack architecture diagram ── */
@@ -250,10 +251,11 @@ const services = [
 ];
 
 export default function ServicesSection() {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(-1);
+  const { openModal } = useContactModal();
 
   return (
-    <section className="px-6 py-20 md:px-12 lg:px-[64px] lg:py-24 bg-bg">
+    <section id="services" className="px-6 py-20 md:px-12 lg:px-[64px] lg:py-24 bg-bg">
       <div className="max-w-[1400px] mx-auto">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
@@ -276,20 +278,20 @@ export default function ServicesSection() {
             </p>
           </div>
 
-          <Link
-            href="#contact"
-            className="inline-flex items-center gap-4 rounded-full pl-6 pr-2 py-2 w-fit font-head font-medium no-underline flex-shrink-0"
+          <button
+            onClick={openModal}
+            className="inline-flex items-center gap-4 rounded-full pl-6 pr-2 py-2 w-fit font-head font-medium flex-shrink-0"
             style={{ background: '#0A0A0A', color: '#FFFFFF' }}
           >
             View My Service
             <span className="w-10 h-10 rounded-full flex items-center justify-center bg-white text-[#0A0A0A] text-base">
               →
             </span>
-          </Link>
+          </button>
         </div>
 
         {/* Accordion */}
-        <div className="border-t border-sep">
+        <div className="border-t border-sep" style={{ overflowAnchor: 'none' }}>
           {services.map((service, i) => {
             const isActive = active === i;
             return (

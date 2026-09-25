@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useContactModal } from './ContactModalContext';
 
 const slides = [
   '/images/portrait01.png',
@@ -77,8 +78,11 @@ const Carousel = () => {
 };
 
 export default function AboutSection() {
+  const { openModal } = useContactModal();
+
   return (
     <section
+      id="about"
       className="relative overflow-hidden px-6 py-20 md:px-12 lg:px-[64px] lg:py-28"
       style={{ background: '#2B2B2B' }}
     >
@@ -102,16 +106,16 @@ export default function AboutSection() {
           </p>
 
           <div className="flex items-center gap-6 flex-wrap mt-10">
-            <Link
-              href="#contact"
-              className="inline-flex items-center gap-4 rounded-full pl-7 pr-2 py-2 w-fit font-head font-medium no-underline"
+            <button
+              onClick={openModal}
+              className="inline-flex items-center gap-4 rounded-full pl-7 pr-2 py-2 w-fit font-head font-medium"
               style={{ background: '#FFFFFF', color: '#0A0A0A' }}
             >
               Let&apos;s Talk
               <span className="w-10 h-10 rounded-full flex items-center justify-center bg-[#0A0A0A] text-white text-base">
                 →
               </span>
-            </Link>
+            </button>
 
             <div className="flex items-center gap-2.5">
               <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(255,255,255,0.08)' }}>

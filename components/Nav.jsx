@@ -2,18 +2,32 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useContactModal } from './ContactModalContext';
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
+  { label: 'Home',       href: '#home' },
+  { label: 'About',      href: '#about' },
+  { label: 'Services',   href: '#services' },
   { label: 'Case Study', href: '#case-study' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Blog',       href: '/blog' },
 ];
+
+function ContactButton({ className, style, children, onClick }) {
+  return (
+    <button onClick={onClick} className={className} style={style}>
+      {children}
+    </button>
+  );
+}
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { openModal } = useContactModal();
+
+  const handleContact = () => {
+    setOpen(false);
+    openModal();
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-bg border-b border-sep">
@@ -31,20 +45,36 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-9">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="font-head font-semibold text-gray-600 no-underline transition-colors hover:opacity-70"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.href.startsWith('/') ? (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="font-head font-semibold text-gray-600 no-underline transition-colors hover:opacity-70"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                className="font-head font-semibold text-gray-600 no-underline transition-colors hover:opacity-70"
+              >
+                {link.label}
+              </a>
+            )
+          )}
+          <button
+            onClick={handleContact}
+            className="font-head font-semibold text-gray-600 transition-colors hover:opacity-70"
+          >
+            Contact
+          </button>
         </nav>
 
         {/* CTA */}
-        <Link
-          href="#contact"
+        <ContactButton
+          onClick={handleContact}
           className="hidden lg:inline-flex items-center gap-4 rounded-full pl-6 pr-2 py-2 font-head font-medium no-underline flex-shrink-0"
           style={{ background: '#0A0A0A', color: '#FFFFFF' }}
         >
@@ -55,7 +85,7 @@ export default function Navbar() {
           >
             →
           </span>
-        </Link>
+        </ContactButton>
 
         {/* Mobile toggle */}
         <button
@@ -87,20 +117,36 @@ export default function Navbar() {
         }}
       >
         <nav className="flex flex-col px-6 py-6 gap-5">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className="font-head text-body text-lg no-underline"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.href.startsWith('/') ? (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="font-head text-body text-lg no-underline"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="font-head text-body text-lg no-underline"
+              >
+                {link.label}
+              </a>
+            )
+          )}
+          <button
+            onClick={handleContact}
+            className="font-head text-body text-lg text-left"
+          >
+            Contact
+          </button>
 
-          <Link
-            href="#contact"
-            onClick={() => setOpen(false)}
+          <ContactButton
+            onClick={handleContact}
             className="inline-flex items-center justify-between gap-4 rounded-full pl-6 pr-2 py-2 font-head font-medium no-underline mt-2 w-fit"
             style={{ background: '#0A0A0A', color: '#FFFFFF' }}
           >
@@ -111,7 +157,7 @@ export default function Navbar() {
             >
               →
             </span>
-          </Link>
+          </ContactButton>
         </nav>
       </div>
     </header>

@@ -16,8 +16,8 @@ export async function sendContactEmail(formData) {
 
   try {
     await resend.emails.send({
-      from: 'Kova Contact <onboarding@resend.dev>',
-      to:   ['hello@kova.co.uk'],           // ← change to your real email
+      from: 'Portfolio Contact <onboarding@resend.dev>',
+      to:   ['edijavier10@gmail.com'],
       replyTo: email,
       subject: `New enquiry from ${name}`,
       html: `

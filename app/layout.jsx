@@ -1,5 +1,6 @@
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import Nav from '@/components/Nav';
+import Providers from '@/components/Providers';
 import './globals.css';
 
 const inter = Inter({
@@ -54,8 +55,10 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-bg text-body font-body antialiased">
-        <Nav />
-        {children}
+        <Providers>
+          <Nav />
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -72,7 +72,7 @@ const FlowDiagram = () => (
 
 export default function CaseStudySection() {
   return (
-    <section className="px-6 py-20 md:px-12 lg:px-[64px] lg:py-24 bg-bg-alt">
+    <section id="case-study" className="px-6 py-20 md:px-12 lg:px-[64px] lg:py-24 bg-bg-alt">
       <div className="max-w-[1400px] mx-auto">
 
         {/* Header */}

@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useContactModal } from './ContactModalContext';
 
 const socials = [
   {
@@ -58,8 +61,11 @@ const stats = [
 ];
 
 export default function HeroSection() {
+  const { openModal } = useContactModal();
+
   return (
     <section
+      id="home"
       className="relative overflow-hidden px-6 py-16 md:px-12 md:py-20 lg:px-[64px] lg:py-24 bg-bg"
       style={{ minHeight: 'calc(100vh - 72px)' }}
     >
@@ -88,8 +94,8 @@ export default function HeroSection() {
           </p>
 
           {/* CTA — visible on desktop here, hidden on mobile (shown later via order) */}
-          <Link
-            href="#contact"
+          <button
+            onClick={openModal}
             className="hidden lg:inline-flex items-center gap-3 rounded-full pl-5 pr-2 py-2 w-fit font-head font-medium text-body"
             style={{ background: '#D4F26A' }}
           >
@@ -97,7 +103,7 @@ export default function HeroSection() {
             <span className="w-8 h-8 rounded-full flex items-center justify-center bg-[#0A0A0A] text-white text-sm">
               →
             </span>
-          </Link>
+          </button>
         </div>
 
         {/* ── CENTER — portrait ── */}
@@ -144,8 +150,8 @@ export default function HeroSection() {
 
         {/* ── CTA mobile only — order-4 ── */}
         <div className="lg:hidden order-4 flex justify-center">
-          <Link
-            href="#contact"
+          <button
+            onClick={openModal}
             className="inline-flex items-center gap-3 rounded-full pl-5 pr-2 py-2 w-fit font-head font-medium text-body"
             style={{ background: '#D4F26A' }}
           >
@@ -153,7 +159,7 @@ export default function HeroSection() {
             <span className="w-8 h-8 rounded-full flex items-center justify-center bg-[#0A0A0A] text-white text-sm">
               →
             </span>
-          </Link>
+          </button>
         </div>
 
       </div>

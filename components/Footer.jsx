@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useContactModal } from './ContactModalContext';
 
 const contacts = [
   {
@@ -42,6 +43,7 @@ const socials = [
 
 export default function Footer() {
   const [email, setEmail] = useState('');
+  const { openModal } = useContactModal();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -159,7 +161,7 @@ export default function Footer() {
             <Link href="/" className="no-underline hover:text-body">Home</Link>
             <Link href="#about" className="no-underline hover:text-body">About</Link>
             <Link href="#services" className="no-underline hover:text-body">Services</Link>
-            <Link href="#contact" className="no-underline hover:text-body">Contact</Link>
+            <button onClick={openModal} className="hover:text-body transition-colors">Contact</button>
           </div>
 
           <span>© {new Date().getFullYear()} Edi Javier. All rights reserved.</span>
