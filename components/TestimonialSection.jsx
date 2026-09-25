@@ -18,7 +18,7 @@ const testimonials = [
     company: 'Held & Co',
     role: 'Owner',
     logo: '/images/heldandco.png',
-    quote: "We'd been burned by agencies before — overpromised, underdelivered. Edi was the opposite. Straightforward, reliable, and the work was solid. We'll be back.",
+    quote: "Edi was so great to work with. I have no clue how websites work but as a Psychotherapist, I knew it was important to establish one. I gave Edi a whirlwind of ideas and by magic he made sense of it all and created my website. I couldn't be happier with it. It matches my brand messaging and conveys everything I want it to, to prospective clients. Thank you so much!",
   },
   {
     id: 'hannahelsy',
