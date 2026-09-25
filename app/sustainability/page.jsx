@@ -22,7 +22,7 @@ export default function SustainabilityPage() {
         <span className="font-mono block text-xs text-green tracking-[0.12em] mb-4">
           // sustainability
         </span>
-        <h1 className="page-h1 font-head font-bold text-white tracking-[-0.02em] mb-5">
+        <h1 className="page-h1 font-head font-bold text-body tracking-[-0.02em] mb-5">
           Building software.
           <br />
           <span className="bg-[linear-gradient(125deg,#4ade80_0%,#60a5fa_100%)] bg-clip-text text-transparent">
@@ -52,7 +52,7 @@ export default function SustainabilityPage() {
             <span className="font-mono block uppercase text-[11px] text-[#16a34a] tracking-[0.12em] mb-3">
               // impact
             </span>
-            <h2 className="font-head font-bold text-white text-[1.8rem] leading-[1.2] mb-4">
+            <h2 className="font-head font-bold text-body text-[1.8rem] leading-[1.2] mb-4">
               Our work has a real impact on the environment.
             </h2>
             <p className="text-muted text-base leading-[1.8]">
@@ -77,7 +77,7 @@ export default function SustainabilityPage() {
             <span className="font-mono block uppercase text-[11px] text-[#16a34a] tracking-[0.12em] mb-3">
               // our pledge
             </span>
-            <h2 className="font-head font-bold text-white text-[1.8rem] leading-[1.2] mb-4">
+            <h2 className="font-head font-bold text-body text-[1.8rem] leading-[1.2] mb-4">
               One client. One tree. Every time.
             </h2>
             <p className="text-muted text-base leading-[1.8]">
@@ -110,7 +110,7 @@ export default function SustainabilityPage() {
           <span className="font-mono block text-xs text-green tracking-[0.12em] mb-3.5">
             // impact_by_numbers
           </span>
-          <h2 className="section-h2 font-head font-bold text-white tracking-[-0.02em] mb-3.5">
+          <h2 className="section-h2 font-head font-bold text-body tracking-[-0.02em] mb-3.5">
             Small actions, big results.
           </h2>
           <p className="text-muted text-base leading-7 max-w-[560px] mx-auto">
@@ -138,7 +138,7 @@ export default function SustainabilityPage() {
           <span className="font-mono block text-xs text-green tracking-[0.12em] mb-3.5">
             // initiatives
           </span>
-          <h2 className="section-h2 font-head font-bold text-white tracking-[-0.02em] mb-3.5">
+          <h2 className="section-h2 font-head font-bold text-body tracking-[-0.02em] mb-3.5">
             More Ways We Give Back
           </h2>
           <p className="text-muted text-base leading-7 max-w-[560px] mx-auto">
@@ -154,7 +154,7 @@ export default function SustainabilityPage() {
                 {item.icon}
               </div>
               <div>
-                <div className="font-head font-bold text-white text-[0.95rem] mb-1.5">{item.title}</div>
+                <div className="font-head font-bold text-body text-[0.95rem] mb-1.5">{item.title}</div>
                 <p className="text-[0.87rem] text-muted leading-[1.65]">{item.desc}</p>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function SustainabilityPage() {
           <span className="font-mono block text-xs text-green tracking-[0.12em] mb-3.5">
             // our commitment
           </span>
-          <h2 className="section-h2 font-head font-bold text-white mb-4">
+          <h2 className="section-h2 font-head font-bold text-body mb-4">
             Committed to continuous improvement.
           </h2>
           <p className="text-muted text-base leading-[1.8] mb-7">

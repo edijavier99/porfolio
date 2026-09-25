@@ -9,7 +9,7 @@ export default function FAQItem({ q, a }) {
     <div className={`rounded-[10px] overflow-hidden mb-2 border transition-colors duration-200 ${open ? 'border-sep-h' : 'border-sep'}`}>
       <button
         onClick={() => setOpen((o) => !o)}
-        className={`w-full flex items-center justify-between gap-4 px-6 py-5 font-body text-[0.93rem] font-medium cursor-pointer text-left transition-colors duration-200 border-none ${open ? 'bg-card-h text-white' : 'bg-card text-body'}`}
+        className={`w-full flex items-center justify-between gap-4 px-6 py-5 font-body text-[0.93rem] font-medium cursor-pointer text-left transition-colors duration-200 border-none ${open ? 'bg-card-h text-body' : 'bg-card text-body'}`}
       >
         {q}
         <span

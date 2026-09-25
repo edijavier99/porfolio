@@ -1,88 +1,119 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 
-const tabs = [
-  { label: 'Home',           href: '/',              favicon: '⌂' },
-  { label: 'About Us',       href: '/about',          favicon: '◎' },
-  { label: 'Sustainability', href: '/sustainability', favicon: '🌿' },
+const navLinks = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Services', href: '#services' },
+  { label: 'Case Study', href: '#case-study' },
+  { label: 'Blog', href: '#blog' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 export default function Navbar() {
-  const pathname = usePathname();
-
-  const isActive = (href) => {
-    if (href === '/') return pathname === '/';
-    if (href.includes('#')) return pathname === '/';
-    return pathname === href;
-  };
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-chrome sticky top-0 z-50" style={{ borderBottom: '2px solid #0d0d0d' }}>
-      {/* Browser toolbar */}
-      <div className="flex items-center gap-3 px-4 py-2 bg-toolbar" style={{ borderBottom: '1px solid #1a1a1a' }}>
-        {/* Window dots */}
-        <div className="flex gap-1.5 items-center flex-shrink-0">
-          <span className="w-3 h-3 rounded-full bg-[#ff5f56] animate-pulse-dot" style={{ animationDelay: '0s' }} />
-          <span className="w-3 h-3 rounded-full bg-[#ffbd2e] animate-pulse-dot" style={{ animationDelay: '0.3s' }} />
-          <span className="w-3 h-3 rounded-full bg-[#27c93f] animate-pulse-dot" style={{ animationDelay: '0.6s' }} />
-        </div>
-
-        {/* Nav arrows */}
-        <div className="flex gap-0.5">
-          <button className="text-dim text-lg leading-none px-1.5 py-0.5 rounded cursor-default select-none">‹</button>
-          <button className="text-dim text-lg leading-none px-1.5 py-0.5 rounded cursor-default select-none">›</button>
-        </div>
-
-        {/* URL bar */}
-        <div className="flex-1 max-w-[480px] mx-auto bg-[#2c2c2c] rounded-full px-4 py-1.5 flex items-center gap-2 font-mono text-xs text-muted" style={{ border: '1px solid #3a3a3a' }}>
-          <span className="opacity-60 text-[10px]">🔒</span>
-          <span>kova.co.uk</span>
-        </div>
-
+    <header className="sticky top-0 z-50 bg-bg border-b border-sep">
+      <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4 md:px-12 lg:px-[64px]">
         {/* Logo */}
-        <div className="ml-auto flex-shrink-0">
-          <Image
-            src="/images/logo.png"
-            alt="Kova"
-            width={88}
-            height={30}
-            className="object-contain brightness-0 invert opacity-70"
-            priority
-          />
-        </div>
-      </div>
+        <Link href="/" className="flex items-center gap-2.5 no-underline flex-shrink-0">
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
+            <path
+              d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2zm0 4a10 10 0 016.5 17.6c-1.2-2.4-3.9-4-6.5-4-1 0-1.8-.8-1.8-1.8V16c0-3.3-2.7-6-6-6-.8 0-1.5.2-2.2.4A10 10 0 0116 6z"
+              fill="#0A0A0A"
+            />
+          </svg>
+          <span className="font-head font-bold text-body text-xl">Logoipsum</span>
+        </Link>
 
-      {/* Chrome tabs row */}
-      <div className="flex items-end px-2 h-[38px] gap-px overflow-x-auto scrollbar-hide">
-        {tabs.map((tab) => {
-          const active = isActive(tab.href);
-          return (
+        {/* Desktop nav */}
+        <nav className="hidden lg:flex items-center gap-9">
+          {navLinks.map((link) => (
             <Link
-              key={tab.href}
-              href={tab.href}
-              className={[
-                'flex items-center gap-2 px-[18px] h-9 rounded-t-lg',
-                'text-[13px] font-medium no-underline',
-                'border border-b-0 transition-colors duration-200',
-                'whitespace-nowrap flex-shrink-0',
-                active
-                  ? 'bg-bg text-white border-sep chrome-tab-active'
-                  : 'bg-tab-off text-muted border-transparent hover:text-[#bbb] hover:bg-[#333]',
-              ].join(' ')}
+              key={link.href}
+              href={link.href}
+              className="font-head text-body text-base no-underline transition-colors hover:opacity-70"
             >
-              <span className="text-xs">{tab.favicon}</span>
-              {tab.label}
-              {active && <span className="ml-1 text-dim text-sm leading-none">×</span>}
+              {link.label}
             </Link>
-          );
-        })}
-        <button className="text-dim text-xl h-9 px-2 flex items-center flex-shrink-0 hover:text-muted transition-colors">
-          +
+          ))}
+        </nav>
+
+        {/* CTA */}
+        <Link
+          href="#contact"
+          className="hidden lg:inline-flex items-center gap-4 rounded-full pl-6 pr-2 py-2 font-head font-medium no-underline flex-shrink-0"
+          style={{ background: '#0A0A0A', color: '#FFFFFF' }}
+        >
+          Contact Now
+          <span
+            className="w-9 h-9 rounded-full flex items-center justify-center text-[#0A0A0A] text-base"
+            style={{ background: '#D4F26A' }}
+          >
+            →
+          </span>
+        </Link>
+
+        {/* Mobile toggle */}
+        <button
+          onClick={() => setOpen((o) => !o)}
+          aria-label="Toggle menu"
+          className="lg:hidden flex flex-col items-center justify-center gap-1.5 w-10 h-10 flex-shrink-0"
+        >
+          <span
+            className="block w-6 h-0.5 bg-body transition-transform duration-300"
+            style={{ transform: open ? 'translateY(6px) rotate(45deg)' : 'none' }}
+          />
+          <span
+            className="block w-6 h-0.5 bg-body transition-opacity duration-300"
+            style={{ opacity: open ? 0 : 1 }}
+          />
+          <span
+            className="block w-6 h-0.5 bg-body transition-transform duration-300"
+            style={{ transform: open ? 'translateY(-6px) rotate(-45deg)' : 'none' }}
+          />
         </button>
       </div>
-    </nav>
+
+      {/* Mobile menu */}
+      <div
+        className="lg:hidden overflow-hidden transition-all duration-300 ease-in-out border-t border-sep"
+        style={{
+          maxHeight: open ? 480 : 0,
+          borderTopWidth: open ? 1 : 0,
+        }}
+      >
+        <nav className="flex flex-col px-6 py-6 gap-5">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="font-head text-body text-lg no-underline"
+            >
+              {link.label}
+            </Link>
+          ))}
+
+          <Link
+            href="#contact"
+            onClick={() => setOpen(false)}
+            className="inline-flex items-center justify-between gap-4 rounded-full pl-6 pr-2 py-2 font-head font-medium no-underline mt-2 w-fit"
+            style={{ background: '#0A0A0A', color: '#FFFFFF' }}
+          >
+            Contact Now
+            <span
+              className="w-9 h-9 rounded-full flex items-center justify-center text-[#0A0A0A] text-base"
+              style={{ background: '#D4F26A' }}
+            >
+              →
+            </span>
+          </Link>
+        </nav>
+      </div>
+    </header>
   );
 }

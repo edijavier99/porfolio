@@ -29,7 +29,7 @@ export default function TerminalWindow() {
 
   const renderLine = (line, i) => {
     if (line.type === 'header') return (
-      <div key={i} className="animate-line-in text-[#e6edf3] font-semibold text-[15px]">
+      <div key={i} className="animate-line-in text-body font-semibold text-[15px]">
         {line.text}
       </div>
     );
@@ -42,7 +42,7 @@ export default function TerminalWindow() {
       </div>
     );
     if (line.type === 'item') return (
-      <div key={i} className="animate-line-in flex items-baseline gap-2.5 text-[13.5px] text-[#e6edf3] mb-[5px]">
+      <div key={i} className="animate-line-in flex items-baseline gap-2.5 text-[13.5px] text-body mb-[5px]">
         <span className="text-green flex-shrink-0 text-xs">→</span>
         {line.text}
       </div>
@@ -56,7 +56,7 @@ export default function TerminalWindow() {
   };
 
   return (
-    <div className="font-mono overflow-hidden w-full max-w-[510px] bg-bg rounded-xl border border-sep" style={{ boxShadow: '0 0 0 1px #21262d, 0 24px 80px rgba(0,0,0,0.6), 0 8px 24px rgba(74,222,128,0.04)' }}>
+    <div className="font-mono overflow-hidden w-full max-w-[510px] bg-card rounded-xl border border-sep" style={{ boxShadow: '0 0 0 1px #E5E3DE, 0 8px 32px rgba(0,0,0,0.07), 0 2px 8px rgba(22,163,74,0.04)' }}>
       <div className="p-6" style={{ minHeight: 300 }}>
         {lines.slice(0, shown).map((line, i) => renderLine(line, i))}
         {shown > 0 && shown <= lines.length && (

@@ -22,7 +22,7 @@ export default function AboutPage() {
         <span className="font-mono block text-xs text-green tracking-[0.12em] mb-4">
           // about_us
         </span>
-        <h1 className="page-h1 font-head font-bold text-white tracking-[-0.02em] mb-5">
+        <h1 className="page-h1 font-head font-bold text-body tracking-[-0.02em] mb-5">
           A team that builds software
           <br />
           <span className="bg-[linear-gradient(125deg,#4ade80_0%,#60a5fa_100%)] bg-clip-text text-transparent">
@@ -53,7 +53,7 @@ export default function AboutPage() {
             <span className="font-mono block text-xs text-green tracking-[0.12em] mb-4">
               // our story
             </span>
-            <h2 className="font-head font-bold text-white text-[1.8rem] leading-[1.2] mb-4">
+            <h2 className="font-head font-bold text-body text-[1.8rem] leading-[1.2] mb-4">
               We started with a simple belief: businesses deserve better technology.
             </h2>
             <p className="text-muted text-base leading-[1.8]">
@@ -69,13 +69,6 @@ export default function AboutPage() {
               always with the same commitment to quality and transparency.
             </p>
 
-            <div className="bg-card border-l-4 border-green rounded-r-xl px-7 py-[22px] mt-7">
-              <p className="font-head italic text-body text-[1rem] leading-7 mb-2.5">
-                &ldquo;Quality in a service or product is not what you put into it.
-                It is what the customer gets out of it.&rdquo;
-              </p>
-              <cite className="font-mono not-italic text-xs text-muted">— Peter Drucker</cite>
-            </div>
           </div>
         </div>
       </section>
@@ -86,7 +79,7 @@ export default function AboutPage() {
           <span className="font-mono block text-xs text-green tracking-[0.12em] mb-3.5">
             // our_values
           </span>
-          <h2 className="section-h2 font-head font-bold text-white tracking-[-0.02em] mb-3.5">
+          <h2 className="section-h2 font-head font-bold text-body tracking-[-0.02em] mb-3.5">
             What We Stand For
           </h2>
           <p className="text-muted text-base leading-7 max-w-[560px] mx-auto">
@@ -101,7 +94,7 @@ export default function AboutPage() {
               <div className="flex items-center justify-center mx-auto w-16 h-16 bg-green/[0.07] rounded-full text-[28px] mb-5">
                 {v.icon}
               </div>
-              <div className="font-head font-bold text-white text-base mb-2.5">{v.title}</div>
+              <div className="font-head font-bold text-body text-base mb-2.5">{v.title}</div>
               <p className="text-[0.88rem] text-muted leading-[1.7]">{v.desc}</p>
             </div>
           ))}
@@ -114,7 +107,7 @@ export default function AboutPage() {
           <span className="font-mono block text-xs text-green tracking-[0.12em] mb-3.5">
             // our_history
           </span>
-          <h2 className="section-h2 font-head font-bold text-white tracking-[-0.02em]">
+          <h2 className="section-h2 font-head font-bold text-body tracking-[-0.02em]">
             How It All Started
           </h2>
         </div>
@@ -150,7 +143,7 @@ export default function AboutPage() {
         <span className="font-mono block text-xs text-green tracking-[0.12em] mb-3.5">
           // work_with_us
         </span>
-        <h2 className="section-h2 font-head font-bold text-white tracking-[-0.02em] mb-3.5">
+        <h2 className="section-h2 font-head font-bold text-body tracking-[-0.02em] mb-3.5">
           Ready to build something?
         </h2>
         <p className="text-muted text-base leading-7 max-w-[560px] mx-auto mb-8">

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { PROJECT_VISUALS } from './ProjectVisuals';
 
 export default function ProjectCarousel({ projects }) {
   const [activeIdx, setActiveIdx] = useState(0);
@@ -17,6 +18,7 @@ export default function ProjectCarousel({ projects }) {
   const next = () => goTo((activeIdx + 1) % projects.length);
 
   const p = projects[activeIdx];
+  const Visual = p.visualKey ? PROJECT_VISUALS[p.visualKey] : null;
 
   return (
     <div>
@@ -29,16 +31,22 @@ export default function ProjectCarousel({ projects }) {
           transform: fading ? 'translateY(6px)' : 'translateY(0)',
         }}
       >
-        {/* Left — image (hidden on mobile) */}
+        {/* Left — visual (hidden on mobile) */}
         <div className="relative overflow-hidden hidden md:block" style={{ minHeight: 420 }}>
-          <Image
-            src={p.image}
-            alt={p.name}
-            fill
-            className="object-cover transition-transform duration-500 hover:scale-[1.04]"
-            sizes="(max-width: 768px) 100vw, 55vw"
-          />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(13,13,13,0) 50%, #161616 100%)' }} />
+          {Visual ? (
+            <Visual />
+          ) : (
+            <>
+              <Image
+                src={p.image}
+                alt={p.name}
+                fill
+                className="object-cover transition-transform duration-500 hover:scale-[1.04]"
+                sizes="(max-width: 768px) 100vw, 55vw"
+              />
+              <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(13,13,13,0) 50%, #161616 100%)' }} />
+            </>
+          )}
         </div>
 
         {/* Right — info */}

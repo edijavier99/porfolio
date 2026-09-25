@@ -5,11 +5,11 @@ import { sendContactEmail } from '@/app/actions/contact';
 
 const inputStyle = {
   width: '100%',
-  background: '#0d0d0d',
-  border: '1px solid #2a2a2a',
+  background: '#FFFFFF',
+  border: '1px solid #E5E3DE',
   borderRadius: 10,
   padding: '14px 18px',
-  color: '#e5e5e5',
+  color: '#111111',
   fontSize: '0.95rem',
   fontFamily: 'inherit',
   outline: 'none',
@@ -20,7 +20,7 @@ const labelStyle = {
   display: 'block',
   fontSize: 12,
   fontFamily: 'var(--font-jetbrains)',
-  color: '#6b6b6b',
+  color: '#6B7280',
   textTransform: 'uppercase',
   letterSpacing: '0.1em',
   marginBottom: 8,
@@ -48,14 +48,14 @@ export default function ContactForm() {
       <div className="text-center py-16">
         <div
           className="flex items-center justify-center mx-auto mb-6"
-          style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(74,222,128,0.1)', border: '1px solid rgba(74,222,128,0.3)', fontSize: 28 }}
+          style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(22,163,74,0.1)', border: '1px solid rgba(22,163,74,0.3)', fontSize: 28 }}
         >
           ✓
         </div>
-        <h3 className="font-head font-bold text-white mb-3" style={{ fontSize: '1.6rem' }}>
+        <h3 className="font-head font-bold text-body mb-3" style={{ fontSize: '1.6rem' }}>
           Message received!
         </h3>
-        <p style={{ color: '#6b6b6b', fontSize: '1rem', lineHeight: 1.75 }}>
+        <p style={{ color: '#6B7280', fontSize: '1rem', lineHeight: 1.75 }}>
           We&apos;ll review your project and get back to you within 24 hours.
         </p>
       </div>
@@ -74,8 +74,8 @@ export default function ContactForm() {
             required
             placeholder="Jane Smith"
             style={inputStyle}
-            onFocus={e => (e.target.style.borderColor = '#4ade80')}
-            onBlur={e  => (e.target.style.borderColor = '#2a2a2a')}
+            onFocus={e => (e.target.style.borderColor = '#16a34a')}
+            onBlur={e  => (e.target.style.borderColor = '#E5E3DE')}
           />
         </div>
         <div>
@@ -86,8 +86,8 @@ export default function ContactForm() {
             required
             placeholder="jane@company.com"
             style={inputStyle}
-            onFocus={e => (e.target.style.borderColor = '#4ade80')}
-            onBlur={e  => (e.target.style.borderColor = '#2a2a2a')}
+            onFocus={e => (e.target.style.borderColor = '#16a34a')}
+            onBlur={e  => (e.target.style.borderColor = '#E5E3DE')}
           />
         </div>
       </div>
@@ -98,8 +98,8 @@ export default function ContactForm() {
         <select
           name="budget"
           style={{ ...inputStyle, cursor: 'pointer' }}
-          onFocus={e => (e.target.style.borderColor = '#4ade80')}
-          onBlur={e  => (e.target.style.borderColor = '#2a2a2a')}
+          onFocus={e => (e.target.style.borderColor = '#16a34a')}
+          onBlur={e  => (e.target.style.borderColor = '#E5E3DE')}
         >
           <option value="">Select a range...</option>
           <option value="Under £1,500">Under £1,500</option>
@@ -119,14 +119,14 @@ export default function ContactForm() {
           rows={5}
           placeholder="Describe what you want to build, what problem it solves, and any key features you need..."
           style={{ ...inputStyle, resize: 'vertical', minHeight: 140 }}
-          onFocus={e => (e.target.style.borderColor = '#4ade80')}
-          onBlur={e  => (e.target.style.borderColor = '#2a2a2a')}
+          onFocus={e => (e.target.style.borderColor = '#16a34a')}
+          onBlur={e  => (e.target.style.borderColor = '#E5E3DE')}
         />
       </div>
 
       {/* Error */}
       {status === 'error' && (
-        <p style={{ color: '#f87171', fontSize: 13, fontFamily: 'var(--font-jetbrains)' }}>
+        <p style={{ color: '#dc2626', fontSize: 13, fontFamily: 'var(--font-jetbrains)' }}>
           ⚠ {errorMsg}
         </p>
       )}
@@ -141,7 +141,7 @@ export default function ContactForm() {
         {status === 'loading' ? 'Sending...' : 'Send Enquiry →'}
       </button>
 
-      <p style={{ fontSize: 12, color: '#3a3a3a', fontFamily: 'var(--font-jetbrains)' }}>
+      <p style={{ fontSize: 12, color: '#9CA3AF', fontFamily: 'var(--font-jetbrains)' }}>
         We respond within 24 hours · No spam, ever
       </p>
     </form>
