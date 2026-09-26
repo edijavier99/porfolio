@@ -16,29 +16,53 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://kova.co.uk'),
+  metadataBase: new URL('https://edijavier.com'),
   title: {
-    template: '%s | Kova',
-    default: 'Kova — Software Studio London',
+    template: '%s | Edi Javier',
+    default: 'Edi Javier — Software Engineer & Builder',
   },
   description:
-    'We design and build websites, web applications, and custom software that help businesses grow online. London-based, serving clients globally.',
-  keywords: ['software studio', 'web development', 'web design', 'London', 'custom software'],
+    'Software Engineer helping founders and businesses build websites, web apps, and AI-powered products. London-based, working globally.',
+  keywords: [
+    'Edi Javier',
+    'software engineer London',
+    'web developer London',
+    'freelance software engineer',
+    'web app development',
+    'AI integration developer',
+    'Next.js developer',
+    'React developer London',
+    'startup developer',
+    'custom software development UK',
+  ],
+  authors: [{ name: 'Edi Javier', url: 'https://edijavier.com' }],
+  creator: 'Edi Javier',
+  publisher: 'Edi Javier',
+  alternates: { canonical: 'https://edijavier.com' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://kova.co.uk',
-    siteName: 'Kova',
-    title: 'Kova — Software Studio London',
-    description: 'We design and build websites, web apps and custom software.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Kova' }],
+    url: 'https://edijavier.com',
+    siteName: 'Edi Javier',
+    title: 'Edi Javier — Software Engineer & Builder',
+    description:
+      'Software Engineer helping founders and businesses build websites, web apps, and AI-powered products.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Edi Javier — Software Engineer' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kova — Software Studio London',
-    description: 'We design and build websites, web apps and custom software.',
+    creator: '@edijavier',
+    title: 'Edi Javier — Software Engineer & Builder',
+    description:
+      'Software Engineer helping founders and businesses build websites, web apps, and AI-powered products.',
+    images: ['/og-image.png'],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  category: 'technology',
 };
 
 export default function RootLayout({ children }) {

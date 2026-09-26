@@ -2,6 +2,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { posts } from '@/lib/posts';
 
+export const metadata = {
+  title: 'Blog — Software Engineering & AI',
+  description:
+    'Thoughts on software engineering, AI, and the ideas that shape how Edi Javier builds. Practical insights from real projects.',
+  alternates: { canonical: 'https://edijavier.com/blog' },
+  openGraph: {
+    title: 'Blog — Software Engineering & AI | Edi Javier',
+    description: 'Practical thoughts on software engineering, AI, and building digital products.',
+    url: 'https://edijavier.com/blog',
+    type: 'website',
+  },
+};
+
 const BlogPostCard = ({ post }) => (
   <Link href={`/blog/${post.id}`} className="block no-underline group">
     <div

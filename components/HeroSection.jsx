@@ -112,7 +112,7 @@ export default function HeroSection() {
         </div>
 
         {/* ── RIGHT — bottom-aligned on desktop, order-3 on mobile ── */}
-        <div className="flex-1 flex flex-col items-center text-center lg:justify-end lg:items-end lg:max-w-[280px] lg:text-right order-3 lg:order-none gap-0">
+        <div className="flex-1 flex flex-col items-start text-center lg:justify-end lg:items-end lg:max-w-[280px] lg:text-right order-3 lg:order-none gap-0">
           {/* Quote — desktop only (top of right col) */}
           <div className="hidden lg:flex items-start gap-3 mb-10">
             <span className="w-px self-stretch bg-sep flex-shrink-0" />

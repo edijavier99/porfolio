@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 const lines = [
-  { type: 'header',  text: 'Kova — Software Studio' },
+  { type: 'header',  text: 'Edi Javier — Software Engineer' },
   { type: 'divider' },
   { type: 'label',   text: 'What we build' },
   { type: 'item',    text: 'Websites & landing pages' },

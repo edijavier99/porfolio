@@ -6,11 +6,12 @@ import { susInitiatives } from '@/lib/data';
 export const metadata = {
   title: 'Sustainability',
   description:
-    "Kova is committed to sustainability — planting a tree for every client, running a paperless office, and supporting environmental causes.",
+    "Edi Javier is committed to sustainability — running a paperless operation, using energy-efficient tools, and supporting environmental causes.",
+  alternates: { canonical: 'https://edijavier.com/sustainability' },
   openGraph: {
-    title: 'Sustainability | Kova',
-    description: 'How Kova is committed to protecting the planet — one project at a time.',
-    url: 'https://kova.co.uk/sustainability',
+    title: 'Sustainability | Edi Javier',
+    description: 'How Edi Javier is committed to protecting the planet — one project at a time.',
+    url: 'https://edijavier.com/sustainability',
   },
 };
 
@@ -168,7 +169,7 @@ export default function SustainabilityPage() {
           <div className="relative mx-auto rounded-2xl overflow-hidden w-full max-w-[480px] h-[260px] mb-9">
             <Image
               src="/images/sus3.png"
-              alt="Kova sustainability commitment"
+              alt="Edi Javier sustainability commitment"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 480px"

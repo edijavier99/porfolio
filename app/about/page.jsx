@@ -4,19 +4,47 @@ import Footer from '@/components/Footer';
 import { aboutValues } from '@/lib/data';
 
 export const metadata = {
-  title: 'About Us',
+  title: 'About Edi Javier — Software Engineer',
   description:
-    "Kova is a software studio based in London. We partner with businesses to design, build, and grow their digital products. No jargon, no overcomplication. Just good work, delivered on time.",
+    'Edi Javier is a London-based Software Engineer. He partners with founders and businesses to design, build, and grow digital products — no jargon, delivered on time.',
+  alternates: { canonical: 'https://edijavier.com/about' },
   openGraph: {
-    title: 'About Kova — Software Studio London',
-    description: 'Meet the team behind Kova — a London-based software studio.',
-    url: 'https://kova.co.uk/about',
+    title: 'About Edi Javier — Software Engineer',
+    description:
+      'London-based Software Engineer. 50+ projects shipped, serving clients globally.',
+    url: 'https://edijavier.com/about',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'About Edi Javier' }],
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'About Edi Javier',
+  url: 'https://edijavier.com/about',
+  description:
+    'Edi Javier is a London-based Software Engineer who partners with businesses to design, build, and grow their digital products.',
+  about: {
+    '@type': 'Person',
+    '@id': 'https://edijavier.com/#person',
+    name: 'Edi Javier',
+    jobTitle: 'Software Engineer',
+    url: 'https://edijavier.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'London',
+      addressCountry: 'GB',
+    },
+    sameAs: ['https://www.linkedin.com/in/edisonca%C3%B1izares/'],
+    areaServed: 'Worldwide',
+    description: 'Software Engineer building websites, web apps, and AI-powered products.',
   },
 };
 
 export default function AboutPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* ── Page Hero ─────────────────────────────────────────────────────── */}
       <section className="px-6 pt-14 pb-12 md:px-12 md:pt-20 md:pb-16 lg:px-[88px] lg:pt-[80px] lg:pb-[72px] bg-bg border-b border-sep">
         <span className="font-mono block text-xs text-green tracking-[0.12em] mb-4">
@@ -30,7 +58,7 @@ export default function AboutPage() {
           </span>
         </h1>
         <p className="text-base text-muted leading-7 max-w-[560px]">
-          We&apos;re Kova — a software studio based in London. We partner with
+          I'm Edi Javier — a Software Engineer based in London. We partner with
           businesses to design, build, and grow their digital products. No jargon,
           no overcomplication. Just good work, delivered on time.
         </p>
@@ -42,7 +70,7 @@ export default function AboutPage() {
           <div className="relative rounded-2xl overflow-hidden h-[360px]">
             <Image
               src="https://images.unsplash.com/photo-1564410267845-ae5acf1ce8d9?q=80&w=1200&auto=format&fit=crop"
-              alt="Kova team working"
+              alt="Edi Javier working"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -57,13 +85,13 @@ export default function AboutPage() {
               We started with a simple belief: businesses deserve better technology.
             </h2>
             <p className="text-muted text-base leading-[1.8]">
-              Kova was born out of a clear observation — most businesses were struggling
+              This work was born out of a clear observation — most businesses were struggling
               to adapt to a digital world that was moving faster than they could keep up.
               They needed a partner who could translate their goals into technology that
               actually worked for them, not against them.
             </p>
             <p className="text-muted text-base leading-[1.8] mt-4">
-              So we built Kova: a software studio dedicated to creating digital
+              So I built this practice: a software engineering service dedicated to creating digital
               products that are beautiful, reliable, and built to last. We&apos;ve worked
               with startups, established businesses, and everything in between —
               always with the same commitment to quality and transparency.
@@ -115,7 +143,7 @@ export default function AboutPage() {
         <p className="text-muted text-base leading-[1.85] max-w-[720px] mx-auto text-center">
           Our journey began with a simple observation: most businesses knew they needed
           to be better online, but didn&apos;t know where to start — or who to trust. We
-          built Kova to change that. Starting with small local businesses and growing
+          built this to change that. Starting with small local businesses and growing
           to serve clients across multiple countries, we&apos;ve stayed true to one principle:
           build things that actually work, and always be honest about what it takes to
           get there. Today, with 50+ projects shipped and a growing team of engineers

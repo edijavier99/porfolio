@@ -1,0 +1,55 @@
+# Edi Javier — Software Engineer
+
+> Edi Javier is a London-based Software Engineer who helps founders and small businesses build websites, web apps, and AI-powered products that remove friction, save time, and accelerate growth.
+
+## About
+
+Edi Javier is a software engineer with 4+ years of experience shipping digital products. He works directly with founders, startups, and growing businesses — from MVPs to scalable platforms. He has shipped 10+ client projects across industries including fintech, healthcare, social platforms, and professional services.
+
+## Services
+
+- **Website Development**: Custom websites with SEO-friendly structure, fast load times, and mobile-first design.
+- **Software & Web Apps**: Custom web and mobile applications built to replace manual processes and scale with the business.
+- **Maintenance & Support**: 24/7 uptime monitoring, security patches, and ongoing improvements after launch.
+- **Ongoing Updates**: New features, design improvements, and compatibility upgrades.
+- **AI Integration**: Chatbots, smart search, automated workflows, and data insights built into products.
+
+## Notable Projects
+
+- **Superfanbase** (superfanbase.com): Fan engagement platform — full product strategy, UX design, and end-to-end development.
+- **Tokunize**: Fintech platform for asset tokenization — rebuilt from MVP to production-ready system deployed on AWS.
+- **Togethr Social** (togethrsocial.com): Social MVP built for investor-ready delivery.
+- **AC Services**: Corporate services website for London-based company.
+- **VC Clinic**: Healthcare clinic website with appointment booking system.
+- **Jesus Antonio**: Personal trainer platform with booking, scheduling, and client management.
+
+## Technology
+
+Specialises in: Next.js, React, Node.js, TypeScript, AWS, Tailwind CSS, AI integrations.
+
+## Location
+
+London, United Kingdom. Working with clients globally.
+
+## Contact & Links
+
+- Website: https://edijavier.com
+- LinkedIn: https://www.linkedin.com/in/edisonca%C3%B1izares/
+
+## Blog
+
+Edi writes about software engineering and AI at https://edijavier.com/blog
+
+Recent posts:
+- Next.js vs Remix in 2025: https://edijavier.com/blog/nextjs-vs-remix-2025
+- AI Agents for Small Businesses: https://edijavier.com/blog/ai-agents-for-smb
+
+## Key Facts
+
+- Name: Edi Javier
+- Role: Software Engineer
+- Based: London, UK
+- Experience: 4+ years
+- Projects shipped: 10+
+- Process: Discovery call → clear timeline → weekly updates → post-launch support
+- Pricing: Custom quotes, no hidden fees

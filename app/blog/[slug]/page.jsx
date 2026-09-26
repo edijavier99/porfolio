@@ -11,7 +11,27 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = posts.find((p) => p.id === slug);
   if (!post) return {};
-  return { title: `${post.title} — Edi Javier`, description: post.excerpt };
+  return {
+    title: post.title,
+    description: post.excerpt,
+    authors: [{ name: 'Edi Javier', url: 'https://edijavier.com' }],
+    alternates: { canonical: `https://edijavier.com/blog/${post.id}` },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `https://edijavier.com/blog/${post.id}`,
+      type: 'article',
+      publishedTime: post.date,
+      authors: ['Edi Javier'],
+      images: [{ url: post.image, width: 900, alt: post.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
+  };
 }
 
 const ContentBlock = ({ block, i }) => {
@@ -52,8 +72,47 @@ export default async function BlogPostPage({ params }) {
   const post = posts.find((p) => p.id === slug);
   if (!post) notFound();
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home',  item: 'https://edijavier.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog',  item: 'https://edijavier.com/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://edijavier.com/blog/${post.id}` },
+    ],
+  };
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    image: post.image,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Person',
+      '@id': 'https://edijavier.com/#person',
+      name: 'Edi Javier',
+      url: 'https://edijavier.com',
+      jobTitle: 'Software Engineer',
+    },
+    publisher: {
+      '@type': 'Person',
+      '@id': 'https://edijavier.com/#person',
+      name: 'Edi Javier',
+      url: 'https://edijavier.com',
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://edijavier.com/blog/${post.id}` },
+    url: `https://edijavier.com/blog/${post.id}`,
+    articleSection: post.category,
+    timeRequired: post.readTime,
+  };
+
   return (
     <main className="bg-bg">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Hero */}
       <section className="px-6 pt-10 pb-14 md:px-12 lg:px-[64px] lg:pt-14 lg:pb-16">
         <div className="max-w-[800px] mx-auto">
