@@ -1,29 +1,9 @@
 'use client';
 
-import { useRef } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
-
-
-const posts = [
-  {
-    id: 'nextjs-vs-remix-2025',
-    category: 'Software Engineering',
-    date: 'August 28, 2025',
-    title: 'Next.js vs Remix in 2025: Which One Should You Actually Pick',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&q=80',
-    bg: '#1A1A2E',
-  },
-  {
-    id: 'ai-agents-for-smb',
-    category: 'AI & Automation',
-    date: 'August 20, 2025',
-    title: 'Boost Your Business with AI Agents Built for Small Teams',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&q=80',
-    bg: '#0D1117',
-  },
-]
+import { posts } from '@/lib/posts';
 
 
 
