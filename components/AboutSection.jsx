@@ -94,15 +94,15 @@ export default function AboutSection() {
             className="font-head font-bold tracking-[-0.02em] mb-6"
             style={{ fontSize: 'clamp(2.25rem, 4vw, 3.25rem)', lineHeight: 1.15, color: '#FFFFFF' }}
           >
-            I help founders turn rough ideas into{' '}
-            <span style={{ color: '#9CA3A3' }}>real, working products.</span>
+            I write code. But I{' '}
+            <span style={{ color: '#9CA3A3' }}>think in products.</span>
           </h2>
 
           <p className="text-base leading-7 mb-10" style={{ color: '#B0B0B0' }}>
-            I&apos;ve spent 4+ years working with early-stage startups and small businesses —
-            building features, setting technical foundations, and shipping products that solve
-            real problems. Lately I&apos;ve been focused on helping businesses implement AI
-            and automation to remove friction and grow faster.
+            Most of the people I work with aren&apos;t looking for someone to execute a brief —
+            they want someone who&apos;ll flag when something doesn&apos;t make sense, suggest a
+            better approach, and care about whether the thing actually works once it&apos;s live.
+            That&apos;s how I&apos;ve always worked. Four years in, it&apos;s still the part I find most interesting.
           </p>
 
           <div className="flex items-center gap-6 flex-wrap mt-10">
