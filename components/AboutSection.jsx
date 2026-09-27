@@ -94,15 +94,17 @@ export default function AboutSection() {
             className="font-head font-bold tracking-[-0.02em] mb-6"
             style={{ fontSize: 'clamp(2.25rem, 4vw, 3.25rem)', lineHeight: 1.15, color: '#FFFFFF' }}
           >
-            I write code. But I{' '}
-            <span style={{ color: '#9CA3A3' }}>think in products.</span>
+            The technical partner{' '}
+            <span style={{ color: '#9CA3A3' }}>non-tech founders actually need.</span>
           </h2>
 
           <p className="text-base leading-7 mb-10" style={{ color: '#B0B0B0' }}>
-            Most of the people I work with aren&apos;t looking for someone to execute a brief —
-            they want someone who&apos;ll flag when something doesn&apos;t make sense, suggest a
-            better approach, and care about whether the thing actually works once it&apos;s live.
-            That&apos;s how I&apos;ve always worked. Four years in, it&apos;s still the part I find most interesting.
+            The founders I work with know their idea inside out — the problem, the market, the vision.
+            What they don&apos;t always have is someone who can translate that into the right technical
+            decisions. I come in from day one: helping shape the product, choosing the right tech,
+            navigating pivots, and staying hands-on all the way from early planning to a live product.
+            I don&apos;t just build what&apos;s on the spec. I get involved, add my own perspective,
+            and care about where the product is actually going.
           </p>
 
           <div className="flex items-center gap-6 flex-wrap mt-10">
