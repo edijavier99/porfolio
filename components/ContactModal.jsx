@@ -90,7 +90,7 @@ export default function ContactModal() {
             <div className="mb-8">
               <span className="inline-flex items-center gap-2 font-mono text-xs text-body border border-sep rounded-full px-4 py-1.5 mb-4 w-fit">
                 <span className="w-1.5 h-1.5 rounded-full bg-green animate-pulse-dot" />
-                Available for new projects
+                Based in London · Remote friendly
               </span>
               <h2 className="font-head font-bold text-body tracking-[-0.02em]" style={{ fontSize: 'clamp(1.6rem, 3vw, 2rem)' }}>
                 Let&apos;s work together

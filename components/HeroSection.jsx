@@ -55,7 +55,7 @@ const Portrait = () => (
 
     <div className="flex items-center gap-2 mt-4">
       <span className="w-2 h-2 rounded-full bg-green animate-pulse-dot flex-shrink-0" />
-      <span className="font-head font-medium text-sm text-body">Available for new projects</span>
+      <span className="font-head font-medium text-sm text-body">Based in London · Remote friendly</span>
     </div>
   </div>
 );

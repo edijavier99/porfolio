@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useContactModal } from './ContactModalContext';
+import { subscribeEmail } from '@/app/actions/subscribe';
 
 const contacts = [
   {
@@ -43,13 +44,22 @@ const socials = [
 
 export default function Footer() {
   const [email, setEmail] = useState('');
+  const [subStatus, setSubStatus] = useState('idle'); // idle | loading | success | error
+  const [subError, setSubError] = useState('');
   const { openModal } = useContactModal();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: hook up to your subscribe endpoint
-    console.log('Subscribe:', email);
-    setEmail('');
+    setSubStatus('loading');
+    const formData = new FormData(e.target);
+    const result = await subscribeEmail(formData);
+    if (result.success) {
+      setSubStatus('success');
+      setEmail('');
+    } else {
+      setSubError(result.error);
+      setSubStatus('error');
+    }
   };
 
   return (
@@ -86,32 +96,46 @@ export default function Footer() {
 
           <p className="font-head font-medium text-body text-lg mb-5">Subscribe for Updates</p>
 
-          <form
-            onSubmit={handleSubmit}
-            className="flex items-center gap-2 rounded-full p-1.5 w-full mb-24"
-            style={{
-              maxWidth: 560,
-              background: '#FFFFFF',
-              border: '1px solid #E5E3DE',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.06)',
-            }}
-          >
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              className="flex-1 bg-transparent px-5 py-3 text-base text-body placeholder:text-muted outline-none min-w-0"
-            />
-            <button
-              type="submit"
-              className="rounded-full px-7 py-3 font-head font-medium flex-shrink-0"
-              style={{ background: '#0A0A0A', color: '#FFFFFF' }}
-            >
-              Send
-            </button>
-          </form>
+          {subStatus === 'success' ? (
+            <p className="font-head font-medium text-green text-base mb-24">
+              You&apos;re subscribed!
+            </p>
+          ) : (
+            <div className="w-full mb-24" style={{ maxWidth: 560 }}>
+              <form
+                onSubmit={handleSubmit}
+                className="flex items-center gap-2 rounded-full p-1.5 w-full"
+                style={{
+                  background: '#FFFFFF',
+                  border: '1px solid #E5E3DE',
+                  boxShadow: '0 8px 32px rgba(0,0,0,0.06)',
+                }}
+              >
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  className="flex-1 bg-transparent px-5 py-3 text-base text-body placeholder:text-muted outline-none min-w-0"
+                />
+                <button
+                  type="submit"
+                  disabled={subStatus === 'loading'}
+                  className="rounded-full px-7 py-3 font-head font-medium flex-shrink-0"
+                  style={{ background: '#0A0A0A', color: '#FFFFFF', opacity: subStatus === 'loading' ? 0.7 : 1 }}
+                >
+                  {subStatus === 'loading' ? '...' : 'Send'}
+                </button>
+              </form>
+              {subStatus === 'error' && (
+                <p className="text-xs mt-2 text-center" style={{ color: '#dc2626', fontFamily: 'var(--font-jetbrains)' }}>
+                  {subError}
+                </p>
+              )}
+            </div>
+          )}
 
           {/* Contact info */}
           <div className="flex flex-wrap items-center justify-center gap-x-14 gap-y-8 mb-10">

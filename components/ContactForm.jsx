@@ -56,7 +56,7 @@ export default function ContactForm() {
           Message received!
         </h3>
         <p style={{ color: '#6B7280', fontSize: '1rem', lineHeight: 1.75 }}>
-          We&apos;ll review your project and get back to you within 24 hours.
+          I&apos;ll review your project and get back to you within 24 hours.
         </p>
       </div>
     );
@@ -67,7 +67,7 @@ export default function ContactForm() {
       {/* Name + Email */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label style={labelStyle}>Your name *</label>
+          <label style={labelStyle}>Name *</label>
           <input
             name="name"
             type="text"
@@ -79,7 +79,7 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label style={labelStyle}>Email address *</label>
+          <label style={labelStyle}>Email *</label>
           <input
             name="email"
             type="email"
@@ -92,27 +92,9 @@ export default function ContactForm() {
         </div>
       </div>
 
-      {/* Budget */}
-      <div>
-        <label style={labelStyle}>Budget range</label>
-        <select
-          name="budget"
-          style={{ ...inputStyle, cursor: 'pointer' }}
-          onFocus={e => (e.target.style.borderColor = '#16a34a')}
-          onBlur={e  => (e.target.style.borderColor = '#E5E3DE')}
-        >
-          <option value="">Select a range...</option>
-          <option value="Under £1,500">Under £1,500</option>
-          <option value="£1,500 – £5,000">£1,500 – £5,000</option>
-          <option value="£5,000 – £15,000">£5,000 – £15,000</option>
-          <option value="£15,000+">£15,000+</option>
-          <option value="Not sure yet">Not sure yet</option>
-        </select>
-      </div>
-
       {/* Message */}
       <div>
-        <label style={labelStyle}>Tell us about your project *</label>
+        <label style={labelStyle}>Tell me what you&apos;re building *</label>
         <textarea
           name="message"
           required
@@ -138,11 +120,11 @@ export default function ContactForm() {
         className="btn-primary font-head justify-center"
         style={{ fontSize: 15, padding: '14px 32px', opacity: status === 'loading' ? 0.7 : 1, cursor: status === 'loading' ? 'not-allowed' : 'pointer' }}
       >
-        {status === 'loading' ? 'Sending...' : 'Send Enquiry →'}
+        {status === 'loading' ? 'Sending...' : 'Send Message →'}
       </button>
 
       <p style={{ fontSize: 12, color: '#9CA3AF', fontFamily: 'var(--font-jetbrains)' }}>
-        We respond within 24 hours · No spam, ever
+        I respond within 24 hours · No spam, ever
       </p>
     </form>
   );

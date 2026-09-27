@@ -6,7 +6,7 @@ const experience = [
     company: 'Sing King',
     role: 'Software Engineer',
     years: 'Aug 2026 — Present',
-    logo: '/images/singkingLogo2.png',
+    logo: '/images/singKingLogo2.png',
     initials: 'SK',
   },
   {

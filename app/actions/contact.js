@@ -1,13 +1,13 @@
 'use server';
 
 import { Resend } from 'resend';
+import { supabase } from '@/lib/supabase';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendContactEmail(formData) {
   const name    = formData.get('name');
   const email   = formData.get('email');
-  const budget  = formData.get('budget');
   const message = formData.get('message');
 
   if (!name || !email || !message) {
@@ -15,6 +15,8 @@ export async function sendContactEmail(formData) {
   }
 
   try {
+    await supabase.from('contact_enquiries').insert({ name, email, message });
+
     await resend.emails.send({
       from: 'Portfolio Contact <onboarding@resend.dev>',
       to:   ['edijavier10@gmail.com'],
@@ -26,10 +28,9 @@ export async function sendContactEmail(formData) {
           <table style="width:100%;border-collapse:collapse;">
             <tr><td style="padding:8px 0;color:#888;width:100px;">Name</td><td style="padding:8px 0;font-weight:600;">${name}</td></tr>
             <tr><td style="padding:8px 0;color:#888;">Email</td><td style="padding:8px 0;">${email}</td></tr>
-            <tr><td style="padding:8px 0;color:#888;">Budget</td><td style="padding:8px 0;">${budget || 'Not specified'}</td></tr>
           </table>
           <hr style="border:none;border-top:1px solid #eee;margin:16px 0;" />
-          <p style="color:#888;margin-bottom:8px;">Project description</p>
+          <p style="color:#888;margin-bottom:8px;">What they're building</p>
           <p style="line-height:1.7;">${message}</p>
         </div>
       `,
@@ -38,6 +39,6 @@ export async function sendContactEmail(formData) {
     return { success: true };
   } catch (err) {
     console.error('Resend error:', err);
-    return { success: false, error: 'Failed to send. Please email us directly at hello@edijavier.com' };
+    return { success: false, error: 'Failed to send. Please email directly at hello@edijavier.com' };
   }
 }
