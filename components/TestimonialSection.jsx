@@ -10,7 +10,7 @@ const testimonials = [
     company: 'Innergrow',
     role: 'Owner',
     logo: '/images/InnergrowLogo2.png',
-    quote: "Edi understood what we needed from day one. He built exactly what we asked for, communicated clearly throughout, and delivered on time. Working with him felt easy.",
+    quote: "We were doing everything in person — no website, no system, nothing online. We didn't really know what we needed or where to start. Edi listened, gave us options that made sense for us, and was patient throughout the whole process. Now we manage our clients and appointments in one place and people can actually find us online. It's made a real difference to how we run things day to day.",
   },
   {
     id: 'heldandco',

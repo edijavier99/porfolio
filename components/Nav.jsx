@@ -34,12 +34,6 @@ export default function Navbar() {
       <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4 md:px-12 lg:px-[64px]">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 no-underline flex-shrink-0">
-          <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
-            <path
-              d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2zm0 4a10 10 0 016.5 17.6c-1.2-2.4-3.9-4-6.5-4-1 0-1.8-.8-1.8-1.8V16c0-3.3-2.7-6-6-6-.8 0-1.5.2-2.2.4A10 10 0 0116 6z"
-              fill="#0A0A0A"
-            />
-          </svg>
           <span className="font-head font-bold text-body text-xl">Edi Javier</span>
         </Link>
 
