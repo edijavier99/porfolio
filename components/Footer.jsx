@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useContactModal } from './ContactModalContext';
 import { subscribeEmail } from '@/app/actions/subscribe';
 
@@ -68,22 +67,19 @@ export default function Footer() {
         className="relative flex flex-col items-center text-center px-6 pt-20 pb-16 md:px-12 lg:px-[64px] lg:pt-28 lg:pb-20"
         style={{ minHeight: 640 }}
       >
-        {/* Mountain background image */}
-        <div className="absolute inset-0 pointer-events-none" style={{ opacity: 0.9 }}>
-          <Image
-            src="/images/footer-mountain.jpg"
-            alt=""
-            fill
-            className="object-cover object-bottom"
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                'linear-gradient(to bottom, var(--bg) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 60%, var(--bg) 100%)',
-            }}
-          />
-        </div>
+        {/* Dot map background */}
+        <svg
+          className="absolute inset-0 w-full h-full pointer-events-none"
+          style={{ opacity: 0.5 }}
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <pattern id="footer-dot-map" width="14" height="14" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.4" fill="#D4D4D0" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#footer-dot-map)" />
+        </svg>
 
         <div className="relative z-10 flex flex-col items-center w-full">
           <h2
