@@ -1,11 +1,73 @@
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+
+function useCountUp(target, duration = 1200, start = false) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!start) return;
+    let startTime = null;
+    const step = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      // ease out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(eased * target));
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, [start, target, duration]);
+
+  return count;
+}
+
+function StatItem({ num, suffix, label, started, delay }) {
+  const [go, setGo] = useState(false);
+  const count = useCountUp(num, 1000, go);
+
+  useEffect(() => {
+    if (!started) return;
+    const t = setTimeout(() => setGo(true), delay);
+    return () => clearTimeout(t);
+  }, [started, delay]);
+
+  return (
+    <div className="flex items-center gap-6 sm:gap-8">
+      <div className="flex items-center gap-4 md:flex-col md:items-start md:gap-2">
+        <span
+          className="font-head font-bold text-body"
+          style={{ fontSize: 'clamp(2.25rem, 4vw, 3.5rem)', lineHeight: 1 }}
+        >
+          {count}{suffix}
+        </span>
+        <p className="text-muted text-sm whitespace-nowrap md:whitespace-normal">
+          {label}
+        </p>
+      </div>
+    </div>
+  );
+}
 
 export default function StatsSection() {
   const stats = [
-    { num: '10', suffix: '+', label: 'Projects shipped' },
-    { num: '7',  suffix: '+', label: 'Happy clients' },
-    { num: '4',  suffix: '+', label: 'Years experience' },
+    { num: 10, suffix: '+', label: 'Projects shipped' },
+    { num: 7,  suffix: '+', label: 'Happy clients' },
+    { num: 4,  suffix: '+', label: 'Years experience' },
   ];
+
+  const ref = useRef(null);
+  const [started, setStarted] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setStarted(true); observer.disconnect(); } },
+      { threshold: 0.3 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section className="px-6 py-20 md:px-12 lg:px-[64px] lg:py-24 bg-bg-alt">
@@ -33,20 +95,10 @@ export default function StatsSection() {
           </div>
 
           {/* Stats */}
-          <div className="flex flex-col sm:flex-row flex-1 items-start justify-center lg:justify-end gap-8 sm:gap-16">
+          <div ref={ref} className="flex flex-col sm:flex-row flex-1 items-start justify-center lg:justify-end gap-8 sm:gap-16">
             {stats.map((s, i) => (
               <div key={i} className="flex items-center gap-6 sm:gap-8">
-                <div className="flex items-center gap-4 md:flex-col md:items-start md:gap-2">
-                  <span
-                    className="font-head font-bold text-body"
-                    style={{ fontSize: 'clamp(2.25rem, 4vw, 3.5rem)', lineHeight: 1 }}
-                  >
-                    {s.num}{s.suffix}
-                  </span>
-                  <p className="text-muted text-sm whitespace-nowrap md:whitespace-normal">
-                    {s.label}
-                  </p>
-                </div>
+                <StatItem {...s} started={started} delay={i * 120} />
                 {i < stats.length - 1 && (
                   <span className="hidden sm:block w-px self-stretch bg-sep" />
                 )}
