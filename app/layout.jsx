@@ -1,4 +1,5 @@
 import { Inter, JetBrains_Mono } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import Nav from '@/components/Nav';
 import Providers from '@/components/Providers';
 import './globals.css';
@@ -83,6 +84,7 @@ export default function RootLayout({ children }) {
           <Nav />
           {children}
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
