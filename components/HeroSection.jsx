@@ -30,7 +30,7 @@ const Portrait = () => (
       style={{ width: 460, height: 560, background: '#E9E9EA' }}
     >
       <Image
-        src="/images/portrait_face03.jpg"
+        src="/images/portrait_face03.webp"
         alt="Edi Javier"
         fill
         className="object-cover object-top"
