@@ -13,7 +13,7 @@ export const metadata = {
     description:
       'London-based Software Engineer. 50+ projects shipped, serving clients globally.',
     url: 'https://edijavier.com/about',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'About Edi Javier' }],
+    images: [{ url: '/images/og-image-edi.png', width: 1200, height: 630, alt: 'About Edi Javier' }],
   },
 };
 

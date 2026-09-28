@@ -38,7 +38,7 @@ export const metadata = {
       'Software Engineer helping founders and businesses build websites, web apps, and AI-powered products.',
     url: 'https://edijavier.com',
     siteName: 'Edi Javier',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Edi Javier — Software Engineer' }],
+    images: [{ url: '/images/og-image-edi.png', width: 1200, height: 630, alt: 'Edi Javier — Software Engineer' }],
   },
 };
 

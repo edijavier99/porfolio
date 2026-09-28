@@ -48,7 +48,7 @@ export const metadata = {
     title: 'Edi Javier — Software Engineer & Builder',
     description:
       'Software Engineer helping founders and businesses build websites, web apps, and AI-powered products.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Edi Javier — Software Engineer' }],
+    images: [{ url: '/images/og-image-edi.png', width: 1200, height: 630, alt: 'Edi Javier — Software Engineer' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -56,7 +56,7 @@ export const metadata = {
     title: 'Edi Javier — Software Engineer & Builder',
     description:
       'Software Engineer helping founders and businesses build websites, web apps, and AI-powered products.',
-    images: ['/og-image.png'],
+    images: ['/images/og-image-edi.png'],
   },
   robots: {
     index: true,
