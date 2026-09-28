@@ -16,12 +16,11 @@ Edi Javier is a software engineer with 4+ years of experience shipping digital p
 
 ## Notable Projects
 
-- **Superfanbase** (superfanbase.com): Fan engagement platform — full product strategy, UX design, and end-to-end development.
+- **Superfanbase** ([superfanbase.com](https://superfanbase.com)): Fan engagement platform — full product strategy, UX design, and end-to-end development.
 - **Tokunize**: Fintech platform for asset tokenization — rebuilt from MVP to production-ready system deployed on AWS.
-- **Togethr Social** (togethrsocial.com): Social MVP built for investor-ready delivery.
+- **Togethr Social** ([togethrsocial.com](https://togethrsocial.com)): Social MVP built for investor-ready delivery.
 - **AC Services**: Corporate services website for London-based company.
 - **VC Clinic**: Healthcare clinic website with appointment booking system.
-- **Jesus Antonio**: Personal trainer platform with booking, scheduling, and client management.
 
 ## Technology
 
@@ -33,16 +32,17 @@ London, United Kingdom. Working with clients globally.
 
 ## Contact & Links
 
-- Website: https://edijavier.com
-- LinkedIn: https://www.linkedin.com/in/edisonca%C3%B1izares/
+- Website: [edijavier.com](https://edijavier.com)
+- LinkedIn: [Edi Javier on LinkedIn](https://www.linkedin.com/in/edisonca%C3%B1izares/)
+- Email: [edijavier10@gmail.com](mailto:edijavier10@gmail.com)
 
 ## Blog
 
-Edi writes about software engineering and AI at https://edijavier.com/blog
+Edi writes about software engineering and AI at [edijavier.com/blog](https://edijavier.com/blog)
 
 Recent posts:
-- Next.js vs Remix in 2025: https://edijavier.com/blog/nextjs-vs-remix-2025
-- AI Agents for Small Businesses: https://edijavier.com/blog/ai-agents-for-smb
+- [AI-Assisted Development: How I Actually Use AI to Ship Better Code](https://edijavier.com/blog/vibe-coding-production)
+- [The AI Mistake Most Founders Make (And What Actually Works)](https://edijavier.com/blog/ai-agents-for-smb)
 
 ## Key Facts
 

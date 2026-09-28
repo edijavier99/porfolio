@@ -44,6 +44,7 @@ const Portrait = () => (
             href={s.href}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`Edi Javier on ${s.key}`}
             className="w-10 h-10 rounded-full flex items-center justify-center text-white transition-transform hover:scale-105"
             style={{ background: 'rgba(60,60,60,0.55)', backdropFilter: 'blur(4px)' }}
           >
