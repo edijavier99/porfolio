@@ -88,8 +88,8 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-muted text-lg leading-8 mb-9">
-            Running on spreadsheets and manual processes? Have an idea but not sure
-            how to build it right? I help you figure out what to build — and get it done.
+            I help founders and small businesses build software and implement AI
+            solutions that remove friction, save time, and accelerate growth.
           </p>
 
           <button
