@@ -184,7 +184,10 @@ export default function Footer() {
             <button onClick={openModal} className="hover:text-body transition-colors">Contact</button>
           </div>
 
-          <span>© {new Date().getFullYear()} Edi Javier. All rights reserved.</span>
+          <div className="flex items-center gap-4">
+            <span>© {new Date().getFullYear()} Edi Javier. All rights reserved.</span>
+            <Link href="/privacy" className="no-underline hover:text-body transition-colors">Privacy Policy</Link>
+          </div>
         </div>
       </div>
     </footer>

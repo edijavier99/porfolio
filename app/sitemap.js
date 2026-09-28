@@ -8,6 +8,7 @@ export default function sitemap() {
     { url: `${BASE}/about`,            lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/blog`,             lastModified: new Date(), changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${BASE}/sustainability`,   lastModified: new Date(), changeFrequency: 'yearly',  priority: 0.4 },
+    { url: `${BASE}/privacy`,          lastModified: new Date(), changeFrequency: 'yearly',  priority: 0.2 },
   ];
 
   const blogRoutes = posts.map((post) => ({
