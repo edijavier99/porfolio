@@ -31,9 +31,9 @@ const reasons = [
   },
   {
     key: 'ai',
-    title: "AI can save your team hours every week",
+    title: "AI that actually saves time — no hype",
     description:
-      "Most businesses already have the data and the processes — they're just doing them manually. I find where automation makes real sense for your business and build it properly.",
+      "Most businesses already have the data and the processes — they're just doing them manually. I find the one workflow worth automating first, build it properly, and measure the hours saved. You'll see exactly what it does before it touches anything critical.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
         <rect x="4" y="4" width="16" height="16" rx="3" stroke="#0A0A0A" strokeWidth="1.6" />
@@ -51,6 +51,19 @@ const reasons = [
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
         <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.42 3.18 2 2 0 013.42 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#0A0A0A" strokeWidth="1.6" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    key: 'ownership',
+    title: "Your code and data are yours from day 1",
+    description:
+      "No lock-in. Everything we build is documented, cleanly handed over, and fully yours — to maintain, transfer, or pass to another team whenever you need. You're never dependent on me to keep things running.",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+        <rect x="3" y="11" width="18" height="11" rx="2" stroke="#0A0A0A" strokeWidth="1.6" />
+        <path d="M7 11V7a5 5 0 0110 0v4" stroke="#0A0A0A" strokeWidth="1.6" strokeLinecap="round" />
+        <circle cx="12" cy="16" r="1.5" stroke="#0A0A0A" strokeWidth="1.4" />
       </svg>
     ),
   },
