@@ -13,7 +13,7 @@ Each post ends with a single CTA: book a call.
 
 | Day | Category | Slug | Title | Description |
 |-----|----------|------|-------|-------------|
-| Tue | Founders | `mvp-cost-honest` | **One MVP, Two Quotes: $3K and $150K. Nobody's Lying.** | Honest price ranges and what moves the cost: no-code vs custom, scope, AI features. |
+| Tue | Founders | `mvp-cost-honest` | **What Does Custom Software Really Cost a UK Small Business?** | Honest price ranges by project type, worked examples, and how to tell if it's worth it. |
 | Thu | Case Study | `whatsapp-to-database` | **800 Workers, Zero Spreadsheets: How WhatsApp Became the Database** | Deep dive: 800+ person cleaning company, manual ops → AI+PostgreSQL, -40% manual tasks. |
 
 ## Week 2
