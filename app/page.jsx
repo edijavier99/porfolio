@@ -37,6 +37,7 @@ export const metadata = {
     description:
       'Software Engineer helping founders and businesses build websites, web apps, and AI-powered products.',
     url: 'https://edijavier.com',
+    siteName: 'Edi Javier',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Edi Javier — Software Engineer' }],
   },
 };
@@ -188,3 +189,5 @@ export default function HomePage() {
     </>
   );
 }
+
+
