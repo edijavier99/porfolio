@@ -74,10 +74,19 @@ export default function RootLayout({ children }) {
     >
       <head>
         <link rel="preconnect" href="https://api.fontshare.com" />
+        <link rel="dns-prefetch" href="https://api.fontshare.com" />
         <link
           href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
           rel="stylesheet"
+          media="print"
+          onLoad="this.media='all'"
         />
+        <noscript>
+          <link
+            href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+            rel="stylesheet"
+          />
+        </noscript>
       </head>
       <body className="bg-bg text-body font-body antialiased">
         <Providers>
