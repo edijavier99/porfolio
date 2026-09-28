@@ -129,7 +129,7 @@ export default function WhyChooseSection() {
                 <div className="relative z-10">
                   <h3
                     className="font-head font-semibold text-body tracking-[-0.01em] mb-3"
-                    style={{ fontSize: '1.5rem', lineHeight: 1.2 }}
+                    style={{ fontSize: '1.1rem', lineHeight: 1.25 }}
                   >
                     {reason.title}
                   </h3>
