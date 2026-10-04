@@ -20,14 +20,14 @@ const testimonials = [
     logo: '/images/heldandco.png',
     quote: "Edi was so great to work with. I have no clue how websites work but as a Psychotherapist, I knew it was important to establish one. I gave Edi a whirlwind of ideas and by magic he made sense of it all and created my website. I couldn't be happier with it. It matches my brand messaging and conveys everything I want it to, to prospective clients. Thank you so much!",
   },
-  // {
-  //   id: 'hannahelsy',
-  //   name: 'Hannah Elsy',
-  //   company: 'Hannahelsy',
-  //   role: 'Owner',
-  //   logo: '/images/hannahelsyLogo.webp',
-  //   quote: "He took our rough ideas and turned them into something real. No jargon, no drama — just good work done fast. Exactly what a small business needs.",
-  // },
+  {
+    id: 'hannahelsy',
+    name: 'Hannah Elsy',
+    company: 'Hannah Elsy',
+    role: 'Owner',
+    logo: '/images/hannahelsyLogo.webp',
+    quote: "Edi has been an incredible partner in building products, websites and apps. He has a founders mindset and is always looking for solutions to problems. He takes the time to understand the project and the industry he's working in and then creates something which is responsive to the circumstances and needs of the client. He's quick at coding and shipping and comfortable working on both small and big briefs. I will certainly work with him again.",
+  },
   {
     id: 'tokunize',
     name: 'Nana',
